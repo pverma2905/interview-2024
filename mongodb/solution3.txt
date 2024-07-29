@@ -1,0 +1,88 @@
+1)how we use match?
+db.orders.aggregate([
+  { $match: { status: "shipped" } }
+])
+
+2)how we use group?
+db.orders.aggregate([
+  {
+    $group: {
+      _id: "$customerId",
+      totalOrders: { $sum: 1 }
+    }
+  }
+])
+
+3)how we use $project?
+db.orders.aggregate([
+  {
+    $project: {
+      customerId: 1,
+      orderAmount: 1
+    }
+  }
+])
+
+4)how we use sorting in aggregation?
+db.orders.aggregate([
+  { $sort: { orderDate: -1 } }
+])
+
+5)how we use $lookup?
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "products",
+      localField: "productId",
+      foreignField: "_id",
+      as: "productDetails"
+    }
+  }
+])
+
+6)what is $unwind?
+db.collection.aggregate([
+  { $unwind: "$arrayField" }
+])
+
+7)what is $facet?
+multiple pipeline in a single stage
+allowing a parallel aggregation
+
+db.collection.aggregate([
+  {
+    $facet: {
+      pipeline1: [
+        { $match: { field1: "value1" } },
+        { $group: { _id: null, count1: { $sum: 1 } } }
+      ],
+      pipeline2: [
+        { $match: { field2: "value2" } },
+        { $group: { _id: null, count2: { $sum: 1 } } }
+      ]
+    }
+  }
+])
+
+8)What are some ways to optimize aggregation queries in MongoDB?
+
+1.Use Indexes: Ensure that fields used in $match, $sort, and other filtering stages are indexed.
+2.Early Filtering: Use $match stages early in the pipeline to reduce the number of documents processed by subsequent stages.
+3.Project Early: Use $project early to include only necessary fields.
+4.Pipeline Order: Arrange pipeline stages thoughtfully to minimize data processing and memory usage.
+5.Limit Data Size: Use $limit to restrict the number of documents processed where applicable.
+
+
+9)How would you use aggregation to calculate the average order value per customer?
+db.orders.aggregate([
+  { $group: { _id: "$customerId", averageOrderValue: { $avg: "$orderAmount" } } }
+])
+
+10)How would you use aggregation to find the top 5 products with the highest sales?
+db.sales.aggregate([
+  { $group: { _id: "$product", totalSales: { $sum: "$amount" } } },
+  { $sort: { totalSales: -1 } },
+  { $limit: 5 }
+])
+
+11)what is $merge?

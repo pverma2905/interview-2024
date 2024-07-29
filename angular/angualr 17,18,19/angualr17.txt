@@ -1,0 +1,99 @@
+1)what is standalone component??
+it is introduced in angualr 14
+
+standalone by default enable
+no need to register module
+
+creating module component
+ng g c component --standalone=false
+
+2)what is defferable views?
+it reduce the initial bundle size
+it is a like a lazy loading
+in which kisi template ako lazy load kara sakta hoon
+which temlate is heavy to load so we load as a  defferable view se
+it is used in ondemand load 
+@defer(on viewport){
+    <component/>
+} @placeholder{
+  <div class="placeholder">placeholder</div>
+} @loading(minimum 2s){
+    <div class="placeholder">Loading...</div>
+} @error{
+     <div class="error">Error loading component</div>
+}
+
+3)trigger?
+1)on scroll data is load
+2)on hover data is  load
+3)on idle
+4)on interaction
+5)on timer
+
+4)custom trigger??
+
+
+3)differnce b/w csr and ssr?
+csr=>
+csr me initially me blank page load hota tha baad me content load hota tha
+non seo hota tha
+
+ssr=>
+project is seo friendly hota hai and performance improved
+
+
+4)what is ssr and implement??
+
+server side rendering
+ssr implement by using universal in angualr 16 and before 
+but for 17  onwards ng new projectname --ssr
+ng add @angualr/ssr
+
+5)advantage of ssr??
+project is seo friendly hota hai and performance improved
+
+
+4)what is ssg?
+5)what is hydration??
+which is missing in ssr render like javascrit,other that can render by using hydraton white screen is not coming
+6)conditional statement?
+ngIf     - @if(){}
+else{}   - @else{}
+else if  - @else if(){}
+ngSwitch - @Switch @case @default
+ngFor    - @for(user of users; track user.id){}
+no user  - @empty { no user available }    
+
+7)lazy loading??
+loadChildren - loadComponent 
+
+8)angular life cycle?
+afterNextRender(){} call i time, it run in client side
+afterRender(){} call multiple when state change, it run client side
+
+9)pre rendering??
+after  build
+it is callled static site generation and api is not call
+it cache
+
+10)signal??
+improve the performance of change detection mechanism
+writable signal
+
+count = signal();
+
+this.count.update(value=>value+1)
+
+computed signal
+
+it remove the auto matic change detection
+angualr update the part of ui where sinal is used
+signal ki property and notifies where is used if value change
+signal remove the unneccary check whole application  and update only part whaich has change
+unneccary check use hote hai change detection me
+
+it intoduced in angualr 16
+
+effect(()=>console.log("cccccccccc"));
+
+
