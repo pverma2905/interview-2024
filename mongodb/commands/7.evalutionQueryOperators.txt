@@ -1,0 +1,67 @@
+//$expr:-
+it allow in aggregtion expression
+db.tripBudget.insertMany([
+    {"place":"Mumbai","budget":20000,"spent":21000},
+    {"place":"Pune","budget":150000,"spent":12000},
+    {"place":"Goa","budget":25000,"spent":32000},
+    {"place":"Gujrat","budget":10000,"spent":8500}
+]);
+
+db.tripBudget.find();
+
+// if spent more than budget
+db.tripBudget.find({$expr:{$gt:['$spent','$budget']}});
+
+// if budget more than spent
+db.tripBudget.find({$expr:{$lt:['$spent','$budget']}});
+
+
+//$mod:-
+match document where a given specified field value
+db.tripBudget.find({spent:{$mod:[4000,1000]}});
+db.tripBudget.find({spent:{$mod:[4000,500]}});
+db.tripBudget.find({spent:{$mod:[4000,10]}});
+
+
+
+//$regex:-
+
+select document that match the given regaular expression
+db.employees.find({name:{$regex:'Gupta'}});
+db.employees.find({name:{$regex:'gupta', $options:"i"}});
+db.employees.find({name:{$regex:/Gupta/}});
+db.employees.find({name:{$regex:/gupta/i}});
+db.employees.find({name:{$regex:/gupta/, $options:'i'}});
+
+
+
+//$text:-
+
+perform a text search on the indicated field
+db.employees.find({$text:{$search:"Gupta"}}) // MongoServerError: text index required for $text query  
+db.employees.createIndex({name:"text"});
+db.employees.find({$text:{$search:"Gupta"}});  // getting result
+db.employees.find({$text:{$search:"gupta"}}); // getting result
+db.employees.find({$text:{$search:"gupta",$caseSensitive: false }}); getting result
+db.employees.find({$text:{$search:"gupta",$caseSensitive: true }});  // no record
+
+
+$where:-
+
+it match the javascript expression
+
+db.employees.find({
+    $where: function(){
+        return (obj.city=="Pune")
+    }
+})
+db.employees.find({
+    $where: function(){
+        return (obj.age==24)
+    }
+})
+db.employees.find({
+    $where: function(){
+        return (obj.reportingmgr.mgrid==102)
+    }
+})

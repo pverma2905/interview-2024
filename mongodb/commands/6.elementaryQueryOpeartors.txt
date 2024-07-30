@@ -1,0 +1,23 @@
+1)$exists:- check specified field is exist
+
+db.employees.updateMany({},{$set:{doj:new Date()}});
+
+db.employees.updateOne({empId:202},{$unset:{doj:1}});
+
+db.employees.updateOne({empId:202},{$unset:{doj:1}});
+
+db.employees.find({doj:{$exists:true}}).count(); // 8
+
+db.employees.find({doj:{$exists:false}}).count(); // 1
+
+
+2)$type:- check the specified field datatype
+
+db.employees.find({empId:{$type:"int"}}).count();
+db.employees.find({empId:{$type:["int","date"]}}).count();
+db.employees.find({city:{$type:["string"]}}).count();
+
+double, string, object, array, binData, undefined, 
+objectId, bool, date, null, regex, dbPointer,
+javascript, symbol, int, timestamp, long, decimal,
+minKey, maxKey
