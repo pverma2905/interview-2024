@@ -1,4 +1,5 @@
 // technical thapa
+1)How javascript work??
 
 In Every browser hava own engine like 
 chrome-v8 engine

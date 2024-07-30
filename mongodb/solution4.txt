@@ -1,0 +1,6 @@
+1)sharding vs replica?
+Sharding: A technique for distributing data across multiple servers to handle large datasets and improve performance by scaling horizontally.
+Replication: A technique for duplicating data across multiple servers to enhance availability and read performance, typically using a master-replica architecture.
+
+
+2)aggregation?

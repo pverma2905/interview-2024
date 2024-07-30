@@ -1,9 +1,57 @@
 1)promise to async await
 2)promise chaining?
 
+// Simulate asynchronous operations with promises
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('Data fetched');
+      resolve('User data');
+    }, 1000);
+  });
+}
+
+function processData(data) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('Data processed');
+      resolve(`${data} processed`);
+    }, 1000);
+  });
+}
+
+function saveData(data) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log('Data saved');
+      resolve(`${data} saved`);
+    }, 1000);
+  });
+}
+
+// Chaining promises
+fetchData()
+  .then(processData)
+  .then(saveData)
+  .then(result => {
+    console.log('Final result:', result);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
+  output:-
+
+Data fetched
+Data processed
+Data saved
+Final result: User data processed saved
+
+
 3)map in rxjs?
-4)sharding vs replica?
-5)aggregation?
+
+
+
 6)middleware?
 7)why async and await is better  then promise? 
 8)temporal dead zone?

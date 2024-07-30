@@ -109,8 +109,28 @@ h1 ~ p {
 
 
 8)What are mixin ? And js in css helpful?
+it is used in preprocessor css like less,sass
+its allow your resuse the style 
+it reduce the repetion of code
+
+@mixin block($size){
+   border-radius: $size;
+}
+.button{
+@include block(10px)
+}
+
+
+
 9)What are rem and em properties in css??
 In CSS, rem and em are relative length units that are used to size elements in a scalable and responsive way
 
+em: Relative to the parent’s font size
+1em equals 16px.
+rem: Relative to the root’s font size
+1rem equals 16px.
 
 10)What are the different ways make webpage responsive?
+using grid
+using flexbox
+using mediaqueies

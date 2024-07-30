@@ -69,8 +69,25 @@ promise.allSettled is not rejected
 5)promise chaining?
 6)null coalescing?
 7)object.freeze?
+Object.freeze() method prevents any changes to an object.
+ex)
+const obj = {
+  prop: 42,
+};
+
+Object.freeze(obj);
+
+obj.prop = 33;
+// Throws an error in strict mode
+
+console.log(obj.prop);
+// Expected output: 42
+
+
 8)call stack?
 9)event loop?
+https://www.youtube.com/watch?v=jEbz-qbHEEA
+
 10)micro and macro queue?
 ex)
 console.log("program starts")
