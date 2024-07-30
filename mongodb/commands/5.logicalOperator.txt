@@ -1,0 +1,16 @@
+1)$and 
+db.employees.find({$and:[{city:"Mathura"},{age:22}]}).count();
+db.employees.find({$and:[{city:"Mathura"},{age:22},{empId:202}]}).count();
+
+2)$or
+db.employees.find({$or:[{city:"Pune"},{age:26}]}).count();  // 4
+db.employees.find({$or:[{city:"Mathura"},{age:22},{empId:202}]}).count(); //1
+
+
+3)$nor
+db.employees.find({$nor:[{city:{$eq:"Pune"}},{age:{$gte:25}}]}).count();  // 2
+db.employees.find({$nor:[{city:{$eq:"Pune"}},{age1:{$gte:25}}]}).count();  // 4
+
+4)$not
+db.employees.find({salary:{$not:{$gt:20000}}}).count();
+db.employees.find({gender:{$not:{$eq:'F'}}}).count();

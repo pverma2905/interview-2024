@@ -1,0 +1,15 @@
+1)create collection
+db.createCollection("name")
+
+2)list of collections
+show collections;
+show tables;
+
+3)Rename collection
+db.emp.renameCollection("emp11");
+
+4)Drop collection
+db.collectionName.drop();
+
+5)insert record
+db.emp.insertOne({"name":"rahul"});

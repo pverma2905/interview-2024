@@ -1,0 +1,29 @@
+// database
+1)show databases
+2)create databases
+3)first we import a database?
+4)mongorestore
+5)remove database
+
+// collection
+1)create collection
+2)list of collections
+3)Rename collection
+4)Drop collection
+5)insert record
+
+// crud
+1)insert one
+2)create index
+3)Rename field and rename all field
+4)delete field
+5)insert Many
+6)find , findOne
+7)find document with only one field
+8)update One And update Many
+9)add new field if field is not exist
+10)upsert=> update+insert
+11)delete One, delete Many
+12)remove
+
+
