@@ -1,0 +1,40 @@
+serverless:-  
+1)we have a code no need to create a ec2 machine and configure else everything managed by serverless
+2)its not running constantly . it run on demand
+3)charges apply per invocation
+4)automatically auto scaling
+
+
+disadvantage:
+1)slow
+2)stateless, mongodb bill is high, so we don't make socket connection 
+
+
+export const handler = async (event) => {
+  // TODO implement
+  const response = {
+    statusCode: 200,
+    headers:{
+      'Content-Type':'application/json'
+    },
+    body: JSON.stringify({message:'Hello from Lambda! function from server'}),
+  };
+  return response;
+};
+
+1)lambda
+2)create function
+3)function name
+4)click button
+
+5)add trigger
+6)create new api 
+7)restapi
+8)security: open
+9)clickon add
+
+=>in windows configure key:-
+1)aws configure set aws_access_key_id <yourAccessKey>
+2)aws configure set aws_secret_access_key <yourSecretKey>
+
+server deploy

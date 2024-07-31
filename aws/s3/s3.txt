@@ -1,0 +1,17 @@
+1)s3(simple storage service):- it is object storage
+ex:-image,video
+
+in this we have buckets
+in buckets we have object, folder
+
+in aws account we store 100 bucket
+in one bucket storage limit is unlimitted
+
+1)cors:-
+
+2)policy:-
+
+
+
+
+

@@ -1,0 +1,43 @@
+=> create user Group
+1)create userGroup :- youtubeDev
+2)click on createUserGroup
+
+=> create user
+1)name:pranavverma
+2)check provide access on aws management console
+3)check i want to create iam user
+4)autogrenerated password
+5)user must create a new password  - next
+6)add user to group
+7)check created user group  - next
+
+=> reset password
+8) login in this account
+9)click username
+10)click on password
+11)sign in 
+12)password change
+
+=>assign a usergroup permission
+1)userGroup
+2)permission
+3)add prmission - attach policy
+4)aws s3 full access - add permission
+
+=>create bucket
+1)bucket-name
+2)mumbai region
+3)click on create bucket
+
+=>inside bucket
+1)file upload - done
+2)go inside upload file->objec-url
+
+
+=>public access object
+1)bucket -> permission -> block public access -> uncheck block all public access => save changes => confirm
+
+
+=>bucket policy => edit => add new statement => s3,get object, add resource
+1)google aws bucket policy for public access
+

@@ -1,0 +1,19 @@
+=>users:-
+1)add users
+2)user name- serverless   - next
+3)attach user policy- adminstratorAccess  - next
+4)create user
+
+=>Generate access key, secret access key:-
+1)Go to servless user
+2)secuty credential
+3)create access key
+4)select cli - check- next
+5)create access key
+
+=>in windows configure key:-
+1)aws configure set aws_access_key_id <yourAccessKey>
+2)aws configure set aws_secret_access_key <yourSecretKey>
+
+
+

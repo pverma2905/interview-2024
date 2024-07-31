@@ -1,0 +1,7 @@
+1)create bucket - static.pranav.youtubeDev
+
+2)mumbai
+3)choose setting for existing bucket
+4)block all public access uncheck - check - 
+ 
+

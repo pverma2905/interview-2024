@@ -21,7 +21,7 @@ db.employees.find({empId:{$lt:206}}).count();
 db.employees.find({salary:{$lte:80000}}).count();
 db.employees.find({empId:{$lte:206}}).count();
 
-7)in
+7)$in:-it fetch data from array check either of the field exist
 db.employees.find({salary:{$in:[114000,150000]}}).count();
 db.employees.find({deptwork:{$in:[1,2]}}).count();
 
