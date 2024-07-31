@@ -1,5 +1,0 @@
-=> array typeof(array) return object
-
-so how we determine the array is array or object?
-
-Array.isArray()

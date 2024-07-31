@@ -1,3 +1,5 @@
+https://medium.com/front-end-weekly/angular-interview-questions-with-answers-level-1-b2230dbcd06b
+
 1)content child vs content children?
 2)view child vs view children?
 3)what is map?
@@ -8,3 +10,12 @@
 8)what is flatMap?
 9)what is hot and cold observable?
 10)differnce b/w switchMap, mergeMap, concatMap,exhaustMap?
+11)rxjs customobservable need to unsubscribe??
+yes
+
+12)what is rxjs??
+
+13)ngrx aati hai kya??
+
+
+

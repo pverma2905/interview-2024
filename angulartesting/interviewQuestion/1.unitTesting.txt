@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=21647S7oAik
+1)why we required a unit test cases and what is the important of it??
+detecting the bug early
+code quality and maintainability
+refactoring and code changes
+regress testing
+CICD
+isolate the component
+
+2)what is differnce b/w unit,integration,e2e unit testing??
+unit testing :- testing for single class
+integration testing :- testing for component,service,module 
+e2e testing:-  all the functionalality is working as expected 
+
+
+
+

@@ -1,2 +1,0 @@
-1)Array.includes
-2)exponential operator

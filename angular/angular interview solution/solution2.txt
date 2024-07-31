@@ -18,20 +18,22 @@ ng add @angular/pwa
 ng build --prod
 npm i -g http-server
 
-2)pure and impure pipes?
+2)pure and impure pipes?------------------------------------
 pure:-only called when value is changes
 this will not chck every page change event
 by default pure pipe is true
 more performance
+Pure pipes optimize the change detection cycle because checking primitive values or object references is faster than detecting changes within objects.
 
 impure:-call every time any other value changes
 pure:false
 this will not chck every page change event
 less performance
 
+Impure pipes should be used when the pipe's behavior depends on external factors that can't be easily detected by Angular's change detection mechanism, such as user interactions or global state changes. 
 
 
-3)lifecycle of angular?
+3)lifecycle of angular?-------------------------------------
 #constructor
 #ngOnChanges
 #ngDoCheck
@@ -175,7 +177,7 @@ changeDetection:ChangeDetectionStrategy.OnPush
 20)service worker?
 without net caching ,proxies
 
-21) angular universal?
+21) angular universal/ssr?
 for seo
 
 22)pipe for prime no range

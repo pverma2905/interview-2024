@@ -1,0 +1,57 @@
+https://dev.to/angular/understanding-async-tests-in-angular-f8n
+toHaveBeenCalledTimes(1)
+toHaveBeenCalledWith
+spyOn()
+jasmine.createSpyObj()
+jasmine.SpyObj
+
+
+Matchers:
+
+expect(value).toBe(expectedValue);
+expect(value).toEqual(expectedValue);
+expect(value).toContain(substring);
+expect(value).toBeTruthy();
+expect(value).toBeFalsy();
+expect(value).toBeNull();
+expect(value).toBeDefined();
+expect(value).toBeUndefined();
+expect(value).toThrow();
+
+
+Spies:
+1)To check if a method was called and how it was called.
+spyOn(object, 'method');
+
+2)To specify a return value for a method when it is called.
+spyOn(object, 'method').and.returnValue(value);
+
+3)To replace the method with a custom implementation.(fake value)
+spyOn(object, 'method').and.callFake(() => {});
+
+4) To call the actual implementation of the method.
+spyOn(object, 'method').and.callThrough();
+
+5)To simulate an error being thrown by the method.
+spyOn(object, 'method').and.throwError('error message');
+
+expect(spy).toHaveBeenCalled();
+expect(spy).toHaveBeenCalledWith(args);
+
+6)fakeAsync()
+fakeAsync is a testing utility provided by Angular that allows you to write synchronous tests for asynchronous code
+
+tick():-
+
+When you need to simulate the passage of time in tests.
+When dealing with time-based operations like setTimeout, setInterval, or observables with operators like delay and interval.
+When testing code that involves multiple time-based events happening in sequence.
+
+flush():-
+When you need to ensure that all pending asynchronous operations are completed in your tests.
+When you have multiple asynchronous tasks that need to be resolved in order to verify the final state of your component or service.
+When dealing with nested asynchronous tasks (e.g., a promise inside a setTimeout).
+
+fixture.detectChanges()
+
+await fixture.whenStable()

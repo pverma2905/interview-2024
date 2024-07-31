@@ -1,2 +1,0 @@
-1)promise finally
-2)Object rest and spread operator

@@ -1,3 +1,0 @@
-1)Async function
-2)Object values
-3)object entries
