@@ -1,0 +1,16 @@
+availability of application:-
+suppose btech result are come appliction are  down
+
+monolithic application server are more down becase all resources are deployed in one server
+
+microservice application server are not down becase all resources are deployed on multiple server and replica to multiple machiine
+
+How to increase availability??
+1)Replication
+2)distributed
+3)Redundancy
+
+=>Replication vs Redundancy
+Replication: synchronize with duplication of node(server data)
+Redundancy: copying of node(server data) 
+

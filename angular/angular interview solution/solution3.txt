@@ -16,6 +16,8 @@ yes
 12)what is rxjs??
 
 13)ngrx aati hai kya??
+14)two type of compilation in angular??
+jit, aot
 
 
 

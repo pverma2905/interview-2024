@@ -1,4 +1,56 @@
-1) webworker in javascript?(code with kashi)
+1)how many ways create object in javascript?
+2)Hosting?
+3)Closure?
+4)How event flow in javascript?
+5)Null & undefined?
+6)Is javascript is synchronous  or not synchronous?
+7)State of promises And methods of promises?
+8)call, bind, Apply?
+9) lexical scoping?
+10)type corision?
+
+
+1)what is first class function in javascript?
+2)What is callback? 
+3)callback hell ??
+4)Prototype in javascript?---------------------------------------
+5)Inheritence is possible in javascript?
+6)curring function ??
+Currying is a functional programming technique where a function with multiple arguments is transformed into a sequence of functions, each taking a single argument and return new function
+7)infinite curring?
+
+
+
+8)memoization?
+It is an optimization technique that can be reduce the time consuming calculation by saving the previous input.
+it store the previous data in cache
+
+9)Debouncing?
+it is used in searchbox, windowResize, scroll 
+
+10)throttling ??
+reduce api call when mutiple click
+
+11)map, set, weakMap, weakSet?
+####################### map #######################
+stores key-value pairs
+It maintains the order of the entries 
+add, delete ,has, size
+
+#################### set ##########################
+stores unique values.
+Property:-get, set, has, size 
+It maintains the order of the entries 
+
+##################### weakMap #####################
+are not iterable and not size
+
+##################### weakSet #####################
+ are not iterable and not size
+
+
+
+ 1) webworker in javascript?(code with kashi)
 #run your code in background script
 #create worker object using constructor worker
 #worker run in differnt global context
@@ -33,8 +85,8 @@ html parsing and js loading at same time. it wait to html parsing complete. then
 
 3)Event Bubbling & capturing?(code with kashi)
 There are two phase of event propogation
-#first phase is event capturing called as event trickling (event capturing)(top to bottom)
-#second phase is event bubbling (bottom to top)
+#first phase is event capturing called as event trickling(capturing) (top to bottom)->it pass true for 3rd argument
+#second phase is event bubbling (bottom to top)->it pass false for 3rd argument
 addEventListener method to specify to use eventBubbling and eventCapturing.
 addEventListener take third parameter useCapture flag as boolean
 By default useCapture is false and eventBubbling by default set
@@ -46,7 +98,7 @@ to overcome the performance of application in dom tree we used event delegation
 let arr=[1,2,4,6,8];
 
 1=>
-array.reduce((a,b)=>{
+arr.reduce((a,b)=>{
     return a+b;
 },10)
 
@@ -162,5 +214,17 @@ function one(){
 }
 
 one()
+
+
+
+
+
+
+
+
+
+
+
+
 
 

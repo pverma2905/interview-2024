@@ -1,0 +1,29 @@
+Differnce b/w monolithic and microservice??
+
+monolithic:-
+1)same code base and deploy at one place
+2)single point of failure
+
+
+microservice:-
+1)backened
+2)fronteed
+3)database 
+
+1)differnt code base and deploy each differnt places
+2)it is distributed (so single point of failure)
+
+distributed application code is removed for backup replica is there
+
+advantage:-
+1)horizontally scalable := add more machine  like ec2
+2)No spof
+3)low latency: add more cpu
+
+disadvantage:-
+1)complexity
+2)mangement required
+3)difficult to secure
+4)message may be lost in b/w server
+
+

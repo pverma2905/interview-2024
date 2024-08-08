@@ -40,21 +40,29 @@ arr=[1,2,3,5];
 
 console.log(Math.min(...arr));
 
-5)assending sort?
+5)assending sort number?
 arr=[1,7,3,9,4];
 let res = arr.sort((a,b)=>{
     return(a-b)
 })
 console.log(res)
 
-6)desending order?
+6)desending order number?
 arr=[1,7,3,9,4];
 let res = arr.sort((a,b)=>{
     return(b-a)
 })
 console.log(res)
 
-7)second highest?
+7)sort character??
+str="pranav";
+console.log(str.split('').sort().join(''))
+
+8) reverse sort character??
+str="pranav"
+console.log(str.split('').sort().reverse().join(''));
+
+9)second highest?
 I->
 arr=[1,2,3,4,5];
 high=Math.max(...arr);
@@ -68,17 +76,21 @@ let res = arr.sort((a,b)=>{
 })
 console.log(res[1])
 
-8)remove an element an array?
+10)remove an element an array?
 arr=[1,2,3,4,5];
 //remove->3
 arr.splice(arr.indexOf(3),1);
 console.log(arr)
 
-9)reverse no?
+11)reverse no?
 arr=[1,2,3,4,5];
 console.log(arr.reverse())
 
-10) array to string?
+12)reverse string??
+str="test";
+console.log(str.split('').reverse().join(''));
+
+13) array to string?
 var array = [1,2,4];
 console.log(typeof(array.toString()))?
 

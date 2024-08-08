@@ -48,8 +48,8 @@ test("pranav",test1)
 
 3)callback hell ??
 callback hell is condition nested callBack 
-every callback depend on previous callBack
-code is messy and chance of error is more therfore we not used for nested callBack.we use, promise ,async -await
+everck
+code is messy and chance of error is more therfore we not used for nested callBack.we use, promise ,async -awaity callback depend on previous callBa
 
 4)Prototype in javascript?
 One object inherit the property of another object
@@ -148,8 +148,10 @@ console.timeEnd()
 9)Debouncing?
 it is used in searchbox, windowResize, scroll 
 
+10)throttling ??
+multiple click we press not call multiple api
 
-10)map, set, weakMap, weakSet?
+11)map, set, weakMap, weakSet?
 set -> it contains only unique values
 ex)
 let myArray=[1,2,3,4];

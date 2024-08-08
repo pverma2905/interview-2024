@@ -55,12 +55,7 @@ function counter(){
 counter()
 counter()
 
-4)promise.race and promise.any?
 
-5)promise.all and promise.allSettled?
-promise.all is reject if any one is rejected
-
-promise.allSettled is not rejected
 
 
 

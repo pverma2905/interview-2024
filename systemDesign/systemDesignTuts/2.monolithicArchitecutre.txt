@@ -1,0 +1,18 @@
+monolithic architecure:-
+1)Application internal design called architecture 
+2)in this database, backened,frontend have same code base and deploy are combined
+
+3)it has less complexity and higher productivity
+
+
+advantage:-
+1)all modules are preent in single system so less network call
+2)it is comparitively easy to secure
+3)inegration testing is easy
+4)less confusion
+
+disadvantage:-
+1)if error in application so complete application is break
+2)if single module is updated need to deploy whole application
+
+

@@ -27,7 +27,6 @@ function Person() {
         maths: 90,
         science: 80
     }
-
 }
 
 const person = new Person();
@@ -113,6 +112,8 @@ typeof(x) // undefined
 
 
 6)Is javascript is synchronous  or not synchronous?
+ JavaScript executes code synchronously by default, it provides several ways to handle asynchronous operations efficiently.
+
 synchronous
 one task execute at a time
 
@@ -138,7 +139,17 @@ methods:-
 8)promise.then()
 9)promise.finally()
 
-8)call, bind, Apply?
+8)promise.race and promise.any?
+Race's data will be rejected since it will not be able to accept rejected promise and eventually will also ignore other successfully resolved promise data. 
+
+On the other hand, Any's data will be executed successfully
+
+9)promise.all and promise.allSettled?
+promise.all is reject if any one is rejected
+
+promise.allSettled is not rejected
+
+10)call, bind, Apply?
 
 let userDetails1 = {
     name:"anil",
@@ -169,7 +180,7 @@ res2()
 
 
 
-9) lexical scoping?
+11) lexical scoping?
 inner function can access the variable, parameter of outer function
 
 ex)
@@ -183,6 +194,6 @@ const outerFunction(a){
 }
 outerFunction(5);
 
-10)type corision?
+12)type corision?
 automatic conversion of values from one data type to another data type.
 

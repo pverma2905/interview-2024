@@ -1,0 +1,19 @@
+1)what is ngrx??
+ngrx is a state management library in angualr
+
+2)flow of redux??
+       consume                   dispatch
+store------->>-------component------->--------action------>---------Reducer------->-------store
+
+
+3)flow of ngrx??
+
+       consume(selector)                 dispatch              effect
+store------->>-------component------->--------action------>---------Reducer------->-------store
+
+4)selector??
+by using selector  we can transform/ filter data
+
+5)effect?
+action to reducer  synchronous to change asynchronous
+

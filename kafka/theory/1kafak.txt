@@ -1,0 +1,53 @@
+//https://www.youtube.com/watch?v=ZJJHm_bd9Zo
+
+kafka has high thoughput and storage is temprorary
+we can'tuse the query
+ex- means millon of data insert and fetch
+
+
+DB:- it has high storge and less throughput
+we can use the query
+
+
+all data(called producer) -> kafka (consumer)
+we did bulk insert all data
+kafka->topic->partition
+
+=>if consumer is less than or equal to partition  
+1 consumer consume minimum one partion 
+
+=>one partion can not consume multiple consumer
+
+1)differnce b/w queue and pubsub??
+queue:-
+1 producer and one consumer
+
+pubsub:-
+1 producer and multiple consumer
+=>kafaka use zookeper internally
+zookeper run on 2181 PORT
+kafaka run on 9092 PORT
+broker-> all service are run on 9092
+
+
+
+1)what is kafka cluster??
+group of kafaka broker/kafaka server
+
+2)what is kafaka broker?
+it is server where kafka is running
+
+3)kafka producer??
+it write a new  data to kafka cluster
+
+4)kafaka consumer??
+it take the data from kafka cluster
+
+5)zookeper??
+it monitor the health of kafaka cluster
+
+6)kafka connect??
+it take the all the resource to kafaka cluster
+
+7)kafka stream??
+it has some functionality to transform data in kafaka cluster

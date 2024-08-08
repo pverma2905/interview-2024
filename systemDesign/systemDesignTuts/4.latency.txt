@@ -1,0 +1,13 @@
+latency:-
+ user send to request to server and come to user response that time is called latency
+
+ latency:-Network delay + computational delay
+
+ monolithic app:- only computational delay
+
+ microservice:- Network delay + computational delay
+
+ Redcuce latency:-
+ 1)caching
+ 2)cdn
+ 3)upgrading harware and software

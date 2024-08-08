@@ -1,0 +1,9 @@
+=>to acheive a conisstent for 5 database is updated all have conisstent record there we apply synchronous communication
+=>blocking communication
+
+
+ex)
+1)stock market
+2)ticket booking
+3)bank
+4)Real desion making

@@ -1,0 +1,2 @@
+Each request we send user name and password in header 
+in console request we check the username and password

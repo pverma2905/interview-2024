@@ -1,0 +1,6 @@
+parallel execution
+
+where weuse:-
+1)computational task
+2)scalability
+3)cascading failure

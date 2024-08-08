@@ -1,0 +1,2 @@
+Authntication:-email, password login
+Authorization:-which rights you have

@@ -1,0 +1,7 @@
+reverse proxy:-
+Revere proxy hide the server
+
+when we use reverse prxoy:-
+1)when i don't want to expose the server
+2)provide load balancing for the server
+ 

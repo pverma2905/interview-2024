@@ -21,8 +21,7 @@ function fibo(n){
 
 next=n1+n2;
  while(next<=n){
-    console.log(next)
-    
+    console.log(next)    
     n1=n2;
     n2=next;
     next=n1+n2;
@@ -89,8 +88,6 @@ function isCheckPrime(b,a){
             console.log(i)
         }
     }
-
-
 }
 
 isCheckPrime(10,1)
@@ -100,7 +97,6 @@ function generateRandomNo(max,min){
     let a=parseInt(max);
     let b=parseInt(min);
   console.log(Math.floor(Math.random()*(a-b+1))+b)
-
 }
 generateRandomNo(10,1)
 
@@ -113,8 +109,7 @@ function fibonacci(n){
     }
 }
 
-let num = prompt("Enter a number: ");
-
+    let num = prompt("Enter a number: ");
     if(num<=0){
         console.log("Enter a positive number");
     }
@@ -142,7 +137,6 @@ console.log(result)
 }
 
 29) //Hello World!
-
 //dlroW olleH!
 
 30) duplicate  of array of object?

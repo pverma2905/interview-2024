@@ -1,6 +1,7 @@
 11) array as string?
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits.join(" and ");
+console.log(text)
 
 11)string to array?
 split()
