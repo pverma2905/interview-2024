@@ -1,0 +1,2 @@
+## Simplified service for deploying applications with pre-configured settings.
+## Ideal for developers who want to deploy simple web applications or small-scale projects quickly, without needing to manage complex infrastructure.

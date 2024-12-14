@@ -1,0 +1,65 @@
+1)Use of mixin what are different css library u have used?
+sass (Sass (Syntactically Awesome Style Sheets))
+bootstrap
+2)Difference b/w id and class?
+both are the selector that used in applu in css 
+3)Difference b/w inline element and block level element and inline-block?
+
+inline:- 
+does not start with new line
+padding and margin affect only on right and left not top and bottom 
+ex:- span ,a, img
+
+
+block :- 
+it start on a new line and take up the full width 
+it respect all CSS properties like width, height, padding, margins, and borders on all four sides.
+ex:- div, p,h1, 
+
+inline-block:- 
+it does not start with new line
+they can have a width and height set, and padding, margins, and borders affect all sides.
+
+4)How many ways to define style?
+inline
+internal
+external
+
+
+5)What is selector?
+it target specific elements or groups of elements and apply styles to them
+1)element 
+2)class
+3)id
+4)pseudo class selector
+5)pseudo element selector
+
+
+6)What are Combinators?
+it target  the relationship between the selectors and html element
+it is four type:-
+1)Descendant Combinators:- Selects all elements that are descendants (children, grandchildren, etc.) of a specified element.
+2)Child Combinators(>):- Selects all elements that are direct children of a specified element.
+3)Adjacent Sibling Combinator (+):- Selects the element that is immediately adjacent to a specified element.
+4)eneral Sibling Combinator (~):- Selects all elements that are siblings of a specified element and share the same parent.
+
+
+
+7)Difference b/w visibility:hidden and display:none?
+
+visibility:hidden:-
+
+display:none:-
+
+8)Z-index?
+9)What is aspect ratio?
+ relationship between its width and its height. 
+ e.g., 16:9, 4:3, 1:1, 3:2
+
+
+10)What is self closing tag?
+<img/>
+<br/>
+<hr/>
+<input/>
+<link/>

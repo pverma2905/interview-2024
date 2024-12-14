@@ -1,0 +1,7 @@
+browser -> request ->url goes to routing -> controller -> action ->model
+
+routing =url + http methods
+
+Two ways of routing:-
+1)convention based routing
+2)attribute based routing

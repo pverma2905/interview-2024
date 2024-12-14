@@ -1,0 +1,27 @@
+############################ operators ##############################
+operators is a specail symbol which is used to perform operation according to the user requirment
+ex)+,-*,/
+
+there are 6 type operator :-
+1)arthmetic operator->
+ex)+,-,*,/,%
+
+2)relational operator
+ex)<= >=,<,>,==,!=
+
+3)logical operator
+ex) &&, ||, !
+
+4)assignment operator
+ex) +=, -=, *=, /=, %=
+
+5)unary operator
+a)postfix  b)prefix
+
+6)ternary operator
+? :
+
+7)bitwise operator
+
+
+

@@ -1,0 +1,69 @@
+https://www.youtube.com/watch?v=WYi5-sOJYDQ&list=PLwgFb6VsUj_l3XGLgZTf5lXq9rPAQ9COu&index=10
+1)to check the dom??
+console.dir(document)
+
+2)find id and class in javascript??
+document.getElementByID("main-heading");
+document.getElementByClassName("abc");
+document.getElementByTagName("a");
+
+document.querySelector("#main-heading");
+document.querySelector(".abc");
+
+3)same class repeat multiple times??
+document.querySelectorAll(".abc");
+
+4)change Text??
+const mainHeading = document.getElementByID("main-heading");
+console.log(mainHeading.textContent)
+
+mainHeading.textContent="something else";
+console.log(mainHeading.textContent)
+
+5)differnce b/w textContent and innerText??
+display none => text show in textContent
+but text not show in innerText
+
+6)change style of element??
+const mainHeading = document.querySelectorAll("div.hedline h2");
+mainHeading.style.color="blue"
+
+7)get and set attribute??
+const link = document.querySelector("a");
+console.log(link.getAttribute("href"));
+link.setAttribute("href","https://www.google.com")
+console.log(link.getAttribute("href"));
+
+==> console.log(link.getAttribute("href").slice(1));
+
+
+8)multiple element select??
+(I)
+const navitems = document.getElementByClassName("nav-item") || document.getElementByTagName("a");
+console.log(navitems); // htmlCollection
+console.log(navitems[1]);
+we can't use for each loop
+only simple for loop , for of loop working
+
+(II)
+const navitems = document.querySelectorAll(".nav-item");
+console.log(navitems); // NodeList
+console.log(navitems[1]);
+simple for loop, for of loop , forEach loop is working
+
+9)change NodeList or HtmlCollection to array??
+(I)
+const navitems = document.getElementByClassName("nav-item") || document.getElementByTagName("a");
+navitems = Array.from(navitems);
+console.log(navitems) // array 
+
+(II)
+const navitems = document.querySelectorAll(".nav-item");
+navitems = Array.from(navitems);
+console.log(navitems) // array 
+
+10)innerHtml??
+const headline = document.querySelector(".headline");
+heading.innerHtml = "<h1>Inner html changed</h1>";
+heading.innerHtml += "<button class=\"btn\">Learn More</button>"
+console.log(headline.innerHtml);

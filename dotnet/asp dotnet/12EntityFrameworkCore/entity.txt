@@ -1,0 +1,16 @@
+it is orm framwork
+
+1)code first approach:-
+we create model class and properties but in database table is already created
+=>model class
+=>DbContext class
+=>migration
+=>run
+=>database table generated
+
+
+
+tools:- migration, scaffold DbContext
+Design:-
+
+2)database first approach

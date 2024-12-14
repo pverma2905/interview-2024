@@ -1,0 +1,81 @@
+1)$
+
+in array first search element is updated
+
+=> update deptwork array value 2 to 4
+db.employees.updateOne({empId:210, deptwork:2},{$set:{"deptwork.$":4}});
+
+=> update deptwork array push 6
+db.employees.updateOne({empId:210},{$push:{"deptwork":6}});
+
+=> update deptwork array value 6 to 7
+db.employees.updateOne({empId:210,deptwork:6},{$set:{"deptwork.$":7}});
+
+2)$[]:-
+
+
+// update all elelemt in field
+
+
+=>increment by 1
+db.employees.updateOne({empId:210},{$inc:{"deptwork.$[]":1}});
+
+3)$identifier
+
+// it update all match value
+
+db.employees.updateOne({empId:210},{$push:{"deptwork":4}});
+
+db.employees.updateOne({empId:210},{$set:{"deptwork.$[ele]":6}},{arrayFilters:[{"ele":4}]});
+
+4)$addToSet
+
+in array  add a value but not adda duplicate value
+
+db.employees.updateOne({empId:209},{$addToSet:{deptwork:10}});
+
+5)$pop:-
+
+remove first and last element from array
+-1 remove first element
+1 remove last element
+
+remove last element
+db.employees.updateOne({empId:210},{$pop:{deptwork:1}});
+
+remove first element
+db.employees.updateOne({empId:210},{$pop:{deptwork:-1}});
+
+6)$pull:-
+
+remove the specified value
+
+db.employees.updateOne({empId:210},{$pull:{deptwork:[1,2,4]}})
+
+db.employees.updateOne({empId:210},{$pull:{deptwork:6}})
+
+db.employees.updateOne({empId:210},{$pull:{deptwork:{$in:[5,10]}}})
+
+7)$push:-
+add  a value in array in end
+duplicate is also add
+
+// multiple value push
+db.employees.updateOne({empId:210},{$push:{deptwork:11}});
+
+// multiple value added
+db.employees.updateOne({empId:210},{$push:{deptwork:8, lang:"Punjabi"}});
+
+// value added
+db.employees.updateOne({empId:210},{$push:{deptwork:8}});
+
+/// new field is added
+db.employees.updateOne({empId:210},{$push:{deptwork1:8}});
+
+8)$pushAll:-
+
+
+9)$each:-
+
+=> add in existing array
+db.employees.updateOne({empId:210},{$addToSet:{deptwork:{$each:[1,2,4]}}});

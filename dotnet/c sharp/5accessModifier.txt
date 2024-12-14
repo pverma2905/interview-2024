@@ -1,0 +1,19 @@
+type of access modifier:-
+1)public
+=>Applicable to the Application
+=>Applicable to the current class
+=>Applicable to the derived class
+=>Applicable to the outside the namespace
+=>Applicable to the outside the namespace but in derived class
+
+2)private
+=>Applicable to the current class
+
+3)protected
+=>Applicable to the current class
+=>Applicable to the derived class
+
+4)internal
+=>Applicable to the Application
+=>Applicable to the current class
+=>Applicable to the derived class

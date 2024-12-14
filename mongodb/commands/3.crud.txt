@@ -1,0 +1,69 @@
+1)//insert one
+
+db.emp.insertOne({"name":"rahul","email":"rahul@gmail.com"})
+db.emp.insertOne({"name":"roshan","email":"roshan@gmail.com","marks":[100,90,80,70]});
+db.emp.insertOne({"name":"vinay","email":"vinay@gmail.com","reporting":{"mgrId":"10","mgrName":"shubham"}});
+
+2)create index
+db.emp.createIndex({email:1},{unique:true});
+
+3)Rename
+=>single document field name change
+db.emp.updateMany({"email":"rahul"},{$rename:{name:"fname"}});
+
+=>All document field rename
+db.emp.updateMany({},{$rename:{name:"fname"}})
+
+4)delete field
+=>delete a field in one document
+db.emp.updateMany({"email":"pranav@gmail.com"},{$unset:{fname:1}})
+
+=>delete a field in all document
+db.emp.updateMany({},{$unset:{fname:1}})
+
+
+5)insert Many
+
+db.employees.insertMany([
+{empId:202,name:"Rajan Gupta",email:"rajan@gmail.com",phone:2222222222,age:22,gender:"M",city:"Mathura",profile:"Software Developer",salary:30000,lang:["Hindi","English"],
+reportingmgr:{mgrid:102, mgrname:"Deepak", mgrprofile:"Software Engineer"},deptwork:[1,2]},
+
+{empId:203,name:"Kajal Gupta",email:"kajal@gmail.com",phone:3333333333,age:23,gender:"F",city:"Aligarh",
+profile:"Software Tester",salary:22000,lang:["Hindi","English"],
+reportingmgr:{mgrid:103, mgrname:"Pratima", mgrprofile:"Senior Software Engineer"},deptwork:[5,6]},
+]);
+
+
+6)find , findOne
+
+db.employees.find().count();
+db.employees.findOne();
+
+7)find document with only one field
+db.employees.find({},{name:1,Id:0});
+
+8)update One And update Many
+db.employees.updateOne({"empId":201},{$set:{"city":"delhi"}});
+db.employees.updateMany({"city":"Mathura"},{$set:{"salary":60000}});
+
+9)add new field if field is not exist
+=>doj is not exist feld in database
+db.employees.updateMany({city:"Mathura"},{$set:{doj:new Date()}});
+// now doj is added
+
+=>all record added doj
+db.employees.updateMany({},{$set:{doj:new Date()}});
+
+10)upsert=> update+insert
+add new document with upsert:true if not match
+
+db.employees.updateOne({"empId":211},{$set:{name:"Anshul"}},{upsert:true});
+
+
+11)delete One, delete Many
+db.employees.deleteOne({"empId":211});
+db.employees.deleteMany({"city":"Mathura"});
+
+12)remove
+it delete one or more record
+db.employees.remove({empId:204});

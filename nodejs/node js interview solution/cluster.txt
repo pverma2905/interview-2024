@@ -1,0 +1,7 @@
+=>suppose node js running on port 8000
+=>if the more user are come on application so load is increase
+=>single nodejs server is not handled
+=>user is taking so much time and server crash
+
+cluster can be run on multiple instances on node js that can distribute workload among multiple threads
+so application is scale up

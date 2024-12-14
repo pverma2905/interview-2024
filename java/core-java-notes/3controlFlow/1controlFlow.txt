@@ -1,0 +1,25 @@
+1)what is control flow statement??
+if i want to control the flow of my program exection then go for controlflow statement
+
+it is three type
+1)control statement
+2)iterative looping statement
+3)transfer statement
+
+1)control statement:-
+
+a)if 
+b)else
+c)else if
+
+2)iterative
+a)for looping
+b)while loop:- if i want to execute block of code repeatedly on the basis of condition result then go for while loop
+c)do whle:- if i want execute of some block of statement at least once without checking condition then go for while loop
+
+3)transfer statement:-
+a)break:-it terminate the program exection then go for break;
+b)continue:- if i want to skip the current iteration and go for next iteration
+
+switch case statement:-
+a)if i want to execute some block of statement on the basis of expression result if the expression result if the expression result and  case value is match then that particular case  wiil be execute 

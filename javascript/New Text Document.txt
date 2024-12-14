@@ -1,0 +1,2 @@
+1)what is web component??
+2)how we create a reusable component in javascript??

@@ -1,0 +1,11 @@
+proxy server:- 
+it is placed b/w client and server
+it provide a gateway b/w user and internet
+
+proxy is two type :-
+
+1)forward proxy:-proxy server hide the identity of client, server does not know the client
+ex-> suppose we want blocked website to access proxy off this website we can access the website
+
+2)reverse proxy:-it hide the server
+

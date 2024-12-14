@@ -1,0 +1,2 @@
+Purpose: Infrastructure as Code (IaC) service for defining and provisioning AWS resources.
+Why Important: Helps full stack developers automate infrastructure setup and manage application environments in a repeatable, consistent way.

@@ -1,0 +1,2 @@
+Purpose: Continuous integration and continuous delivery (CI/CD) services for automating the build and deployment of applications.
+Why Important: Streamlines the development and deployment process, enabling rapid iteration on both frontend and backend components of an application.

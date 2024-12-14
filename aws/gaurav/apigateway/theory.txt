@@ -1,0 +1,3 @@
+## Enables the creation of RESTful and WebSocket APIs that can serve as the front end for backend services like Lambda, EC2, or RDS.
+
+## Managed service that makes it easy to create, publish, maintain, monitor, and secure APIs.   

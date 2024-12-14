@@ -1,0 +1,5 @@
+expect:- 
+
+matcher:- it is a method 
+
+test/it:-

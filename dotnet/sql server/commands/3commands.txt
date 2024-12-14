@@ -1,0 +1,23 @@
+// enter in to the database
+use testDatabase
+
+// create table
+create table Testycodeiz
+(
+    FirstName varchar(100),
+    LastName varchar(100),
+    [Middle Name] varchar(100)
+)
+
+// select
+select * from  Testycodeiz
+
+// Alter table
+alter table Testycodeiz Add email varchar(50) NULL;
+
+//Edit column
+alter table Testycodeiz alter email varchar(100) NULL;
+
+// drop column
+alter table Testycodeiz drop column email;
+

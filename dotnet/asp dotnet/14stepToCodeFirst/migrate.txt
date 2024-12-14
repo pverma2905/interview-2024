@@ -1,0 +1,52 @@
+1)it need 3 packages:-
+=>Microsoft.EntityFrameworkCore.SqlServer
+=>Microsoft.EntityFrameworkCore.Tools
+=>Microsoft.EntityFrameworkCore.Design
+
+2)create student model
+public class Student
+{
+    [Key]
+    public int Id { get; set; }
+    [Column("StudentName",TypeName="varchar(100)")]
+    public string Name { get; set; }
+    [Column("StudentGender", TypeName = "varchar(20)")]
+    public string Gender { get; set; }
+    public int Age { get; set; }
+}
+
+3)create student db context
+
+public class StudentDBContext:DbContext
+{
+    public StudentDBContext(DbContextOptions options):base(options)
+    {
+        
+    }
+
+    public DbSet<Student> Students { get; set; }
+}
+
+4)config in appsetting
+
+"ConnectionStrings": {
+    "docs": "Server=DESKTOP-R5911BV\\SQLEXPRESS;Database=CodeFirstDB;Trusted_Connection=True;"
+},
+
+5)Register configuration in program.cs
+
+var provider = builder.Services.BuildServiceProvider();
+var config = provider.GetRequiredService<IConfiguration>();
+builder.Services.AddDbContext<StudentDBContext>(item => item.UseSqlServer(config.GetConnectionString("dbcs")));
+
+6)migration command:-
+
+tools=> nugget package manager=> package manager console
+=>first time
+add-migration CodeFirstCreateDB
+update-database
+
+
+=>already created database add on row
+add-migration CodeFirstAddClass
+update-database

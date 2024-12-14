@@ -1,0 +1,28 @@
+################### datatype in java#########################################
+
+datatype represent type of data
+datatype decide the memeory size
+datatype decide the range of variable which are stored inside the variable
+
+
+this are two type
+1)primitive
+2)Non primitive
+
+1)primitive:the memeory size s fixed of primitive data type
+a)byte = 1byte  => it store number   range=>-128 to 127 
+b)short =2byte  => it store number   range=>-32768 to 32767
+c)int = 4byte   => it store number
+d)long = 8byte  => it store number
+e)float = 4byte =>  it store decimal
+f)double = 8byte =>  it store decimal
+g)char = 2byte => single character
+h)boolean = 1byte => true or false
+
+2)Non primitive(refrnced datatype): memory size is not fixed  
+a)string
+b)array
+c)class and objects
+d)interface
+e)wrapper classess
+f)collection

@@ -1,0 +1,109 @@
+51)pagination??
+ul.pagination
+ul.pagination-lg
+ul.pagination-sm
+li.page-item
+a.page-link
+li.page-item disabled
+li.page-item active
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+52)pagination alignment classes??
+ul.pagination.justify-content-end
+ul.pagination.justify-content-center
+
+53)breadcrumbs classes??
+ol.breadcrumb
+li.breadcrumb-item
+li.breadcrumb-item.active
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Home</li>
+  </ol>
+</nav>
+
+54)form??
+label.form-label
+input.fonm-control
+input.form-control-lg
+input.form-control-sm
+input disabled
+input readonly
+input.form-control-plaintext readonly
+input.form-control.form-control-color
+select.select-form
+
+55)form checkbox/radio?
+.form-check
+.form-check-input
+.form-check-label
+disabled
+
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Checked checkbox
+  </label>
+</div>
+
+56)switch classess??
+.form-check form-switch
+.form-check-input
+.form-check-label
+
+57)range??
+.form-label
+.form-range
+
+58)input group??
+.input-group
+.input-group-text
+.form-control
+.input-group-sm
+.input-group-lg
+.form-check-input
+.form-floating
+
+59)form grid/layout classes??
+.row
+.col
+.form-control
+.row g-3 -(margin top and bottom)
+.col-form-label-sm
+.col-form-label-lg
+.col-auto
+.row-cols-lg-auto g-3
+
+horizonatal:-
+.row
+.col-sm-2
+.col-sm-10
+
+60)form validation??
+needs-validation" novalidate
+valid-feedback
+invalid-feedback
+
+
+
+
+
+
+
+

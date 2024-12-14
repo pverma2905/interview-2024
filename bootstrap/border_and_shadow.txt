@@ -1,0 +1,46 @@
+65)border??
+.border
+.border-top
+.border-bottom
+.border-start
+.border-end
+
+66)remove border??
+.border-0
+.border-top-0
+.border-bottom-0
+.border-start-0
+.border-end-0
+
+67)boder color classess??
+.border-primary
+.border-success
+.border-danger
+
+68)border width classes??
+.border-1
+.border-2
+.border-3
+.border-4
+.border-5
+
+69)border radius classes??
+.rounded
+.rounded-top
+.rounded-end
+.rounded-bottom
+.rounded-start
+.rounded-circle
+.rounded-pill
+
+70)border radius size??
+.rounded-0
+.rounded-1
+.rounded-2
+.rounded-3
+
+63)shadow??
+.shadow-none
+.shadow
+.shadow-sm
+.shadow-lg

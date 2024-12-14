@@ -1,0 +1,30 @@
+1)equal=>
+db.employees.find({age:{$eq:26}});
+
+2)not equal=>
+db.employees.find({age:{$ne:26}}).count();
+db.employees.find({name:{$ne:""}}).count();
+
+3)greaterThan
+db.employees.find({salary:{$gt:80000}}).count();
+db.employees.find({empId:{$gt:206}}).count();
+
+4)greaterThanEqual
+db.employees.find({salary:{$gte:80000}}).count();
+db.employees.find({empId:{$gte:206}}).count();
+
+5)lessThan
+db.employees.find({salary:{$lt:80000}}).count();
+db.employees.find({empId:{$lt:206}}).count();
+
+6)lessThanEqual
+db.employees.find({salary:{$lte:80000}}).count();
+db.employees.find({empId:{$lte:206}}).count();
+
+7)$in:-it fetch data from array check either of the field exist
+db.employees.find({salary:{$in:[114000,150000]}}).count();
+db.employees.find({deptwork:{$in:[1,2]}}).count();
+
+8)not in
+db.employees.find({salary:{$nin:[114000,150000]}}).count();
+db.employees.find({deptwork:{$nin:[1,2]}}).count();

@@ -1,0 +1,23 @@
+61)nav and tabs??
+ul.nav
+li.nav-item
+a.nav-link
+
+=>horizonatal nav
+ul.nav.justify-content-center
+
+=>vertical nav
+ul.nav.flex-column
+
+62)navbar??
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+fixed-top
+fixed-bottom
+
+
+
+
+
+
+
+

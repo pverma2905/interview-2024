@@ -1,0 +1,21 @@
+1)placeholder??
+.card
+.placeholder
+
+
+2)placeholder width classes??
+.placeholder col-6
+.placeholder w-75
+
+3)placeholder color classes??
+.placeholder col-12 bg-primary
+
+4)placeholder height classes??
+.placeholder col-12 placeholder-lg
+.placeholder col-12
+.placeholder col-12 placeholder-sm
+.placeholder col-12 placeholder-xs
+
+5)placeholder animation classes??
+.placeholder-glow
+.placeholder col-12

@@ -1,0 +1,2 @@
+## Provides fine-grained control over access to AWS resources.
+## Ensures security by allowing you to manage user access and permissions to resources, enforcing least privilege policies.

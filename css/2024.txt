@@ -1,0 +1,339 @@
+1)boxmodel??
+the space for an element is calculated, including content, padding, border, and margin. By default, the width and height properties include only the content, but you can change this behavior using box-sizing: border-box;, which makes the element's width and height include padding and border as well.
+
+2)differnce b/w display none and visibility hidden?
+=>display:none 
+Element is completely removed.
+Does not take up space in the layout.
+Cannot be interacted with (not in the DOM).
+
+=>visibility:hidden
+Element is invisible but still present.
+Still takes up space in the layout.
+Cannot be interacted with (hidden but in the DOM).
+
+3)position?
+=>static - default
+The top, right, bottom, and left properties do not apply to statically positioned elements.
+
+=>relative
+it stic to its position and its apply top,bottom,left,right
+
+=>absolute
+it not stic to its position and its apply top,bottom,left,right, it check the parent have any position if not it take body
+
+=>position fixed
+it stic to its position and it is used for scrolling
+
+=>sticky:-
+ For elements that should remain "sticky" at the top or bottom after scrolling 
+top,bottom we apply 
+
+
+4)differnce b/w resonsive and adaptive design??
+responsive design:- it work for same all device
+adaptive design:- it work not same all the device  and you don't have all the element in all the device
+
+5)what is cascading in css???
+same style define twice so it take last css
+
+6)What is specificity, and how is it calculated?
+Specificity is the mechanism used by browsers to decide which CSS rule to apply when multiple rules match the same element. It is calculated based on the types of selectors used:
+
+1) 10,000 -> !important
+Inline styles (style="") have the highest specificity (1000).
+IDs (#id) have a specificity of 100.
+Classes, pseudo-classes (:hover), and attribute selectors ([type="text"]) have a specificity of 10.
+Elements and pseudo-elements (div, ::before) have a specificity of 1.
+Universal selector (*) and combinators (+, >) have no specificity (0).
+
+7)What is the difference between em, rem, and px units?
+px: Pixels are absolute units and are not affected by the parent or root element’s font size.
+em: Relative to the font size of the nearest parent element. For example, if the parent font-size is 16px and an element uses 2em, it will be 32px.
+rem: Relative to the root element’s font size (typically the <html> element). If the root font-size is 16px, then 2rem is 32px, regardless of the parent’s font size.
+
+8)How do you achieve responsive design using CSS?
+Answer: Responsive design is achieved using flexible layouts, media queries, and relative units like %, em, rem, vh, and vw. Tools like CSS Grid and Flexbox are essential for creating responsive layouts. Additionally, media queries help to adjust the layout based on different screen sizes.
+
+9)Explain the concept of Flexbox. How does justify-content and align-items work?
+
+Answer: Flexbox (Flexible Box Layout) is a CSS layout model that provides a more efficient way to lay out, align, and distribute space among items in a container. The main idea is to make the container's children (flex items) behave predictably when the size of the container changes.
+justify-content: Aligns items horizontally (along the main axis). Values include flex-start, flex-end, center, space-between, space-around, etc.
+align-items: Aligns items vertically (along the cross axis). Values include stretch, flex-start, flex-end, and center.
+
+10)differnce b/w flexbox and grid??
+Flexbox: One-dimensional (row or column).
+Grid: Two-dimensional (both rows and columns).
+
+11)What are pseudo-elements and pseudo-classes in CSS?
+Pseudo-classes are used to define the state of an element. Examples include :hover, :focus, :nth-child().
+ex:- /* li:first-child{
+    color: red;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(5){
+    color: blueviolet;
+} */
+li:nth-child(odd){
+    color: blueviolet;
+}
+li:nth-child(even){
+    color: red;
+
+
+
+
+Pseudo-elements are used to style specific parts of an element, like ::before, ::after, ::first-letter, ::first-line.
+
+/* p::first-letter{
+    font-size: 40px;
+    color: tomato;
+} */
+/* p::first-line{
+    font-size: 40px;
+    color: tomato;
+}
+
+p::selection{
+    color: blueviolet;
+    background-color: crimson;
+} */
+
+/* ::selection{
+    color: blueviolet;
+    background-color: tomato;
+} */
+
+h1::before{
+    content: "Farzeen ";
+}
+h1::after{
+    content: " Farzeen ";
+}
+
+12)Given a design where elements need to be centered both vertically and horizontally, how would you implement that using Flexbox?
+
+.container {
+   display: flex;
+   justify-content: center; /* Horizontal centering */
+   align-items: center; /* Vertical centering */
+   height: 100vh; /* Full height of viewport */
+}
+
+13)What is aspect ratio?
+ relationship between its width and its height. 
+ e.g., 16:9, 4:3, 1:1, 3:2
+
+
+14)What is self closing tag?
+<img/>
+<br/>
+<hr/>
+<input/>
+<link/>
+
+15)media queries?
+
+@media screen and (max-width: 450px)
+{
+    /* mobile */
+    #box-1{
+        display: block;
+        background-color: blueviolet;
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 780px)
+{
+    /* tablet */
+    #box-2{
+        display: block;
+        background-color: tomato;
+    }
+}
+@media screen and (min-width: 781px) and (max-width: 1024px)
+{
+    /* laptop */
+    #box-3{
+        display: block;
+        background-color: crimson;
+    }
+}
+@media screen and (min-width: 1025px)
+{
+    /* large screen */
+    #box-4{
+        display: block;
+        background-color: chartreuse;
+    }
+}
+
+16)what is portrait and landscape?
+Landscape orientation is horizontal,
+while portrait orientation is vertical.
+
+17)The-difference-between-nth-child-and-nth-of-type?
+li:nth-of-type(2){
+    color:red;
+}
+
+same the type of sibling
+
+li:nth-child(2){
+    color:red;
+}
+
+it check the second position
+
+18)What are Combinators?
+it target  the relationship between the selectors and html element
+it is four type:-
+1)Descendant Combinators:- Selects all elements that are descendants (children, grandchildren, etc.) of a specified element.
+2)Child Combinators(>):- Selects all elements that are direct children of a specified element.
+3)Adjacent Sibling Combinator (+):- Selects the element that is immediately adjacent to a specified element.
+4)eneral Sibling Combinator (~):- Selects all elements that are siblings of a specified element and share the same parent.
+
+19)overflow??
+overflow: hidden; 
+overflow: scroll; 
+overflow: auto
+
+20)gradient??
+background-image: linear-gradient(green, blue); */
+background-image: radial-gradient(green,blue, yellow); by default eclipse shape */
+
+21)box-sizing??
+    box-sizing: content-box; // default
+    box-sizing: border-box;
+
+22)float nd clear??
+ float
+1) left
+2) right
+3) none (by default)
+ Clear
+1) left
+2) right
+3) both
+
+23)2d transform??
+/* transform: translate(100px,100px); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* scale */
+    /* transform: scale(2,3); */
+    /* skew */
+    /* transform: skew(20deg,30deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewY(20deg); */
+    /* rotate */
+    /* transform: rotate(45deg); */
+    /* transform: rotateX(45deg); */
+    /* transform: rotateY(45deg); */
+
+24)3d transform??
+    /* transform: perspective(200px) rotate3d(40,40,40, 40deg); */
+    transform: perspective(200px) translate3d(0px,0px,-40px);
+
+25) transition??
+ transition: all 1s ease-in-out 1s;
+
+26)What is css selectors and css rules?
+CSS selectors are patterns used to select the elements you want to style. They define which HTML elements the CSS rules apply to
+
+Type of css selector
+1=> Element Selector
+p {
+  color: blue;
+}
+
+2=> Class Selector
+.my-class {
+  color: green;
+}
+
+3=> ID Selector
+#my-id {
+  color: red;
+}
+
+4=> Attribute Selector
+a[href] {
+  color: purple;
+}
+
+a[href="https://example.com"] {
+  color: orange;
+}
+
+5=> Universal Selector
+a[href] {
+  color: purple;
+}
+
+a[href="https://example.com"] {
+  color: orange;
+}
+
+
+6=> Descendant Selector
+div p {
+  color: brown;
+}
+
+7=> Child Selector:
+div > p {
+  color: black;
+}
+
+8=> Adjacent Sibling Selector:
+h1 + p {
+  color: navy;
+}
+
+9=> General Sibling Selector
+
+h1 ~ p {
+  color: olive;
+}
+
+
+27)object -fit?
+The object-fit property is used to specify how an image or video should be resized to fit its container. It is commonly used with <img> or <video> elements;
+
+object-fit: fill | contain | cover | none | scale-down;
+
+28)Css sprite? And benefit?
+combine multiple images into a single image file to reduce the number of HTTP requests for resources, thus improving the performance of a website. The single image, known as a sprite sheet, is then used to display the various images by showing specific portions of the sheet at a time.
+
+benefit:
+reduce http request
+improving performance
+
+29)What is the use of preconnect in css?
+<link rel="preconnect" href="https://example-cdn.com" crossorigin>
+<link rel="preconnect" href="https://example-cdn.com">
+  <!-- Preconnect to a Google Fonts domain -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Optionally, use with crossorigin if resources require it -->
+  <link rel="preconnect" href="https://example-cdn.com" crossorigin>
+
+Using preconnect correctly can help optimize resource loading and improve the performance of your web applications.
+
+benifit:-
+1)Reduce latency
+2)improving performance
+
+30)text-shadow?
+create various effects with text shadows, including soft or hard shadows, multiple shadows, and even some 3D-like effects
+
+text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+
+31)box-shadow?
+ adds shadow effects around an element's frame. You can create a variety of effects, including single or multiple shadows, inner shadows, and different levels of blurring and spreading. Here’s a detailed guide on how to use the box-shadow property:
+
+  box-shadow: h-offset v-offset blur-radius spread-radius color inset;
+
+

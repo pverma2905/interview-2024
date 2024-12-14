@@ -1,0 +1,7 @@
+destructure same name with class name with before tilde sign
+
+feature:-
+it can not be overloaded or inherited
+it can not be explicitly invoked
+it can not specify the access modfier and can not take parameter
+  

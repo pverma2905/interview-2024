@@ -1,0 +1,5 @@
+normalisation :- break one table to multiple temple for remove the redundancy
+
+denormalisation:- multiple table to one
+
+

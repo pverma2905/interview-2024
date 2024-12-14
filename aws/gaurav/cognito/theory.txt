@@ -1,0 +1,3 @@
+ ## Identity management service for adding user sign-up, sign-in, and access control to web and mobile apps.
+
+ ##  Handles authentication, authorization, and user management securely, reducing the need for custom-built authentication systems.

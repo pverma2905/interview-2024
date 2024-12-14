@@ -1,0 +1,109 @@
+1)mongodb backup command?
+mongodump
+
+2)which command is used to restore?
+mongorestore
+
+3)command mongodb projection?
+db.collection.find({ field1: 1, field2: 1, field3: 0 });
+db.users.find({ age: { $gt: 25 } },{ name: 1, email: 1 })
+db.users.aggregate([{ $match: { age: { $gt: 25 } } },{ $project: { name: 1, email: 1, _id: 0 } }]);
+
+4)which command is used to drop database?
+db.dropDatabase();
+
+5) joins in mongodb?
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",
+      localField: "customerId",
+      foreignField: "_id",
+      as: "customerDetails"
+    }
+  }
+])
+
+6) field exist in mongodb collection?
+db.users.find({ email: { $exists: true } })
+
+7)How do you create a database in MongoDB?
+use databaseName
+
+8)show all databases?
+show dbs
+
+9)How do you switch to a specific database?
+use databaseName
+
+10)How do you list all collections in the current database?
+show collections
+
+11)How do you insert a document into a collection?
+db.collection.insertOne({ key: "value" })
+db.collection.insertMany([{ key1: "value1" }, { key2: "value2" }])
+
+12)How do you find all documents in a collection?
+db.collection.find()
+
+13)How do you find a document with a specific field value?
+db.collection.find({ key: "value" })
+
+14)How do you update a document in a collection?
+db.collection.updateOne({ key: "value" }, { $set: { key: "newValue" } })
+db.collection.updateMany({ key: "value" }, { $set: { key: "newValue" } })
+
+15)How do you delete a document from a collection?
+db.collection.deleteOne({ key: "value" })
+db.collection.deleteMany({ key: "value" })
+
+16)How do you create an index on a field?
+db.collection.createIndex({ key: 1 }) // Ascending order
+db.collection.createIndex({ key: -1 }) // Descending order
+
+17)How do you list all indexes on a collection?
+db.collection.getIndexes()
+
+18)How do you drop an index on a collection?
+db.collection.dropIndex("indexName")
+
+19)How do you perform a basic aggregation using $match and $group?
+db.collection.aggregate([
+  { $match: { key: "value" } },
+  { $group: { _id: "$groupKey", total: { $sum: "$amount" } } }
+])
+
+20)How do you drop a database?
+use databaseName
+db.dropDatabase()
+
+21)How do you drop a collection?
+db.collection.drop()
+
+22)How do you enable the profiler to log slow operations?
+db.setProfilingLevel(1, { slowms: 100 }) // Logs operations slower than 100 milliseconds
+
+23)How do you view the profiling data?
+db.system.profile.find().sort({ ts: -1 }) // Most recent first
+
+24)How do you check the status of a replica set?
+rs.status()
+
+25)How do you initiate a replica set?
+rs.initiate()
+
+26)How do you add a member to a replica set?
+rs.add("hostname:port")
+
+27)How do you start a MongoDB instance with a specific storage engine?
+mongod --storageEngine wiredTiger
+
+28)How do you limit the number of documents returned by a query?
+db.collection.find().limit(5)
+
+29)How do you sort the results of a query?
+db.collection.find().sort({ key: 1 }) // Ascending order
+db.collection.find().sort({ key: -1 }) // Descending order
+
+
+

@@ -1,0 +1,185 @@
+1)sharding? vs Repilca?
+sharding->Sharding is a method for allocating data across multiple machines
+
+replica->Replication is the method of duplication of data across multiple servers
+
+2)Does MongoDB support ACID transaction management and locking functionalities?
+No. MongoDB does not support default multi-document ACID transactions. However, MongoDB provides atomic operation on a single document.
+
+3)How can you achieve primary key - foreign key relationships in MongoDB?
+By default MongoDB does not support such primary key - foreign key relationships. However, we can achieve this concept by embedding one document inside another. Foe e.g. an address document can be embedded inside customer document.
+
+4)Does MongoDB need a lot of RAM?
+No. MongoDB can be run even on a small amount of RAM. MongoDB dynamically allocates and de-allocates RAM based on the requirements of other processes.
+
+5)Mention what is Objecld composed of?
+Objectld is composed of
+
+Timestamp
+Client machine ID
+Client process ID
+3 byte incremented counter
+
+6) Explain what is GridFS in MongoDB?
+For storing and retrieving large files such as images, video files and audio files GridFS is used. By default, it uses two files fs.files and fs.chunks to store the file’s metadata and the chunks.
+
+7) What is the syntax to create a collection and to drop a collection in MongoDB?
+Syntax to create collection in MongoDB is db.createCollection(name,options)
+Syntax to drop collection in MongoDB is db.collection.drop()
+
+8) What is “Namespace” in MongoDB?
+ The concatenation of the collection name and database name is called a namespace.
+
+9) Explain what is MongoDB?
+Mongo-DB is a document database which provides high performance, high availability and easy scalability.
+
+10)what is $unwind?
+destruction array of each documnt?
+
+11)what is $match?
+it is used for filtering the document
+
+12)what is $group?
+it can apply a aggregate function like $sum, $avg, $max, $min
+
+13)what is $project?
+it is used to including, excluding the field and transforming the existing field
+
+14)what is $lookup?
+it is perform a left outerjoin operation 
+
+15)limitation of mongodb?
+MongoDB is a powerful and flexible NoSQL database, but it has some limitations and considerations that you should be aware of when choosing it for your application. Here are some key limitations:
+
+1. Transaction Support
+Single-Document Transactions: Prior to version 4.0, MongoDB only supported atomic operations on a single document.
+Multi-Document Transactions: Introduced in MongoDB 4.0, multi-document transactions provide ACID guarantees across multiple documents and collections. However, they can impact performance and are generally less efficient than single-document operations.
+2. Joins
+Limited Join Support: MongoDB does not support joins in the same way as relational databases. While the $lookup aggregation stage can perform joins, it is not as efficient or flexible as SQL joins and can be complex to use for deeply nested or highly relational data.
+3. Schema Design Complexity
+Flexible Schema: MongoDB’s schema-less design offers flexibility, but it also means that careful planning is needed to avoid data redundancy, inconsistency, and inefficient queries.
+Data Model Complexity: Designing efficient data models in MongoDB often requires denormalization, embedding, or complex referencing, which can be more complex compared to traditional relational databases.
+4. Performance Considerations
+High Write Load: MongoDB handles high write loads well, but large-scale updates, especially those involving multi-document transactions, can affect performance.
+Indexing: While indexes improve query performance, they can slow down write operations. Over-indexing can lead to significant overhead and increased storage requirements.
+5. Sharding Complexity
+Sharding Overhead: Sharding (horizontal scaling) can distribute data across multiple servers, but it adds complexity in terms of configuration, maintenance, and query optimization.
+Manual Effort: While MongoDB automates some aspects of sharding, effective sharding often requires manual effort and a deep understanding of your data and access patterns.
+6. Memory Usage
+Memory Intensive: MongoDB can be memory-intensive, particularly with the WiredTiger storage engine, which uses a significant amount of memory for caching and other operations.
+7. Limited SQL Support
+No Native SQL: MongoDB uses a different query language (BSON) instead of SQL. This can be a limitation for those familiar with SQL or for applications that require complex querying capabilities inherent to SQL.
+8. Backup and Recovery
+Backup Complexity: Backing up and restoring large MongoDB databases can be complex and time-consuming. Point-in-time recovery and other advanced backup features may require additional tools or third-party solutions.
+9. Consistency Models
+Eventual Consistency: While MongoDB provides strong consistency within single-document operations, it uses eventual consistency in distributed setups, which may not be suitable for all applications.
+10. Aggregation Framework
+Complex Aggregations: The aggregation framework in MongoDB is powerful, but complex aggregations can be less intuitive and harder to optimize compared to SQL-based relational databases.
+11. Storage Costs
+Storage Overhead: MongoDB can have higher storage costs due to its flexible schema design, use of BSON (which can be more verbose than other formats), and the need to store indexes.
+Conclusion
+While MongoDB offers many advantages, including flexibility, scalability, and ease of use for certain types of applications, it also has some limitations and requires careful planning and management. Understanding these limitations can help you determine if MongoDB is the right fit for your application and how to best leverage its capabilities while mitigating potential drawbacks.
+
+
+16)mongodb engine ? what is default engine?
+WiredTiger
+
+17)which engine is used and when?
+WiredTiger is recommended for most use cases due to its advanced features, better performance, and efficient resource utilization. and since version 3.2
+
+MMAPv1 is still available for compatibility with older systems but is not recommended for new deployments.
+
+
+18)what is role of profiler?
+The MongoDB profiler is a powerful tool used to monitor and analyze the performance of database operations. It helps identify slow queries, long-running operations, and performance bottlenecks. By providing detailed information about database operations, the profiler aids in optimizing and tuning the database.
+
+Key Features and Capabilities of the Profiler
+Capture Performance Data:
+
+The profiler can capture detailed information about operations that take place in the MongoDB instance, such as queries, updates, deletes, and more.
+It records metrics like execution time, indexes used, the number of documents scanned, and more.
+Granularity Levels:
+
+The profiler can be configured to capture all operations, slow operations, or only those operations that exceed a certain threshold.
+Level 0: The profiler is off and does not collect any data.
+Level 1: The profiler collects data for slow operations based on a specified threshold.
+Level 2: The profiler collects data for all operations.
+Query Optimization:
+
+By analyzing the data collected by the profiler, you can identify inefficient queries and optimize them.
+Helps in creating and tuning indexes based on query patterns.
+Monitoring:
+
+Useful for monitoring the database in real-time to ensure that it is performing optimally.
+Helps in identifying sudden changes in performance.
+How to Use the Profiler
+Enabling the Profiler
+To enable the profiler and set its level, you can use the following commands:
+// Set profiler level to 1 (profile slow operations)
+db.setProfilingLevel(1, { slowms: 100 })
+
+// Set profiler level to 2 (profile all operations)
+db.setProfilingLevel(2)
+
+// Set profiler level to 0 (disable profiling)
+db.setProfilingLevel(0)
+
+
+Viewing Profiling Data
+The profiling data is stored in the system.profile collection within the database. You can query this collection to view the profiling data:
+
+// Find all entries in the system.profile collection
+db.system.profile.find()
+
+// Find slow operations (e.g., operations longer than 100 milliseconds)
+db.system.profile.find({ millis: { $gt: 100 } })
+
+// Sort profiling data by the duration of the operations
+db.system.profile.find().sort({ millis: -1 })
+
+Example
+Here is an example of enabling the profiler to capture slow operations and then querying the profiling data:
+
+// Enable profiling for slow operations (greater than 100 ms)
+db.setProfilingLevel(1, { slowms: 100 })
+
+// Perform some operations (e.g., queries, updates)
+
+// Query the profiling data for slow operations
+db.system.profile.find({ millis: { $gt: 100 } }).sort({ millis: -1 }).pretty()
+
+Disabling the Profiler
+To disable the profiler, set the profiling level to 0:
+db.setProfilingLevel(0)
+
+The MongoDB profiler is an essential tool for database administrators and developers to monitor and optimize the performance of their MongoDB instances. By providing detailed insights into database operations, it enables efficient troubleshooting and performance tuning.
+
+
+
+19)indexes in mongodb?
+Indexes improve the efficiency of query operations and can significantly enhance the performance of read operations.
+
+type of index:-
+
+1)Single Field Index?
+db.collection.createIndex({ field: 1 }) // Ascending order
+db.collection.createIndex({ field: -1 }) // Descending order
+
+2)Compound index?
+db.collection.createIndex({ field1: 1, field2: -1 })
+
+3)Multikey index?
+db.collection.createIndex({ arrayField: 1 })
+
+4)Text index?
+db.collection.createIndex({ field: "text" })
+
+5)Hashed index?
+db.collection.createIndex({ field: "hashed" })
+
+6)Geospatial index?
+db.collection.createIndex({ location: "2dsphere" }) // For spherical geometry
+db.collection.createIndex({ location: "2d" }) // For legacy coordinate pairs
+
+
+

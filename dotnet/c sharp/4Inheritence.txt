@@ -1,0 +1,12 @@
+type of inheritence:-
+1)single inheritence:-
+one base class and one child class
+
+2)hierarchical inheritence:-
+one base class have multiple child class
+
+3)Multilevel inheritence:-
+One base class have one child class and 
+one child class have one grand child class   
+
+4)Multiple(using interface)

@@ -1,0 +1,18 @@
+1)contructor is same as method but no return type
+2)constructor name and class name should be same
+3)constructor have no return type include void
+4)constructor will automatically called  when we create an object
+5)for each object constructor will execute only once
+
+6)in java we have public,private,protected and default contructor
+7)in java constructorcan not be abstract static final
+8)if we not create a constructor compiler automatically create a default constructor
+
+in java 3type of constructor:-
+1)parameterised
+2)non-parameterised
+3)default constructor
+
+
+################ initialize to constructor ##########################
+=>constructor is used to initialize object/instance variable

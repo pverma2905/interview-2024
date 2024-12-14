@@ -1,0 +1,54 @@
+1)who developed java??
+james gosling in 1995
+
+2)what is java??
+java is a general purpuse ,static compiled interpreted object oriented programing language
+
+3)what is general purpuse??
+we can develop any kind of application in java
+1)web application
+2)mobile application
+3)gaming application
+4)desktop application
+5)enterprise application
+6)standalone application
+
+4)what is high level??
+there are two type of language
+1)high level language
+2)low level language
+
+=>high level language:-whichb are understood by human
+ex)java, python, c++
+=>low level language:-which are understood by machine/computer/pc/laptop
+ex)assembly language
+
+5)why java is called static??
+bacause in java we need to declare datatype before initialisation
+
+6)what is compiler??
+it convert high levelcode to byte code using compiler
+
+7)what is interpreter??
+bytecode converted into machine code using interpreter
+
+8)execution flow of java program??
+it convert high levelcode to byte code using compiler
+bytecode converted into machine code using interpreter
+
+9)why java is called compiled and interpreted programing language??
+it convert high levelcode to byte code using compiler
+bytecode converted into machine code using interpreter
+
+10)why java is called object oriented programing language??
+oop is a way to write of program
+oop has lot of advantage:-
+1)code reusability -> inheritence
+2)security -> data security and code security
+
+it follow oop concept:-
+=>polymorphism
+=>Abstrction
+=>encapsulation
+
+

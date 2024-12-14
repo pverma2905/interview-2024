@@ -1,0 +1,94 @@
+1)how many ways create object in javascript?
+2)Hosting?
+3)Closure?
+4)How event flow in javascript?
+5)Null & undefined?
+6)Is javascript is synchronous  or not synchronous?
+7)State of promises And methods of promises?
+8)call, bind, Apply?
+9) lexical scoping?
+10)type corision?
+
+
+1)what is first class function in javascript?
+2)What is callback? 
+3)callback hell ??
+4)Prototype in javascript?
+5)Inheritence is possible in javascript?
+6)curring function ??
+7)infinite curring?
+8)memoization?
+9)Debouncing?
+10)throttling ??
+11)map, set, weakMap, weakSet?
+
+
+
+
+1)webworker in javascript?(code with kashi)
+2)normal loading vs async loading and defer loading?(code with kashi)
+3)Event Bubbling & capturing?(code with kashi)
+4)event Delegation?(code with kashi)
+5)array.reduce?(code with kashi)
+6)temporal dead zone?(code with kashi)
+7)iife?(code with kashi)
+8)what is scopechain?
+9)differnce b/w es5 and es6?
+10)higher order function?
+11)promise?(code step by step)
+12)lexical scope?
+
+
+
+1)deep copy and shallow copy?(Tech mentor tutorials)
+2)call by value and call by refrence?
+3)pure and impure function in javascript?
+3)throttling?
+4)async-await?
+5)promise chaining?
+6)null coalescing?
+7)object.freeze?
+8)call stack?
+9)event loop?
+10)micro and macro queue?
+11)generators in javascript?
+12)uses of clousure? in real time?
+13)differnce b/w localStorage session storage and cookies?
+14)readonly object?
+15)differnce b/w map and flatmap?
+16)differnce b/w flat and flatmap?
+17)Object.freeze() and  Object.seal()?
+18)prototype in javascript?
+19)event loop ?
+20)enable modules in javascript?
+21)map and forEach?
+22)clousure example?
+23)data type in javascript?
+
+
+
+1)promise to async await
+2)promise chaining?
+3)map in rxjs?
+6)middleware?
+7)why async and await is better  then promise? 
+8)temporal dead zone?
+9)prototype ?
+10)Array.flat()? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+1)what is solid principle??
+s=>single responsibility principle
+o=>open closed principle
+l=>liskov substitution principle
+i=>interface segregation principle
+d=>depencdency inversion principle 
+
+2)shallow copy and deep copy??
+in object:- 
+1)shallow copy:-
+(i)object.assign=> object.assign({}, originalObject)
+(ii)spreadOperator=>const shallowCopy = { ...originalObject };
+
+in array:-
+(i)array.from
+(ii)spread operator
+(iii)slice
+2)deep copy:-
+(i)JSON.parse(JSON.stringify(original));
+
+3)shift and unshift methods??
+shift means remove element
+unshift means add more element
+
+3)call,bind,apply??
+let userDetails = {
+  name:"test"
+}
+
+let address=function(state){
+ console.log(this.name+" "+state)
+}
+
+address.call(userDetails,'maharastra')
+address.apply(userDetails,['maharastra1'])
+let res1=address.bind(userDetails,'maharastra2');
+res1()
+
+
+call:-
+Executes a function immediately with a specified this value and individual arguments.
+apply:-
+ Executes a function immediately with a specified this value and arguments as an array.
+ bind:-
+Creates a new function with a specified this value and optionally preset arguments. The new function can be called later. 
+
+4)generator in javascript??
+which function we stop and resume the execution.
+by using yeild("vvv"); we stop execution
+by using function name().next() we resume function
+
+5)hosting?
+
+6)iife??
+
+7)anonymous function??
+
+8)differnce b/w es5 and es6??
+
+9)what is callback??
+10)what is callbackhell??

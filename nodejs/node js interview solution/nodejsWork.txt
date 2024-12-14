@@ -1,0 +1,20 @@
+/////////////////////////////// step of nodejs working ////////////////////////////////////////
+
+blocking- synchronous
+non-blocking- asynchronous
+
+
+
+step 1:All request are goes in event queue
+step 2:event loop always checking event queue
+step 3:event queque pick a request and check this request is blocking or non blocking
+step 4: if it is non-blocking so it execute give the response to the user
+step 5: if it is blocking operation. it goes to the thread pool and thread pool working thread free so working thread is executing the blocking operation
+
+By default it have 4 working thread
+
+so always try to write a non- blocking operation
+
+
+we can increase the size of thread depend on cpu if it s 8 core cpu to its 8
+console.log(os.cpus().length)

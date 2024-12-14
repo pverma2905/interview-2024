@@ -1,0 +1,13 @@
+system Design:-it is a process of designing the eleement of a system scuch as module, component,interfaces
+
+two type of system design:-
+1)HLD
+2)LLD
+
+HLD->
+1)main component would be developed for the resulting product
+2)database design , service, process and there relationship
+
+LLD:-
+1)Design each element in the hld of the system
+2)classes, interface b/w differnt classes 

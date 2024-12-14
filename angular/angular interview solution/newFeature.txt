@@ -1,0 +1,21 @@
+1)angular 13?
+#release on 3 nov 2021
+#typescript 4.4
+#remove of IE 11 support
+#removal of view engine 100% ivy
+#node stable version 16.14.2,12.2 support remove
+#rxjs 7.4
+
+
+angualr 15:-
+1)it is deprecated view engine 
+2)angular 15 depened on rxjs observable
+3)it improvements to SSR but did not have full hydration capabilities.
+4)it reactive routing with router signals and better route-based code splitting, improving performance and developer experience over Angular 15.
+5)it DI improvements reduce memory usage and increase performance, a step forward from Angular 15's DI capabilities.
+
+
+angualr 16:-
+1)it completely removed view engine and used ivy engine
+2)it introduced a signal
+3)it support full hydration for ssr

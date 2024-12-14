@@ -1,0 +1,9 @@
+// create database
+create database testDatabase;
+
+// drop database
+drop database testDatabase;
+
+// rename database
+alter database testDatabase modify name=newtestDatabase
+exec sp_renamedb newtestDatabase testDatabase

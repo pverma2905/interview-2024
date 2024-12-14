@@ -1,0 +1,161 @@
+1)sass:-
+
+feature:-
+1)variable 
+2)nesting
+3)partials and imports
+4)Mixins and include
+5)Extends
+6)Operators
+7)Functions
+8)Conditional Directive
+
+2)variable??
+Allow you to store values (such as colors, fonts, or any CSS value) that you can reuse throughout your stylesheet.
+scss
+Copy code
+$primary-color: #333;
+body {
+  color: $primary-color;
+}
+
+2)what is nesting??
+
+Enables you to nest your CSS selectors in a way that follows the same visual hierarchy of your HTML.
+scss
+Copy code
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li { display: inline-block; }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+3)what is partials/import??
+
+Allow you to create small SCSS files that contain little snippets of CSS and import them into other SCSS files.
+scss
+Copy code
+// _reset.scss
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// main.scss
+@import 'reset';
+body {
+  font-family: Arial, sans-serif;
+}
+
+4)what is mixins and @include??
+
+Let you create reusable chunks of CSS that you can include in other selectors.
+scss
+Copy code
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+5)inheritence/Extends??
+
+Allows selectors to inherit all the styles of another selector.
+scss
+Copy code
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+
+6)Operators??
+SCSS supports standard mathematical operators, allowing you to perform calculations directly within your stylesheets.
+scss
+Copy code
+.container {
+  width: 100%;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.main {
+  width: calc(100% - 300px);
+}
+
+
+7)functions??
+SCSS includes built-in functions for manipulating colors, numbers, strings, and more. You can also define your own functions.
+scss
+Copy code
+@function em($px, $base: 16px) {
+  @return ($px / $base) * 1em;
+}
+
+.container {
+  font-size: em(24px);
+}
+Control Directives and Expressions:
+
+SCSS includes features like @if, @for, @each, and @while that allow you to use logic and loops within your stylesheets.
+scss
+Copy code
+@for $i from 1 through 3 {
+  .col-#{$i} { width: 100% / 3 * $i; }
+}
+
+@each $color in red, green, blue {
+  .#{$color}-text { color: $color; }
+}
+These features make SCSS a powerful tool for developers to write more maintainable, reusable, and readable CSS.
+
+
+1)Feature of scss?
+SCSS (Sassy CSS) is a preprocessor scripting language that is interpreted or compiled into CSS. SCSS is a syntax of Sass (Syntactically Awesome Stylesheets), and it offers a more concise and powerful way to write CSS. Here are some key features of SCSS:
+
+
+
+
+
+
+
+2)Css preprocessor?
+
+ a program generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+
+Here are a few of the most popular CSS preprocessors:
+
+SASS (SCSS)
+LESS
+Stylus
+PostCSS
+
+
+

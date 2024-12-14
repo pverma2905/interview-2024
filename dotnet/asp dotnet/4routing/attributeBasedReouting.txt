@@ -1,0 +1,50 @@
+builder.Services.AddControllersWithViews();
+app.MapControllers();
+
+
+//(I)
+//public class HomeController : Controller
+//{
+//    [Route("")]
+//    [Route("Home")]
+//    [Route("Home/Index")]
+//    public IActionResult Index()
+//    {
+//        return View();
+//    }
+//    [Route("Home/About")]
+//    public IActionResult About()
+//    {
+//        return View();
+//    }
+
+//    [Route("Home/Details/{id?}")]
+//    public int Details(int? id)
+//    {
+//        return id ?? 1;
+//    }
+//}
+
+//(II)
+//[Route("Home")]
+//public class HomeController : Controller
+//{
+//    [Route("")]
+//    [Route("Index")]
+//    [Route("~/")]
+//    public IActionResult Index()
+//    {
+//        return View();
+//    }
+//    [Route("About")]
+//    public IActionResult About()
+//    {
+//        return View();
+//    }
+
+//    [Route("Details/{id?}")]
+//    public int Details(int? id)
+//    {
+//        return id ?? 1;
+//    }
+//}

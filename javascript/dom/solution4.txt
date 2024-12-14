@@ -1,0 +1,81 @@
+1)innerHtml to add html element??  
+// innerHTML to add html element but this is not recommended
+
+const todoList = document.querySelector(".todo-list");
+// console.log(todoList.innerHTML)
+// todoList.innerHTML = "<li>New Todo 2 </li>"
+// todoList.innerHTML += "<li>New Todo </li>";
+// todoList.innerHTML += "<li>teach students </li>";
+
+// when you should use it , when you should not
+todoList.insertAdjacentElement("afterbegin", '<li>Hi</li>')
+
+
+2)create element append??
+const newTodoItem = document.createElement("li");
+newTodoItem.textContent = "Teach Students";
+const todoList = document.querySelector(".todo-list");
+todoList.append(newTodoItem);
+console.log(newTodoItem);
+
+2)create element prepend??
+const newTodoItem = document.createElement("li");
+newTodoItem.textContent = "Teach Students";
+const todoList = document.querySelector(".todo-list");
+todoList.prepend(newTodoItem);
+console.log(newTodoItem);
+
+3)create element remove??
+const todo1 = document.querySelector(".todo-list li");
+todo1.remove();
+console.log(todo1)
+
+4)before ul??
+// const newTodoItem = document.createElement("li");
+// newTodoItem.textContent = "Teach students";
+// const todoList = document.querySelector(".todo-list");
+// todoList.before(newTodoItem);
+
+5)after ul??
+// const newTodoItem = document.createElement("li");
+// newTodoItem.textContent = "Teach students";
+// const todoList = document.querySelector(".todo-list");
+// todoList.after(newTodoItem);
+
+6)clone nodes??
+// const ul = document.querySelector(".todo-list");
+// const li = document.createElement("li");
+// li.textContent = "new todo";
+// const li2 = li.cloneNode(true);
+// ul.append(li);
+// ul.prepend(li2);
+
+
+// append
+// prepend
+// remove
+// before
+// after
+
+
+7)some old method to support poor IE??
+//appendChild
+//insertBefore
+//replaceChild
+//removeChild
+
+
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+li.textContent="new todo";
+ul.appendChild(li);
+
+
+8)static list vs live list??
+querySelectorAll humein static  list dege after sinsert element
+getElementByClassName|getElementByTagName humein live list dege after insert element  
+
+9)how to get the dimension of element??
+const sectionTodo = document.querySelector(".section-todo");
+const info = sectionTodo.getBoundingClientRect();
+console.log(info); 

@@ -1,0 +1,49 @@
+Map:- it can worko every method
+if we want same response for every method then we use Map
+
+
+MapGet - only get request 
+MapPost
+MapPut
+MapDelete
+
+405 - MEthod not allowed
+
+
+//app.Map("/", () => "Hello World!");
+
+//app.MapGet("/", () => "Hello World! - GET");
+//app.MapPost("/", () => "Hello World! - Post");
+//app.MapPut("/", () => "Hello World! - Put");
+//app.MapDelete("/", () => "Hello World! - Delete");
+
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("/Home", async (context) =>
+    {
+        await context.Response.WriteAsync("This is Home Page...Get");
+    });
+
+    endpoints.MapPost("/Home", async (context) =>
+    {
+        await context.Response.WriteAsync("This is Home Page...Post");
+    });
+
+    endpoints.MapPut("/Home", async (context) =>
+    {
+        await context.Response.WriteAsync("This is Home Page...Put");
+    });
+
+    endpoints.MapDelete("/Home", async (context) =>
+    {
+        await context.Response.WriteAsync("This is Home Page...Delete");
+    });
+});
+
+app.Run( async (HttpContext context) =>
+{
+    await context.Response.WriteAsync("Page Not Found");
+});
+
+app.Run();

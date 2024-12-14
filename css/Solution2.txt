@@ -1,0 +1,136 @@
+1)box model?
+every html element crate a box model
+in this box model have content + padding+ border +margin
+when we calulate the height and  width of the element add the margin +padding +border
+
+Total Width Of An Element: - Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin
+
+Total Height Of An Element: - Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin
+
+2)text-shadow?
+create various effects with text shadows, including soft or hard shadows, multiple shadows, and even some 3D-like effects
+
+text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+
+3)box-shadow?
+ adds shadow effects around an element's frame. You can create a variety of effects, including single or multiple shadows, inner shadows, and different levels of blurring and spreading. Here’s a detailed guide on how to use the box-shadow property:
+
+  box-shadow: h-offset v-offset blur-radius spread-radius color inset;
+
+4)object -fit?
+The object-fit property is used to specify how an image or video should be resized to fit its container. It is commonly used with <img> or <video> elements;
+
+object-fit: fill | contain | cover | none | scale-down;
+
+5)Css sprite? And benefit?
+combine multiple images into a single image file to reduce the number of HTTP requests for resources, thus improving the performance of a website. The single image, known as a sprite sheet, is then used to display the various images by showing specific portions of the sheet at a time.
+
+benefit:
+reduce http request
+improving performance
+
+6)What is the use of preconnect in css?
+<link rel="preconnect" href="https://example-cdn.com" crossorigin>
+<link rel="preconnect" href="https://example-cdn.com">
+  <!-- Preconnect to a Google Fonts domain -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Optionally, use with crossorigin if resources require it -->
+  <link rel="preconnect" href="https://example-cdn.com" crossorigin>
+
+Using preconnect correctly can help optimize resource loading and improve the performance of your web applications.
+
+benifit:-
+1)Reduce latency
+2)improving performance
+
+
+7)What is css selectors and css rules?
+CSS selectors are patterns used to select the elements you want to style. They define which HTML elements the CSS rules apply to
+
+Type of css selector
+1=> Element Selector
+p {
+  color: blue;
+}
+
+2=> Class Selector
+.my-class {
+  color: green;
+}
+
+3=> ID Selector
+#my-id {
+  color: red;
+}
+
+4=> Attribute Selector
+a[href] {
+  color: purple;
+}
+
+a[href="https://example.com"] {
+  color: orange;
+}
+
+5=> Universal Selector
+a[href] {
+  color: purple;
+}
+
+a[href="https://example.com"] {
+  color: orange;
+}
+
+
+6=> Descendant Selector
+div p {
+  color: brown;
+}
+
+7=> Child Selector:
+div > p {
+  color: black;
+}
+
+8=> Adjacent Sibling Selector:
+h1 + p {
+  color: navy;
+}
+
+9=> General Sibling Selector
+
+h1 ~ p {
+  color: olive;
+}
+
+
+
+
+
+
+8)What are mixin ? And js in css helpful?
+it is used in preprocessor css like less,sass
+its allow your resuse the style 
+it reduce the repetion of code
+
+@mixin block($size){
+   border-radius: $size;
+}
+.button{
+@include block(10px)
+}
+
+
+
+9)What are rem and em properties in css??
+In CSS, rem and em are relative length units that are used to size elements in a scalable and responsive way
+
+em: Relative to the parent’s font size
+1em equals 16px.
+rem: Relative to the root’s font size
+1rem equals 16px.
+
+10)What are the different ways make webpage responsive?
+using grid
+using flexbox
+using mediaqueies

@@ -1,0 +1,50 @@
+
+    //(III) Tokens
+    //[Route("[controller]")]
+    //public class HomeController : Controller
+    //{
+    //    [Route("")]
+    //    [Route("[action]")]
+    //    [Route("~/")]
+    //    public IActionResult Index()
+    //    {
+    //        return View();
+    //    }
+    //    [Route("[action]")]
+    //    public IActionResult About()
+    //    {
+    //        return View();
+    //    }
+
+    //    [Route("[action]/{id?}")]
+    //    public int Details(int? id)
+    //    {
+    //        return id ?? 1;
+    //    }
+    //}
+
+
+
+    //(IV) Tokens 
+    [Route("[controller]/[action]")]
+    public class HomeController : Controller
+    {
+        [Route("")]
+        [Route("~/")]
+        [Route("~/Home")]
+        public IActionResult Index()
+        {
+            return View();
+        }
+        
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [Route("{id?}")]
+        public int Details(int? id)
+        {
+            return id ?? 1;
+        }
+    }

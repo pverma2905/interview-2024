@@ -1,0 +1,75 @@
+31)font size classes??
+font-size:2.5rem   ->.fs-1  ---- 40px
+font-size:2rem   ->.fs-2  -------
+font-size:1.75rem   ->.fs-3
+font-size:1.5rem   ->.fs-4
+font-size:1.25rem   ->.fs-5
+font-size:1rem   ->.fs-6
+
+32)font-weight??
+font-weight:700 - .fw-bold
+font-weight:bolder - .fw-bolder
+font-weight:400 - .fw-bold
+font-weight:300 - .fw-bold
+font-style:italic - fst-italic
+font-style:normal - .fst-normal
+
+33)line height??
+line-height:1  - .lh-1
+line-height:1.25  - .lh-sm
+line-height:1.5  - .lh-base
+line-height:2  - .lh-lg
+
+34)text-decoration??
+text-decoration-underline
+text-decoration-line-through
+text-decoration-underline
+
+35)heading classess??
+h1 -> .display-1
+h2 -> .display-2
+h3 -> .display-3
+h4 -> .display-4
+h5 -> .display-5
+h6 -> .display-6
+
+36)paragraph class??
+.lead
+
+37)list??
+remove . dot 
+.List-1
+.List-2
+.List-3
+.List-4
+
+.list-inline
+
+.list-inline-item
+
+<ul class="list-unstyled list-inline">
+    <li class="list-inline-item">One</li>
+    <li class="list-inline-item">Two</li>
+    <li class="list-inline-item">Three</li>
+    <li class="list-inline-item">Four</li>
+    <li class="list-inline-item">Five</li>
+</ul>
+
+38)Block quote classes??
+<blockquote class="blockquote">
+"A well-known quote,container in a block quote element"
+
+<footer class="blockquote-footer">--Harry Roy</footer>
+
+</blockquote>
+
+39)button classes??
+<a href="btn btn-primary" href="#" role="button">Button</a>
+
+<button class="btn btn-primary" type="submit">Button</button>
+<input type="button" class="btn btn-primary" type="button" value="input">
+<input type="submit" class="btn btn-primary" type="button" value="submit">
+<input type="reset" class="btn btn-primary" type="button" value="reset">
+
+40)outline button??
+.btn-outline-primary

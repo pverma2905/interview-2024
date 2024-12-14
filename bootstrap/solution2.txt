@@ -1,0 +1,56 @@
+
+17)dislay classes??
+dislay:none -> .d-none
+display:inline -> .d-inline
+dislay:inline-block -> .d-inline-block
+display:block -> .d-block
+dislay:table -> .d-table
+dislay:table-cell -> d-table-cell
+dislay:table-row -> d-table-row
+dislay:grid -> d-grid
+dislay:flex -> d-flex
+dislay:inline-flex -> .d-inline-flex
+
+
+dislay:print-none -> .d-print-none
+dislay:print-inline -> .d-print-inline
+dislay:print-inline-block -> .d-print-inline-block
+dislay:print-block -> .d-print-block
+dislay:print-table -> .d-print-table
+dislay:print-table-cell -> .d-print-table-cell
+dislay:print-table-row -> .d-print-table-row
+dislay:print-flex -> .d-print-flex
+dislay:print-inline-flex -> .d-print-inline-flex
+
+d-md-none
+
+
+18)float and clearfix??
+=>float:-
+.float-start
+.float-end
+.float-none
+
+.float-md-start
+
+=>clearfix:-
+.clearfix
+
+19)width classes??
+width:25%    w-25
+width:50%    w-50
+width:75%    w-75
+width:100%   w-100
+width:auto   w:auto
+
+max-width:100  mw-100
+
+20)height classes??
+height:25%    h-25
+height:50%    h-50
+height:75%    h-75
+height:100%   h-100
+
+max-height:100  mh-100
+height:auto h-auto 
+

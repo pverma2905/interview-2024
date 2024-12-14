@@ -1,0 +1,2 @@
+## Managed GraphQL service for building data-driven applications
+## Makes it easy to build GraphQL APIs that connect your frontend to a variety of data sources (e.g., databases, Lambda functions) in a real-time, responsive manner.

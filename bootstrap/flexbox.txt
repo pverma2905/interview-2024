@@ -1,0 +1,79 @@
+1)flexbox??
+d-flex
+
+2)horizontal alignment classes??
+it apply on column
+.justify-content-start (default)
+.justify-content-end
+.justify-content-center
+.justify-content-between
+.justify-content-around
+.justify-content-evenly
+
+.justify-content-sm-end
+
+3)vertical alignment??
+it apply on column
+.align-items-stretch (default)
+.align-items-start
+.align-items-end
+.align-items-center
+.align-items-baseline
+
+.align-items-sm-stretch
+
+4)align content?? 
+it apply on column
+give a height to row
+
+.align-content-start
+.align-content-end
+.align-content-center
+.align-content-between
+.align-content-around
+.align-content-stretch(default)
+
+.align-content-md-start
+
+5)align-self??
+it apply on column
+give a height to row
+
+.align-self-start
+.align-self-end
+.align-self-center
+.align-self-stretch(default)
+.align-self-baseline
+
+.align-self-md-start
+
+6)flex direction??
+it apply on row
+
+.row flex-row (default)
+.row flex-row-reverse
+
+.flex-column
+.flex-column-reverse
+
+.flex-wrap (default)
+.flex-nowrap
+.flex-wrap-reverse
+
+.flex-fill  - Force flex items into equal widths on different screens
+
+.flex-md-row
+.flex-md-fill
+
+7)flex fill??
+apply on column
+after take a full width 
+it is apply only when it class is col
+
+8)flex grow??
+flex-grow-1 take a rest complete space
+
+9)flex shrink??
+.flex-*-shrink-1  Make items shrink on different screens
+
+

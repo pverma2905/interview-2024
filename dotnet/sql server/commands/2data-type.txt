@@ -1,0 +1,19 @@
+1)Numeric:- bit, tinyint, smallint, int, bigint, decimal, numeric, float, real
+
+2)Date/Time:- Date, Time, Datetime, TimeStamp
+
+3)Character/String:- Char, Varchar, Varchar(max), Text
+
+4)Unicode Character/String:- NChar, Varchar, Varchar(max), Text
+
+5)Binary:- Binary, Varbinary, Varbinary(max), image
+
+6)Miscellaneous:- clob, Blob, XML, JSON
+
+7)Boolean:- true/false
+
+8)Enumerated:- Enum
+
+9)Array:- Array
+
+10)JSON:- JSON ,JSONB

@@ -1,0 +1,162 @@
+https://www.youtube.com/watch?v=uWdUlirfvDs&list=PL98MbIu3NiM2XZHdROMjfnJj_EW50EuXp&index=8
+1)swap without using third variable??
+
+let a=10;
+let b=2;
+
+a=a+b;
+b=a-b;
+a=a-b;
+
+console.log(a)
+console.log(b)
+
+2)if 3and 5 divisble by fizzbuzz and it divisible by 3 and it divisible by 5 buzz?? 
+
+function test (n){
+   for(let i=1; i<=n; i++){
+    if(i%3===0 && i%5===0){
+        console.log("fizzbuzz")
+    }else if(i%3==0){
+         console.log("fizz")
+    } else if(i%5==0){
+        console.log("buzz")
+    } else{
+        console.log(i)
+    }
+   }
+}
+
+test(20)
+
+3)no of character in a string??
+
+function strCount (str){
+   console.log(str.length)
+}
+
+strCount("pranav")
+
+4)capitalize??
+
+function capital(str){
+   console.log(str.charAt(0).toUpperCase()+str.slice(1))
+}
+
+capital("test")
+
+
+5)find the longest word in a string??
+
+function longest(str){
+let strArr = str.split(" ");
+
+let longest=0;
+for(let i=0; i<strArr.length; i++){
+    if(strArr[i].length > longest){
+        longest=strArr[i].length
+    }
+}
+return longest;
+}
+console.log(longest("My name is ravi verma"));
+
+6)reverse string with reverse method??
+
+function reverseStr(x){
+  console.log("ccccccccc",x.split('').reverse().join(''));
+}
+reverseStr("Pranav");
+
+7)without reverse method??
+function reverseStr(str){
+ var newStr="";
+ for(let i=str.length-1; i>=0; i--){
+    newStr+= str[i] 
+ }
+ console.log("vvvvvvv",newStr)
+}
+reverseStr("Pranav");
+
+8)curring??
+
+function test(a){
+  return (b)=>{
+     return (c)=>{
+        return a+b+c;
+     }
+  }
+}
+console.log(test(2)(3)(4))
+
+9)redirect to web page??
+
+<button onClick="myFun"></button>
+
+I)
+function myFun(){
+    location.href="https://www.google.com";
+}
+
+II)
+
+function myFun(){
+    location.assign("https://www.google.com");
+}
+
+III) -> back button disable
+
+function myFun(){
+    location.replace("https://www.google.com");
+}
+
+10)count words??
+function countWords(w){
+  console.log(w.split(' ').length)
+}
+
+countWords("my name is pranav verma")
+
+11)count vowvel??
+function countVowvel(str){
+    console.log(str.match(/[aeiou]/gi).length)
+
+}
+countVowvel("abcdefghijklmnopqrstuvwxyz")
+
+12)string contains substring-or-not??
+I=>
+str="my name is pranav verma";
+console.log(str.includes("is"));
+II=>
+if(str.indexOf("is")===-1){
+    console.log(false)
+}else{
+    console.log(true)
+}
+III=>
+if(str.match(/is/g).length>0){
+console.log(true)    
+}else{
+    console.log(false)
+}
+
+13)alternate text?? pranav => Pranav
+str="pranav";
+console.log(str.split("").map((data,i)=>i%2==0?data.toUpperCase():data.toLowerCase()).join(""));
+
+14)split array in 2 part??
+arr=[1,2,4,5,7];
+function splitArray(arr){
+ let mid = arr.length/2;
+ let first=arr.slice(0,mid);
+ let second=arr.slice(mid)
+ 
+ return [first,second]
+}
+
+console.log(splitArray(arr,2)[0])
+console.log(splitArray(arr,2)[1])
+
+
+

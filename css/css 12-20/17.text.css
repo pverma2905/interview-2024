@@ -1,0 +1,57 @@
+.text {
+    width: 700px;
+    border: 5px solid blue;
+
+    /* color: aqua; */
+
+    /* text-align property */
+    /* text-align: center; */
+    text-align: left;  /* by default*/
+    /* text-align: right;
+    text-align: justify; */
+
+    /* direction property */
+    direction: ltr;
+    /* direction: rtl; */
+
+    /* text decoration */
+    /* text-decoration: overline;
+    text-decoration: underline; */
+    text-decoration: none;  /* by default*/
+    /* text-decoration: line-through; */
+
+    /* text transform */
+    /* text-transform: uppercase;
+    text-transform: lowercase; */
+    text-transform: capitalize;
+
+    /* line height */
+    line-height: 20px;
+
+    /* text indent */
+    text-indent: 80px;
+
+    /* letter spacing */
+    letter-spacing: 2px;
+
+    /* word spacing */
+    word-spacing: normal; /* by default */
+    word-spacing: 4px;
+
+    /* white space */
+    /* white-space: pre; */
+    /* white-space: nowrap; */
+
+    /* writing mode */
+    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+
+}
+
+.me{
+    font-size: 40px;
+    /* text shadow */
+
+    /* vertical horizontal blur color */
+    text-shadow: 3px 10px 3px red;
+}

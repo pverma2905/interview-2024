@@ -1,0 +1,106 @@
+1)ViewData - it pass data controller to view
+it store data in key value pair
+ViewData["<Key>"] = <Value>
+Value:- string,Object List, Array , int char,float,double,DateTime
+
+Its life only in current execution
+
+controller:-
+public IActionResult Index()
+{
+    ViewData["data1"] = "Programentor";
+    ViewData["data2"] = 25;
+    ViewData["data3"] = DateTime.Now.ToLongDateString();
+
+    string[] arr = {"kumar","prem","zain"};
+    ViewData["data4"] = arr;
+
+    ViewData["data5"] = new List<string>()
+    {
+        "cricket","football","hockey"
+    };
+    return View();
+}
+
+
+index view:-
+
+@ViewData["data1"];
+<br/>
+@ViewData["data2"];
+<br />
+@ViewData["data3"];
+
+<br />
+@{
+    foreach (var item in (string[])ViewData["data4"])
+    {
+        <h2>@item</h2>
+    }
+}
+
+@{
+    foreach (var item in (List<string>)ViewData["data5"])
+    {
+        <h3>@item</h3>
+    }
+}
+
+
+
+2)ViewBag:- it pass data controller to view
+ViewBag.<PropertyName>=<Value>
+Its life only in current execution
+
+
+
+//ViewBag.data1 = "Programentor";
+//ViewBag.data2 = 24;
+//ViewBag.data3 = DateTime.Now.ToShortDateString();
+
+//string[] arr = { "kumar", "prem", "zain" };
+//ViewBag.data4 = arr;
+
+//ViewBag.data5= new List<string>()
+// {
+//     "cricket","football","hockey"
+// }; 
+
+
+@ViewBag.data1;
+ <br/>
+@ViewBag.data2;
+ <br />
+@ViewBag.data3;
+
+ <br />
+ @{
+    foreach (var item in (string[])ViewBag.data4)
+     {
+         <h2>@item</h2>
+     }
+ }
+
+ @{
+    foreach (var item in (List<string>)ViewBag.data5)
+     {
+         <h3>@item</h3>
+     }
+ }
+
+
+3)TempData - it pass data controller to view
+it store data in key value pair
+
+ ViewData["data1"] = "View Data";
+ ViewBag.data2 = "View Bag";
+ TempData["data3"] = "Temp Data";
+ TempData.Keep();
+
+
+  @ViewData["data1"]
+ @ViewBag.data2
+ @TempData["data3"]
+
+
+4)StronglyTypedViews

@@ -1,0 +1,134 @@
+51) Is it possible to access DOM in Node?
+No, it is not possible to access DOM in Node.
+
+52) How can you avoid callbacks?
+To avoid callbacks, you can use any one of the following options:
+
+You can use modularization. It breaks callbacks into independent functions.
+You can use promises.
+You can use yield with Generators and Promises.
+
+53)How node js work?
+
+
+blocking- synchronous
+non-blocking- asynchronous
+
+
+
+step 1:All request are goes in event queue
+step 2:event loop always checking event queue
+step 3:event queque pick a request and check this request is blocking or non blocking
+step 4: if it is non-blocking so it execute give the response to the user
+step 5: if it is blocking operation. it goes to the thread pool and thread pool working thread free so working thread is executing the blocking operation
+
+By default it have 4 working thread
+
+so always try to write a non- blocking operation
+
+
+we can increase the size of thread depend on cpu if it s 8 core cpu to its 8
+console.log(os.cpus().length)
+
+
+54)first class function in JavaScript?
+assign a function to variable
+passed an argument an return a function
+
+ex)function printName(a,b){
+    return function(){
+        return a+" "+b;
+    } 
+}
+let res= printName("pranav", "verma")
+console.log(res())
+
+55) What are buffers in Node.js?
+In general, a buffer is a temporary memory mainly used by the stream to hold on to some data until it is consumed.
+ Buffers are used to represent a fixed-size chunk of memory allocated outside of the V8 JavaScript engine. It can't be resized. It is like an array of integers, which each represents a byte of data. It is implemented by the Node. js Buffer class. Buffers also support legacy encodings like ASCII, utf-8, etc.
+
+56)where u store audio and video?
+s3
+
+57)create http server?
+var http = require('http'); // Import Node.js core module
+
+var server = http.createServer(function (req, res) {   //create web server
+    if (req.url == '/') { //check the URL of the current request
+        
+        // set response header
+        res.writeHead(200, { 'Content-Type': 'text/html' }); 
+        
+        // set response content    
+        res.write('<html><body><p>This is home Page.</p></body></html>');
+        res.end();
+    
+    }
+    else if (req.url == "/student") {
+        
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write('<html><body><p>This is student Page.</p></body></html>');
+        res.end();
+    
+    }
+    else if (req.url == "/admin") {
+        
+        res.writeHead(200, { 'Content-Type': 'text/html' });
+        res.write('<html><body><p>This is admin Page.</p></body></html>');
+        res.end();
+    
+    }
+    else
+        res.end('Invalid Request!');
+
+});
+
+server.listen(5000); //6 - listen for any incoming requests
+
+console.log('Node.js web server at port 5000 is running..')
+
+58)Why is assert used in Node.js ?
+Assert is used to explicitly write test cases to verify the working of a piece of code. The following code snippet denotes the usage of assert:
+var assert = require('assert');
+function add(x, y) {
+return x + y;
+}
+var result = add(3,5);
+assert( result === 8, 'three summed with five is eight');
+
+59)write a function of routes for middleaware?
+route("/login",[authMiddleware,secondMiddleware],loginController); 
+
+60)jwt code?
+
+61)jwt method for encrypttion?
+jwt.sign({
+  data: 'foobar'
+}, 'secret', { expiresIn: 60 * 60 });
+
+jwt.verify(token, 'shhhhh', function(err, decoded) {
+  console.log(decoded.foo) // bar
+});
+
+62)bcrypt methods?
+bcrypt.genSalt(saltRounds, function(err, salt) {
+    bcrypt.hash(myPlaintextPassword, salt, function(err, hash) {
+        // Store hash in your password DB.
+    });
+});
+
+bcrypt.compare(myPlaintextPassword, hash, function(err, result) {
+    // result == true
+});
+
+63)which engine used in node js?
+v8 engine
+
+64) mvvm architecture?
+MVVM architecture (Model-View-View-Model)
+
+65)which template engine used in node js?
+ejs
+
+66)
+

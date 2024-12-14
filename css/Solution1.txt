@@ -1,0 +1,293 @@
+1)Feature of scss?
+SCSS (Sassy CSS) is a preprocessor scripting language that is interpreted or compiled into CSS. SCSS is a syntax of Sass (Syntactically Awesome Stylesheets), and it offers a more concise and powerful way to write CSS. Here are some key features of SCSS:
+
+1)Variables:
+
+Allow you to store values (such as colors, fonts, or any CSS value) that you can reuse throughout your stylesheet.
+scss
+Copy code
+$primary-color: #333;
+body {
+  color: $primary-color;
+}
+
+2)Nesting:
+
+Enables you to nest your CSS selectors in a way that follows the same visual hierarchy of your HTML.
+scss
+Copy code
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li { display: inline-block; }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+3)Partials and Imports:
+
+Allow you to create small SCSS files that contain little snippets of CSS and import them into other SCSS files.
+scss
+Copy code
+// _reset.scss
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// main.scss
+@import 'reset';
+body {
+  font-family: Arial, sans-serif;
+}
+
+4)Mixins:
+
+Let you create reusable chunks of CSS that you can include in other selectors.
+scss
+Copy code
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+5)Inheritance/Extend:
+
+Allows selectors to inherit all the styles of another selector.
+scss
+Copy code
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+6)Operators:
+
+SCSS supports standard mathematical operators, allowing you to perform calculations directly within your stylesheets.
+scss
+Copy code
+.container {
+  width: 100%;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+.main {
+  width: calc(100% - 300px);
+}
+
+7)Functions:
+
+SCSS includes built-in functions for manipulating colors, numbers, strings, and more. You can also define your own functions.
+scss
+Copy code
+@function em($px, $base: 16px) {
+  @return ($px / $base) * 1em;
+}
+
+.container {
+  font-size: em(24px);
+}
+Control Directives and Expressions:
+
+SCSS includes features like @if, @for, @each, and @while that allow you to use logic and loops within your stylesheets.
+scss
+Copy code
+@for $i from 1 through 3 {
+  .col-#{$i} { width: 100% / 3 * $i; }
+}
+
+@each $color in red, green, blue {
+  .#{$color}-text { color: $color; }
+}
+These features make SCSS a powerful tool for developers to write more maintainable, reusable, and readable CSS.
+
+
+
+2)Css preprocessor?
+
+ a program generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on. These features make the CSS structure more readable and easier to maintain.
+
+Here are a few of the most popular CSS preprocessors:
+
+SASS (SCSS)
+LESS
+Stylus
+PostCSS
+
+3)One div is center of page using css and flexbox?
+display:flexbox
+align-items:center
+justify-content:center
+height-100vh
+
+4)What is specificity?
+a process of determining which css rule will be applied to an element. it actually determines which rules will take precedence.
+
+inline style usually wins then ID then class value (or pseudo-class or attribute selector), universal selector (*) has no specificity.
+
+it work on external css
+
+ <!-- 
+        !important -> override every property   
+        inline -> override every property if important is absent
+        specificity -> External sheet properties
+
+
+        Trick->
+        1) 10,000 -> !important
+        2) 1000 -> inline
+        3) 100 -> id
+        4) 10 -> class , attribute , pseudo class
+        5) 1 -> element  and pseudo elements
+        6) 0 -> universal selector
+    -->
+
+5)Flex vs grid?
+flexbox was designed for layout in one dimension - either a row or a column.
+Grid was designed for two-dimensional layout - rows, and columns at the same time
+
+6)what is portrait and landscape?
+Landscape orientation is horizontal,
+while portrait orientation is vertical.
+
+7)what is pseudo classes and pseudo element ?
+=>pseudo classes:-
+it start from : 
+it is nesscarry a child of some one
+it apply on element state, condition ko style karne ke liye
+
+/* li:first-child{
+    color: red;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(5){
+    color: blueviolet;
+} */
+li:nth-child(odd){
+    color: blueviolet;
+}
+li:nth-child(even){
+    color: red;
+}
+
+input:focus{
+    border: 5px solid blue;
+}
+
+=>pseudo element:-
+::first-line, ::first-letter, ::before, ::after
+it start from ::
+
+/* p::first-letter{
+    font-size: 40px;
+    color: tomato;
+} */
+/* p::first-line{
+    font-size: 40px;
+    color: tomato;
+}
+
+p::selection{
+    color: blueviolet;
+    background-color: crimson;
+} */
+
+/* ::selection{
+    color: blueviolet;
+    background-color: tomato;
+} */
+
+h1::before{
+    content: "Farzeen ";
+}
+h1::after{
+    content: " Farzeen ";
+}
+
+// it add in first letter, first line, (before, after add)
+
+8)media queries?
+
+@media screen and (max-width: 450px)
+{
+    /* mobile */
+    #box-1{
+        display: block;
+        background-color: blueviolet;
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 780px)
+{
+    /* tablet */
+    #box-2{
+        display: block;
+        background-color: tomato;
+    }
+}
+@media screen and (min-width: 781px) and (max-width: 1024px)
+{
+    /* laptop */
+    #box-3{
+        display: block;
+        background-color: crimson;
+    }
+}
+@media screen and (min-width: 1025px)
+{
+    /* large screen */
+    #box-4{
+        display: block;
+        background-color: chartreuse;
+    }
+}
+
+
+9)position?
+
+by default position static 
+
+position element:-
+=>position absolute
+=>position relative
+=>position fixed
+
+if one element is assign a position relative=>it stic to its position and its apply top,bottom,left,right
+if one element is assign a position absolute=>it not stic to its position and its apply top,bottom,left,right, it check the parent have any position if not it take body
+
+if one element is assign a position fixed=>it stic to its position and it is used for scrolling
+
+
+
+

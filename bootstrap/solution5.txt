@@ -1,0 +1,109 @@
+41)button size??
+btn btn-lg
+btn btn-sm
+
+42)button size classess width??
+<div class="d-grid gap-2">
+   <a href="#" class="btn btn-primary">Button</button>
+     <a href="#" class="btn btn-primary">Button</button>
+</div>
+
+43) active and disabled classes??
+.active
+.disabled
+
+44)button group??
+.btn-group
+.btn-group-lg
+.btn-group-sm
+
+<div class="btn-group">
+<button class="btn btn-primary" type="submit">Left</button>
+<button class="btn btn-primary" type="submit">Middle</button>
+<button class="btn btn-primary" type="submit">Right</button>
+</div>
+
+45)button group toolbar??
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-primary">1</button>
+    <button type="button" class="btn btn-primary">2</button>
+    <button type="button" class="btn btn-primary">3</button>
+    <button type="button" class="btn btn-primary">4</button>
+  </div>
+
+46)button group vertical??
+.btn-group-vertical
+
+47)buttton group nesting classes?
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-primary">1</button>
+  <button type="button" class="btn btn-primary">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+</div>
+
+48)list group??
+.list-group
+.list-group-item
+.list-group-item active
+.list-group-item disabled
+.list-group-flush -> remove border classess
+.list-group-horizonatal
+.list-group-numbered
+.list-group-item-primary
+
+<ul class="list-group">
+<li class="list-group-item">List1</li>
+<li class="list-group-item active">List1</li>
+<li class="list-group-item disabled">List1</li>
+</ul>
+
+<ul class="list-group">
+<a href="#" class="list-group-item list-group-item-action active">List1</a> 
+<a href="#" class="list-group-item list-group-item-action">List2</a>
+</ul>
+
+<ul class="list-group">
+<button type="button" class="list-group-item list-group-item-action active">List1</button> 
+<button type="button" class="list-group-item list-group-item-action">List2</button>
+</ul>
+
+<ol class="list-group list-group-numbered">
+<li class="list-group-item">list1</li>
+<li class="list-group-item">list1</li>
+<li class="list-group-item">list1</li>
+</ol>
+
+49)table??
+table.table
+table.table-primary
+table.table table-striped - (even,odd) 
+table.table table-hover
+table.table table-bordered
+table.table table-borderless
+table.table table-sm
+thead.table-light || .table-dark
+<tfoot></tfoot>
+td.table-active
+
+
+50)table responsive??
+.table-responsive
+.table-responsive-sm
+.table-responsive
+<div class="table-responsive">
+<table class="table">
+<thead>
+
+</thead>
+</table>
+</div>

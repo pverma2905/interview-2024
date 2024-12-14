@@ -1,0 +1,6 @@
+indexing:- it orgainsed the denormalisation
+
+apply indexing phele o(n) me kaam ho raha tha ab o(logn) me kaam ho raha hai
+it create a seprate memeory locatio banti hai columen stored in a sorted manner
+B-tree used hot hai indexing
+read intensive data me indexing use karte hai 

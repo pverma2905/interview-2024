@@ -1,0 +1,12 @@
+63)images??
+.img-fluid
+.img-thumbnail
+.rounded float-start
+.rounded float-end
+
+=>center image
+.mx-auto d-block
+.text-center
+
+64)ratio??
+ratio ratio-16x9

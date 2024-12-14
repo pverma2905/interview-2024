@@ -1,0 +1,21 @@
+1)it need 3 packages:-
+=>Microsoft.EntityFrameworkCore.SqlServer
+=>Microsoft.EntityFrameworkCore.Tools
+=>Microsoft.EntityFrameworkCore.Design
+
+2)Run below command:-
+
+first time:-
+Scaffold-DbContext "Server=DESKTOP-R5911BV\SQLEXPRESS; Database=CodeFirstDB; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+update time:-
+Scaffold-DbContext "Server=DESKTOP-R5911BV\SQLEXPRESS; Database=CodeFirstDB; Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force
+
+3)DbContext to appsetting.json
+
+4)Registering Connection to program.cs
+
+var provider = builder.Services.BuildServiceProvider();
+var config = provider.GetRequiredService<IConfiguration>();
+builder.Services.AddDbContext<StudentDBContext>(item => item.UseSqlServer(config.GetConnectionString("docs")));
+

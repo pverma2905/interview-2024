@@ -1,0 +1,72 @@
+11)where is node js used?
+node js used in 
+1)web application
+2)chat application 
+3)network application
+
+12)why node js is single threaded?
+it avoid multithreading and use event loop
+Non-blocking I/O, Efficient use of resources
+event driven programming language
+it folow the asynchronous programming
+Callbacks, Promises, and async/await
+it use of child_process and working threads
+
+
+
+
+13)differnt api support for node js?
+synchronous api: non blocking api
+asynchronous api: blocking api
+
+
+14) differnce b/w synchronous and asynchronous function?
+synchronous:-
+1)blocking execution
+2)Sequential, predictable, and linear
+3)Can cause delays and unresponsiveness
+4)Simple calculations, tasks that don't involve I/O or waiting
+5)Simple try/catch (or similar)
+
+Asynchronous:-
+1)Non-blocking, allows other tasks to proceed
+2)Concurrency and parallelism in task execution
+3)More efficient, especially for I/O-bound tasks
+4)Network requests, file I/O, database operations
+5)Requires handling in callbacks, promises, or async/await
+
+15)why node js is so popular these days?
+1. JavaScript Everywhere
+2. High Performance
+3. Scalability
+4. Large Ecosystem
+5. Active Community and Support
+6. Real-Time Applications
+7. Microservices and API Development
+8. Ease of Learning and Use
+9. Cross-Platform Development
+10. DevOps and Deployment
+
+16)event loop in node js?
+it constantly checks the call stack and message queues, executing callbacks and other asynchronous operations
+
+https://dev.to/endeavourmonk/nodejs-event-loop-46oo
+
+17) disadvantge of node js?
+not suitable for heavy computational task.
+
+18)what is primary reason to use event based  model in node js?
+The event-based model in Node.js is crucial for building scalable and high-performance applications by enabling non-blocking I/O operations, efficient resource utilization, and handling many concurrent connections with a single-threaded event loop. It ensures that applications remain responsive and can process multiple tasks simultaneously, making it well-suited for real-time and I/O-bound applications.
+
+19)what is event driven programming in node js?
+Event-driven programming in Node.js revolves around handling and responding to events asynchronously. This approach allows Node.js to manage many concurrent operations efficiently, ensuring scalability, responsiveness, and efficient resource use. By leveraging the event loop and event emitters, Node.js applications can build highly performant and modular systems.
+
+
+20) differnce b/w ajax and node js?
+Ajax:
+1)client side programming language
+2)execute on browser
+
+node js:
+1)server side scripting language
+2)execute on server

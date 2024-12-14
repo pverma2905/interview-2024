@@ -1,0 +1,17 @@
+throughput:-volume of work done in per second
+amount of data trasmitted per unit time
+itis measured in bits per second
+
+=>distributed application have high throughput then monolithic application
+
+cause of throughput:-
+1)latency
+2)protocol overhead:- 
+3)congstion
+
+improving throughput:-
+1)cdn
+2)caching
+3)distributed application
+4)add load balancer
+5)improve resources

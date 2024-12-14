@@ -1,0 +1,40 @@
+middleware it is function that have req, res, next
+
+it exexcute any code
+update the request and response
+end the reques response
+call the next middleware 
+
+
+there we can exexcute some code or user validated if all are success then it code to routes otherwise it pass to the browser
+
+type of middleware:-
+1.Application-Level Middleware: Middleware that is bound to an instance of express() and is used throughout the application.
+
+// Simple middleware function
+function logRequest(req, res, next) {
+    console.log(`${req.method} ${req.url}`);
+    next(); // Pass control to the next middleware function
+}
+
+// Apply middleware globally to all routes
+app.use(logRequest);
+
+
+
+2.Router-Level Middleware: that can be used with in the routes
+
+3.Built-In Middleware: Middleware functions provided by Express, such as express.json() and express.static().
+
+// Built-in middleware for parsing JSON
+app.use(express.json());
+
+// Built-in middleware for serving static files
+app.use(express.static('public'));
+
+
+4.Third-Party Middleware: Middleware provided by third-party packages, such as body-parser, cors, and morgan.
+5.Error-Handling Middleware: Middleware that handles errors. This middleware has four parameters: err, req, res, and next.
+
+
+

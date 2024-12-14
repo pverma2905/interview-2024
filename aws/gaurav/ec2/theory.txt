@@ -1,0 +1,2 @@
+## it Provides scalable virtual servers in the cloud
+## It allows developers to deploy and manage applications on virtual machines

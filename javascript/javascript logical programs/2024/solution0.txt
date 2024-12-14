@@ -1,0 +1,17 @@
+1)swap?
+2)if 3and 5 divisble by fizzbuzz and it divisible by 3 and it divisible by 5 buzz?? 
+4)capitalize??
+5)find the longest word in a string??
+6)reverse string with reverse method??
+7)without reverse method??
+8)curring??
+9)redirect to web page??
+10)count words??
+11)count vowvel??
+12)string contains substring-or-not??
+13)alternate text?? pranav => Pranav
+14)split array in 2 part??
+
+
+
+

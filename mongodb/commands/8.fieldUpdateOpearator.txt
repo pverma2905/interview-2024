@@ -1,0 +1,58 @@
+1)$currentDate
+
+// add date
+db.employees.updateOne({"empId":202},{$currentDate:{doj:{$type:'date'}}});
+
+// add timestamp
+
+db.employees.updateOne({"empId":203},{$currentDate:{doj:{$type:'timestamp'}}});
+
+2)$inc
+
+
+=>increment by 1000
+db.employees.updateOne({'empId':210},{$inc:{salary:1000}});
+
+$min:- 
+1)minimum value is update if database value  is less than curentvalue   
+2)if field does not exist so $min operator set the field 
+
+=>if input salry(25000) is less then current salary  
+db.employees.updateOne({"empId":208},{$min:{salary:25000}}); // salary:25000 
+
+$max:- 
+1)maximum value is update if database value  is greater than curentvalue   
+2)if field does not exist so $max operator set the field 
+
+=>if input salry(1,40,000) is greater then current salary 
+db.employees.updateOne({"empId":209},{$max:{salary:140000}}); // salary:140000
+
+$mul:-
+
+=> salary multiply by 2
+db.employees.updateOne({empId:207},{$mul:{salary:2}});
+
+$rename:-
+=>rename the field 
+db.employees.updateOne({"empId":210},{$rename:{name:"fname"}});
+
+$set:-
+it is used for create and update
+
+db.employees.updateOne({"empId":210},{$set:{email:"surajy1@gmail.com"}});
+
+
+$setOnInsert:-
+
+it is used for create not update
+
+db.employees.updateOne({empId:211},{$setOnInsert:{name:"shalaj", email:"shalaj@gmail.com"}},{upsert:true});
+
+db.employees.updateOne({empId:210},{$setOnInsert:{age:26}},{upsert:true});
+
+
+$unset:-
+delete a particular field from a document 
+
+=> remove salary1 field from empId:210
+db.employees.updateOne({empId:210},{$unset:{salary1:""}})

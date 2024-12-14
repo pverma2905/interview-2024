@@ -1,0 +1,26 @@
+9)marging classess??
+.mt-* – Margin top
+.mb-* – Margin bottom
+.ms-* – Margin start (left in LTR, right in RTL)
+.me-* – Margin end (right in LTR, left in RTL)
+.mx-* – Horizontal margin (left and right)
+.my-* – Vertical margin (top and bottom)
+
+.m-sm-auto
+
+mt-0 -0rem
+mt-1 -.25rem
+mt-2 -.50rem
+mt-3 - 1rem
+mt-4 - 1.5
+mt-5 - 3
+
+10)padding??
+.pt-* – Padding top
+.pb-* – Padding bottom
+.ps-* – Padding start (left in LTR, right in RTL)
+.pe-* – Padding end (right in LTR, left in RTL)
+.px-* – Horizontal padding (left and right)
+.py-* – Vertical padding (top and bottom)
+.p-sm-3
+

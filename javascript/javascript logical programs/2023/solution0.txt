@@ -1,0 +1,87 @@
+1)count each occurring character?
+2)infinite curring?
+3) find maximum element ?
+4)find minimum element?
+5)assending sort number?
+6)desending order number?
+7)sort character??
+8) reverse sort character??
+9)second highest?
+10)remove an element an array?
+11)reverse no?
+12)reverse string??
+13) array to string?
+
+
+
+11)array to string?
+12)array as string?
+13)string to array?
+12)find unique no?
+13)find duplicate no?
+14)capitalize in string?
+15)convert string to titlecase?
+16)sum of two no is zero?
+17) anagram ?
+18)palidrome no?
+19)armstrong range?
+20)armstrong no?
+
+
+21)fabinocci?
+22)fabinocci range?
+23)factorial?
+24)check prime?
+25)prime no range?
+26)generate random no?
+27)Recursion of fabinocii ?
+28)Recursion factorial?
+29) //Hello World!
+//dlroW olleH!
+30) duplicate  of array of object?
+31) sum of 10?
+arr= [0,1,2,3,4,5,6,7,8,9];
+32)recusion of sum?
+33)possible way of substring?
+34)second smallest number?
+35)output:-
+36)output:-
+37)sorting without  using sort function?
+
+
+
+
+
+
+1) count each no..
+2) remove specific no multple remove..
+3)single item remove?    ####Remove2
+4)Multiple remove With Filter?
+5)remove?
+6)unique using set method?
+let arr = [1,2,3,4,1,2];
+7)unique?
+let arr = [1,2,3,4,1,2];
+8)find Unique without using inbuilt function?
+arr=[1,2,3,4,5,2,3,4];
+9)find duplicate no without using inbuilt function?
+arr=[1,2,3,4,5,2,3,4];
+10)sort?
+11)design pattern?
+1)Singleton pattern:
+The singleton pattern ensures that there is only one instance of a class. This can be useful for classes that manage resources, such as a database connection.
+2)Prototype pattern:
+The prototype pattern allows you to create objects that inherit properties and methods from a prototype object. This is similar to class-based inheritance in object-oriented programming.
+3)Observer pattern:
+The observer pattern lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they're observing.
+4)Factory method pattern:
+The factory method pattern is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created.
+5)Abstract factory pattern:
+The abstract factory pattern is a creational pattern that provides an interface for creating families of related objects without specifying their concrete classes.
+
+
+
+1)swap??
+
+
+

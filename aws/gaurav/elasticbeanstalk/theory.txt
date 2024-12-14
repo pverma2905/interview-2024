@@ -1,0 +1,2 @@
+## Managed service for deploying and scaling web applications and services.
+## Simplifies application deployment by managing the underlying infrastructure, allowing developers to focus on code.

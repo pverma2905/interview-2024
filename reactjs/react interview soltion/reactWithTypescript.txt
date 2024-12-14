@@ -1,0 +1,13 @@
+1)what is typescript??
+=>typescript is a open source pure object oriented programing language
+=>it is strongly type superset of javascript which compilile to plain javascript
+=>typescript is developed and maintained by microsoft
+=>it is not directly run to the browser
+=>it need a compiler to compile and generate a javascript file
+=>typescript has a feature known as static typing but javascript does not support this feature
+
+2)Static Typing??
+Typescript provide static typing through type annotion to enable checking type at compile time
+
+3)create typescript react app command??
+npx create-react-app app1 --template typescript

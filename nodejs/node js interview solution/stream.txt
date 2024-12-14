@@ -1,0 +1,18 @@
+stream:-
+fs module first read the file and file size is big so it store in temprory memeory so memeory consumption is large . and it become challenge for 10000 of user server is going crash
+
+fs.readFile("./sample.txt",(err, data)=>{
+    res.json({data})
+})
+
+
+stream:- break a file into chunk and chunk send to the browser by using  this my memeory is not increase
+const stream = fs.createReadStream("./sample.txt","utf-8");
+stream.on("data", (chunk)=>res.write(chunk));
+stream.on("end",()=>res.send());
+
+type of stream:-
+1)writable=>stream to which data can be write ex- fs.createWriteStream()
+2)readable=>stream to which data can be write ex- fs.createReadStream()
+3)duplex=>stream are both readable and writable ex-net.Socket
+4)transform=>duplex stream can be modified or transform the data as it is write and read

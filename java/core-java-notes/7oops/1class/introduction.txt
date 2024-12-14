@@ -1,0 +1,39 @@
+=>oops->obect oriented programing structure/system --- c++/ java/ python/ C#
+
+=>c/cobol is follow procedure oriented programing language
+
+=>program is a set of instruction
+
+oop under 4 concept:-
+
+1)inheritence:-code reusibility
+2)polymorphism:-differnt behaviour acheive kar sakte hai with same function name
+3)abstraction:- code security
+4)encapsulation:- data security
+
+1)what is class??
+class is template or blueprint from which object are created
+ex- Animal
+dog is the object of animal 
+
+=>class is a logical entity, class does not represent real world entity
+
+=>class does not required memeory by using class keyword we can create class
+
+=>class is a referenced/non primitive data type 
+
+=>class having variable, methods, constructor and block
+
+
+
+2)what is object??
+object is a instance/element of class
+object is a real world entity/physical existence
+object required memory
+we can access the class functionality(variable,method, block,constructor) by using object 
+
+How to create object??
+ex:- ClassName refrenceVariable = new ClassName();
+
+// refrenceVariable = it will store the address of object/ we can access the property of object
+// new -> it is keyword which is reponsible to assign memory to an object

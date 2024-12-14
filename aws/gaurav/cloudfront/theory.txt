@@ -1,0 +1,2 @@
+## Content Delivery Network (CDN) that securely delivers data, videos, applications, and APIs globally.
+## Ensures low latency and high transfer speeds for static and dynamic content, making it essential for backend services requiring global reach.

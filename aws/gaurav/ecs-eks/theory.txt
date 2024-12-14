@@ -1,0 +1,2 @@
+## Container orchestration services to run Docker containers at scale.
+## ECS is AWS's managed container service, while EKS manages Kubernetes clusters. Both are crucial for managing and deploying containerized applications efficiently.

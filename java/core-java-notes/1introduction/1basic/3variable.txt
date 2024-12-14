@@ -1,0 +1,11 @@
+1)what is variable?
+variable is a container which is used to store the data on computer memory
+variable is a named memeory location
+variable name always start with character and we use _ and $ 
+variable declartion->
+int a;
+
+variable initialisation->
+a=10;
+=>variable name can not start with digit
+=>we can used any special character except _ , $

@@ -1,0 +1,23 @@
+1)The-difference-between-nth-child-and-nth-of-type?
+li:nth-of-type(2){
+    color:red;
+}
+
+same the type of sibling
+
+li:nth-child(2){
+    color:red;
+}
+
+it check the second position
+
+
+
+2)difference between “word-wrap: break-all” versus “word-wrap: break-word” in CSS
+
+
+3)How is <b> different from <strong> ?
+4)what transform:translate(-50%,-50%)?
+the transform property to vertically and horizontally center the div element:
+
+

@@ -1,0 +1,43 @@
+1)what is node js ?
+2)what is npm?
+3)what are the modules?
+4)availabe modules in node js?
+5)is node js is single threaded? if yes why?
+6)module.exports?
+7)events in node js? 
+8)global object in node  js??
+9)fs module?
+10)working in node js?
+
+11)where is node js used?
+12)why node js is single threaded?
+13)differnt api support for node js?
+14)differnce b/w synchronous and asynchronous function?
+15)why node js is so popular these days?
+16)event loop in node js?
+17)disadvantge of node js?
+18)what is primary reason to use event based  model in node js?
+19)what is event driven programming in node js?
+20)differnce b/w ajax and node js?
+
+
+
+
+51)Is it possible to access DOM in Node?
+52)How can you avoid callbacks?
+53)How node js work?
+54)first class function in JavaScript?
+55) What are buffers in Node.js?
+56)where u store audio and video?
+57)create http server?
+58)Why is assert used in Node.js ?
+59)write a function of routes for middleaware?
+60)jwt code?
+61)jwt method for encrypttion?
+62)bcrypt methods?
+63)which engine used in node js?
+64) mvvm architecture?
+65)which template engine used in node js?
+
+
+

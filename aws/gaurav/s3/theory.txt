@@ -1,0 +1,2 @@
+## it is a object storage service for storing and retriving any amount of data
+## storing for assets,backup, logs and large files with high duribility and sclibility 

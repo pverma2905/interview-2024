@@ -1,0 +1,4 @@
+single line=@
+multiline=@{}
+var
+enclosing string in quotation mark

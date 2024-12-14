@@ -1,0 +1,2 @@
+## Monitoring service for AWS resources and applications.
+## Essential for logging, monitoring performance metrics, and setting up alarms to respond to changes in resource utilization or application behavior.

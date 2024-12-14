@@ -1,0 +1,2 @@
+## Service for securely managing access to secrets like database credentials, API keys, and other sensitive data.
+## Automates secret rotation, enabling the secure management of credentials and keys within your applications.

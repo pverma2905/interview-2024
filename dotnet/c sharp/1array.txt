@@ -1,0 +1,7 @@
+array is a collection of same data type
+
+array is two type:-
+1)Single Dimensional Array
+2)Multi Dimensional Array
+(i) Rectangular Array =>it size is fix
+(ii) Jagged Array => it size is not fix

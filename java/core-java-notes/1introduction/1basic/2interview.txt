@@ -1,0 +1,49 @@
+############# what is feature in java??############################
+1)simple programing:-
+it is based on c & c++ , java doesn't have operator overloading, java doesn't have pointer
+
+2)java is object oriented programing
+it is a way to write a program
+having lot of advantages as compare to another programing
+a)inheritence - code reusability
+b)polymorphism - differnt task we acheive by using same function/methods
+c)Abstrction - code security acheive
+d)encapsulation - data security acheive
+
+3)platform independent:- bytecode run on any os
+
+
+################## what is jdk , jre, jvm ##########################
+these three main compinent in java
+1)jvm:-
+
+a)byte code load by using jvm class loader in merory
+b)in jvm bytecode verifier check the byte code
+c)in jvm memory areas
+1)static
+2)heap- instance
+3)methods
+d)in jvm execution engine and interpreter:-execute bytecode and convert machine code 
+e)in this jit and garbage collection
+
+2)jre:-
+it provide predefined classes, interfaces
+ex:- system class, string class
+it has a collection of jar files
+it has api
+
+
+3)jvm:-
+jvm is a part of jre
+->jvm is used to execute your code
+
+4)jdk:-inside jre and inside jre jvm
+compiler is a part of jdk
+
+interpreter is apart of jvm
+
+jdk is used to execute java program
+
+5)java project??
+it have multiple package
+each package have multiple classes

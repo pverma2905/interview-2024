@@ -1,0 +1,103 @@
+// database
+1)show databases
+2)create databases
+3)first we import a database?
+4)mongorestore
+5)remove database
+
+// collection
+1)create collection
+2)list of collections
+3)Rename collection
+4)Drop collection
+5)insert record
+
+// crud
+1)insert one
+2)create index
+3)Rename field and rename all field
+4)delete field
+5)insert Many
+6)find , findOne
+7)find document with only one field
+8)update One And update Many
+9)add new field if field is not exist
+10)upsert=> update+insert
+11)delete One, delete Many
+12)remove
+
+//operators
+
+// comparison operators
+1)equal
+2)not equal
+3)greaterThan
+4)greaterThanEqual
+5)lessThan
+6)lessThanEqual
+7)in
+8)not in
+
+// logical operators
+1)$and 
+2)$or
+3)$nor
+4)$not
+
+// elementaryQueryOperator:-
+1)$exists
+2)$type
+
+
+// evalutionQueryOpearator:-
+1)$expr:-
+2)$mod:-
+3)$regex:-
+4)$text:-
+5)$where:-
+
+// field update operator:-
+1)$currentDate
+2)$inc
+3)$min 
+4)$max
+5)$mul
+6)$rename
+7)$set
+8)$setOnInsert
+9)$unset
+
+
+// array update operator
+
+1)$
+2)$[]
+3)$identifier
+4)$addToSet
+5)$pop
+6)$pull
+7)$push
+8)$pushAll
+9)$each
+
+
+// array query operator
+1)$all
+2)$size
+3)$elemMatch
+
+
+// aggregation:-
+
+1)join in mongodb??
+2)how we use match?
+3)how we use group?
+4)how we use $project?
+5)how we use sorting in aggregation?
+6)how we use $lookup?
+7)what is $unwind?
+
+
+
+
+

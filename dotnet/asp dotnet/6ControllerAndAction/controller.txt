@@ -1,0 +1,15 @@
+user -> request -> controller -> model-> view  ->user
+
+######### if model not present ############
+
+user =>  request => routing => controller => action => view
+
+Controller are come in using Microsoft.AspNetCore.Mvc;
+
+IActionResult
+ActionResult
+ContentResult display text 
+JSONResult return json data
+PartialViewResult   
+ViewResult
+EmptyResult

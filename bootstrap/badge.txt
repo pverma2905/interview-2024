@@ -1,0 +1,6 @@
+1)badge??
+.badge bg-secondary
+
+.translate-middle  -make it center
+
+

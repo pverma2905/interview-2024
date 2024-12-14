@@ -1,0 +1,3 @@
+https://github.com/truongcaoxuan/mongodb-crud-aggregation/blob/main/challenges/challenge01.md
+
+https://github.com/mattdavis0351/mongodb-labs/blob/master/exercises/02_intermediate-mongo-queries.md

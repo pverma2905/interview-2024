@@ -1,0 +1,7 @@
+Webhooks are typically used to send notifications or updates about events that have occurred.
+it is called by application when event occur
+
+Payment Gateways: Notifying an e-commerce site when a payment is made.
+Project Management Tools: Updating task status in real-time.
+Social Media: Sending alerts when there are new mentions, comments, or messages
+Github:

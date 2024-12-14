@@ -1,0 +1,31 @@
+1)sharding vs replica?
+Sharding: A technique for distributing data across multiple servers to handle large datasets and improve performance by scaling horizontally.
+Replication: A technique for duplicating data across multiple servers to enhance availability and read performance, typically using a master-replica architecture.
+
+
+2)projection in mongodb??
+db.users.find({name:1, email:1, _id:0})
+
+3)$exist in mongodb??
+db.users.find(age:{$exists:true})
+
+4)joins/lookup in mongodb??
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",           // foreign collection name
+      localField: "customerId",    // field from the orders collection
+      foreignField: "_id",         // field from the customers collection
+      as: "customerDetails"        // the output array field
+    }
+  }
+]);
+
+5)first we import a database?
+mongodump -d pranav_tech -o ./
+
+6)mongorestore export
+mongorestore -d pranavtechnology ./pranav_tech
+
+7)and operator??
+db.employees.find({$and:[{city:"Mathura"},{age:22}]}).count();

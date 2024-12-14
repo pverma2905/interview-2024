@@ -1,0 +1,5 @@
+in program.cs before build 
+step1) builder.Services.AddSession();
+
+in program.cs after build
+app.UseSession();

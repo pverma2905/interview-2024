@@ -1,0 +1,22 @@
+variable is a container which is used to store data in computer memeory
+variable is pointing to the memory location
+
+ex:- int a=10;
+
+type of variable
+1)static:-
+2)instance variable
+3)local variable
+
+1)static:- 
+if the variable is created inside the class outside the method with static keyword
+access variable:-
+it is access by class name / object
+
+2)instance:- if the variable is created inside the class outside the method without static keyword
+access variable:-
+it is access by object
+
+3)local variable:- variable is created inside the method and method paramenter and inside the constructor and constructor paramenter
+access variable:-
+it is access by object

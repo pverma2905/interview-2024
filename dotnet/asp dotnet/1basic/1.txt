@@ -1,0 +1,14 @@
+it is platform depenedent and open source
+
+asp dotnet feature:-
+-cross platform
+-open source
+-run your app over linux, windows, mac
+-fast development
+-we can work visual studio and visual studio code also
+- it is based on mvc architecture
+-latest asp .net core
+
+
+
+

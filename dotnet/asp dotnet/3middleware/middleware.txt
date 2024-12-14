@@ -1,0 +1,8 @@
+middleware:- it is a component/class  which is executed on every request/response in asp .net application
+order of middleware is very important
+
+app.Run -> it has one parameter is context
+it work on  single middleware
+
+app.use -> it has two parameter is context,next
+it work on  multiple middleware

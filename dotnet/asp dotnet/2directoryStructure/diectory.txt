@@ -1,0 +1,5 @@
+=> in asp.net core directory structure launch setting.json used in local development
+=> by default setting is kestrol web server and iis express server
+=>app.setting.json:- it is configuration setting file
+ database connection string, global variable
+=> first file run is program.cs

@@ -1,0 +1,82 @@
+1)card??
+.card
+
+2)card top corner rounded??
+.card-img-top
+
+3)card bottom corner rounded??
+.card-img-bottom
+
+4)card content??
+.card-body
+.card-title 
+.card-text
+.btn.btn-primary
+
+5)card without image??
+.card
+.card-body
+.card-title
+.card-subtitle
+.card-link
+
+6)image with paragraph??
+.card
+.card-img-top
+.card-body
+.card-text
+
+7)card header with list??
+.card
+.card-header
+.list-group list-group-flush
+.list-group-item
+
+8)card list without header and footer??
+.card
+.list-group list-group-flush
+.list-group-item
+
+9)card list with footer??
+.card
+.list-group list-group-flush
+.list-group-item
+.card-footer
+
+10)card with blockquote??
+.card
+.card-header
+.card-body
+.blockquote
+.blockquote-footer
+
+11)card with image overlay??
+.card
+.card-img
+.card-img-overlay
+.card-title
+.card-text
+
+12)card group??
+.card-group
+.card-footer
+
+
+
+13)card-column??
+how many card show in column
+.row-cols-auto
+.row-cols-1
+.row-cols-sm-2
+.row-cols-sm-3
+
+14)card height class??
+h-100
+
+15) grid cards??
+row-cols-1  -for extra small
+row-cols-md-2 -for medium screen
+g-4 -gutter size 
+
+16)equal height card?
+.card h-100

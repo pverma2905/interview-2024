@@ -1,0 +1,52 @@
+
+
+1)what is bootstrap??
+Bootstrap is a popular front-end framework that comes with a variety of utility classes to help with layout and design.
+
+2)bootstrap is made by??
+twitter
+
+3)differnce b/w bootstrap4 and bootstrap5??
+bootstrap4:-
+=>remove jquery
+=>remove support IE
+
+
+
+bootstrap5:-
+=>support for javascript
+=>Enchance grid XXL  
+=>it own icon system
+
+4)conatiner classes??
+.conatiner
+.container-fluid
+
+5)Grid Columns and Rows?
+.row
+.col
+
+
+6)breakpoint??
+Extra Small (xs) – <576px (default for all devices)
+Small (sm) – ≥576px
+Medium (md) – ≥768px
+Large (lg) – ≥992px
+Extra Large (xl) – ≥1200px
+Extra Extra Large (xxl) – ≥1400px
+
+7)offset??
+.offset-md-3
+
+8)order??
+.order-sm-first
+.order-sm-last
+.order-0
+.order-1
+.order-2
+.order-3
+order-first
+order-last
+col-sm-4 order-first
+col-sm-4 order-1
+

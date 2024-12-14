@@ -1,0 +1,28 @@
+.first{
+  border: 5px solid red;
+  /* padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px; */
+
+  /* short hand all have same 25px value */
+  /* padding: 25px; */
+
+  /* top right bottom left */
+  /* padding: 20px 30px 40px 50px; */
+
+  /* when left and right same value And top and bottom have same value */
+  /* top-bottom left-right */
+  padding: 50px 80px;
+
+  /* distance b/w two border */
+   /* when left and right same value And top and bottom have same value */
+  /* top-bottom left-right */
+  margin: 50px 80px;
+}
+
+.second{
+    border: 5px solid blue;
+    padding: 50px 80px;
+    margin: 50px 80px;
+}

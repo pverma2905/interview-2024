@@ -1,0 +1,15 @@
+1)$all:-it fetch data from array check all array field are exist or not
+
+db.employees.find({lang:{$all:['Hindi','English']}});// if both are exist
+db.employees.find({deptwork:{$all:[8,7]}});
+
+
+2)$size:-fetch document with exact size
+db.employees.find({deptwork:{$size:2}});
+db.employees.find({lang:{$size:4}});
+
+
+3)$elemMatch:-
+
+any one
+db.employees.find({deptwork:{$elemMatch:{$lt:3}}});

@@ -1,0 +1,3 @@
+it is fully managed dns 
+it convert url to ip address
+ex- www.example.com send to cache and check it ip address and if not found  goes to internet service resolver and check it ip  address if not . 

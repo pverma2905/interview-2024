@@ -1,0 +1,110 @@
+1)what is semantic element??
+A semantic element clearly describes its meaning to both the browser and the developer.
+They improve accessibility, SEO, and code readability.
+
+<article>
+<nav>
+<section>
+<header>
+<footer>
+<figcaption>
+<figure>
+<aside> like side bar
+<details>
+<main>
+<summary>
+<time>
+
+2)differnce b/w div and span??
+div is a block level element
+span is a inline element
+
+3)code for audio and video??
+
+<audio controls>
+   <source src="audiofile.mp3" type="audio/mpeg">
+   Your browser does not support the audio element.
+</audio>
+
+<video controls>
+<source src="video.mp4" type="video/mp4">
+</video> 
+
+4)What is the difference between localStorage, sessionStorage, and cookies?
+localStorage: Data persists even after closing the browser.
+sessionStorage: Data is stored for the duration of the page session.
+Cookies: Data stored as key-value pairs, sent with every HTTP request, with optional expiration dates.
+
+5)What is the viewport meta tag used for?
+ The viewport meta tag controls the layout on mobile browsers. It ensures your website looks good on all devices.
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+6)What are meta tags and why are they used?
+Metadata is information that describes the data or content of the webpage
+meta tags are used to provide metadata about the HTML document, such as the character set, author, or description. They are placed in the <head> section.
+=>Character Encoding:
+Specifies the character set used in the document. For example, UTF-8 is commonly used.
+<meta charset="UTF-8">
+=>Viewport Settings (Responsive Design):
+Controls the layout on mobile devices to ensure proper scaling and responsiveness.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+=>Page Description:
+Describes the content of the page. Search engines use this in search results.
+<meta name="description" content="This is a description of the page content.">
+=>Keywords (SEO):
+Provides keywords related to the page content, though it is less used by search engines today.
+=>Content-Type:
+Defines the MIME type of the document. For example, ensuring the page is displayed as HTML
+=>Author Information:
+Specifies the author of the document.
+
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Learn HTML, CSS, and JavaScript with tutorials and examples.">
+   <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">
+   <meta name="author" content="John Doe">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+7)new feature of html5??
+New semantic elements like <article>, <section>, <header>, and <footer>.
+New form controls such as <input type="email">, <input type="date">, <input type="range">, etc.
+Multimedia support with <audio> and <video> tags.
+Local storage (localStorage and sessionStorage).
+Canvas and SVG support for drawing graphics.
+Geolocation API, Web Workers, WebSockets.
+
+8)What is the canvas element in HTML5?
+The <canvas> element is used to draw graphics, such as lines, shapes, and images, on a web page via JavaScript. It provides a resolution-dependent, bitmap canvas for creating interactive or animated graphics.
+
+9)What is the difference between SVG and Canvas in HTML5?
+Canvas: A resolution-dependent, pixel-based drawing surface. It is good for complex, high-performance graphics like games but doesn’t support DOM manipulation.
+=>it is resolution dependent
+=>doesn’t support DOM manipulation 
+
+SVG (Scalable Vector Graphics): A vector-based graphics format that is resolution-independent and allows for DOM interaction and CSS styling. It’s better for applications requiring scalability and interactivity.
+=>it is resolution independent
+=>support DOM manipulation 
+
+10) Explain the new API features introduced in HTML5.
+Geolocation API: Retrieves the geographical location of the user.
+Drag-and-Drop API: Enables elements to be draggable on the web page.
+WebSockets: Provides full-duplex communication channels over a single TCP connection, enabling real-time data exchange.
+History API: Allows manipulation of the browser session history.
+
+11)What is the difference between defer and async attributes in script tags in HTML5?
+defer: Ensures the script will be executed only after the entire HTML document is parsed, and it maintains the order of scripts.
+async: Scripts are downloaded in parallel and executed as soon as they are available, without waiting for the HTML to finish parsing.
+
+12)what is web worker??
+A web worker is a JavaScript running in the background, without affecting the performance of the page.
+used:=
+Complex mathematical calculations or algorithms (e.g., cryptography, machine learning).
+Handling large data sets or files (e.g., parsing large JSON files, processing images).
+Real-time data analysis, such as gaming or financial applications.
+Background synchronization or continuous polling of data from a server. 

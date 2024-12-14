@@ -1,0 +1,2 @@
+## Fully managed message queuing service that enables decoupling of microservices, distributed systems, and serverless applications.
+## Helps in handling asynchronous workflows and ensures that tasks are processed in the right order, enhancing system reliability and fault tolerance.

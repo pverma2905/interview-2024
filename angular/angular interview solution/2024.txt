@@ -1,0 +1,171 @@
+1)differnce b/w angualr 15 and angular 16?
+angualr 15:-
+1)it is deprecated view engine 
+2)angular 15 depened on rxjs observable
+3)it improvements to SSR but did not have full hydration capabilities.
+4)it reactive routing with router signals and better route-based code splitting, improving performance and developer experience over Angular 15.
+5)it DI improvements reduce memory usage and increase performance, a step forward from Angular 15's DI capabilities.
+
+
+angualr 16:-
+1)it completely removed view engine and used ivy engine
+2)it introduced a signal
+3)it support full hydration for ssr
+
+
+
+2)directive??
+By using the dom we can manipulate the dom layout
+In Angular there is a 3 type of directive
+a)component
+b)attribute-(ngStyle,ngClass)(Change the appearance and behavior of an element)
+c)structural (*ngIF, *ngFor,*ngSwitch)(change the dom layout by adding and removing the dom element )
+
+
+3)component communication without parent child relationship??
+=>service based communication
+=>state management 
+=>router
+=>local staorage
+=>behaviour subject
+
+4)component communication with parent and child??
+@input
+@output
+@viewchild
+
+4)what is route groud? and types?
+it control access to certain routes within your application based on specific conditions. Route guards are interfaces that can be implemented to decide whether a route should be allowed or prevented. They are commonly used for authentication, authorization, and other conditional access logic, such as checking whether a form is filled out or if data is saved before leaving a page.
+
+types:-
+1)CanActivate:-  Controls whether a route can be activated or not.
+2)CanActivateChild:-  Controls whether the child routes of a route can be activated.
+3)CanDeactivate:-  Controls whether a user can leave a route.
+4)CanLoad:- Controls whether a module can be loaded or not.
+5)Resolve:- Pre-fetches data before a route is activated.
+
+5)what is resolve gourd?
+Purpose: Pre-fetches data before a route is activated.
+Use Case: Used when you want to ensure that data needed for a route is fetched and available before the route is activated. For example, fetching user data or configurations from a server before navigating to a dashboard.
+Implementation: This guard implements the Resolve interface and provides data to the route before it is activated.
+
+6)types of custom pipe?
+it is two type of pipe
+1)Pure Pipe: 
+2)Impure Pipe: 
+
+7)what is pure pipe and impure pipe?
+=>Pure Pipe: Called only when input values change.
+by default pure pipe is true
+=>Impure Pipe: Called on every change detection cycle.
+by default pure pipe is false
+
+
+8)lifecycle in angular??
+#constructor
+#ngOnChanges
+#ngDoCheck
+#ngAfterContentInit
+#ngAfterContentChecked
+#ngAfterViewInit
+#ngAfterViewChecked
+#ngOnDestroy
+
+9)what is ngDocheck??
+
+10)view encapsulation?
+it restrict the scope of style
+three type of view encapsulation:-
+#)emulated-> it is default
+this allow style scoped to th component, but still allow inherited to the parent component
+
+#)native-> implement the shadowdom provide true encapsultion. 
+component style are completely isolated from rest of the application and can not affect by an external style
+
+#)none->disable the view encapsulation and allow component style afftect the other part of application 
+
+11)lazy loading?
+It load javascript component asynchronously
+It improve the speed of application loading time by splitting the application in several bundle
+
+12)promises and observable?
+Handling asynchronous operation handle in angular using promises and Observable 
+
+Promise:
+It is eager
+Promise emit single value
+Not apply any operator
+Not cancel the promise
+
+Observable:-
+Observable is lazy
+Observable emit multiple value
+Many operator  we apply on observable
+But we cancel the Observable
+
+13)differnce type of rxjs operators??
+
+=>Creation Operators:-
+of: Converts arguments to an observable sequence.
+from: Converts various other objects and data types into observables, like arrays or promises.
+fromEvent: Creates an observable that emits events of a specific type from a target, like DOM elements.
+interval: Creates an observable that emits sequential numbers at specified intervals of time.
+timer: Creates an observable that starts emitting values after a specified delay.
+range: Emits a range of sequential numbers.
+empty, never, throwError: Creates observables with special behaviors (no emissions, no completion, or immediate error).
+
+=>Transformation Operators:-
+map: Projects each value from the source observable to a new value using a provided function.
+mapTo: Maps each value to the same output value.
+pluck: Extracts a property from each emitted object.
+scan: Accumulates values from the source observable using an accumulator function.
+mergeMap/flatMap: Projects each value to an observable which is merged in the output observable.
+switchMap: Maps each value to an observable and flattens all inner observables, cancelling previous inner observables.
+concatMap: Projects each value to an observable which is concatenated in the output observable.
+
+=>Filtering Operators:-
+filter: Emits only those items from the source observable that satisfy a specified condition.
+first: Emits only the first value from the source observable that meets the condition.
+last: Emits only the last value from the source observable that meets the condition.
+take: Emits only the first N values.
+takeWhile: Emits values while a specified condition is true.
+skip: Skips the first N values.
+debounceTime: Emits a value from the source observable only after a particular time span has passed without another source emission.
+distinctUntilChanged: Only emits when the current value is different from the last value.
+
+=>Combination Operators:-
+merge: Merges multiple observables into one observable by emitting all values from all inputs.
+concat: Concatenates multiple observables together by sequentially emitting their values one after another.
+combineLatest: Combines the latest values from multiple observables whenever any of them emit.
+zip: Combines the values from multiple observables into pairs.
+forkJoin: Joins multiple observables to execute them in parallel and emits the last value of each observable.
+withLatestFrom: Combines the source observable with another observable and emits values from the source only when the source emits.
+
+=>Multicasting Operators:-
+share: Returns a new observable that multicasts (shares) the original observable. All subscribers share a single subscription.
+publish: Converts an observable into a connectable observable that doesn't start emitting until connect() is called.
+multicast: Allows you to share the subscription with multiple subscribers using a subject or another observable.
+
+=>Error Handling Operators:-
+catchError: Catches errors on the observable to be handled and returns a new observable or throws an error.
+retry: Repeats the observable sequence a specified number of times in case of an error.
+retryWhen: Repeats the observable sequence on error, based on the logic in the provided notifier function.
+
+=>Utility Operators:-
+tap: Performs side effects, such as logging or debugging, without affecting the observable's behavior.
+delay: Delays the emission of items from the source observable by a given timeout or until a given date.
+timeout: Errors if the source observable does not emit within a specified period.
+delayWhen: Delays the emission of items from the source observable based on a second observable.
+
+=>Conditional and Boolean Operators-
+defaultIfEmpty: Emits a default value if the source observable completes without emitting any values.
+every: Emits true if all values in the source observable meet a specified condition.
+find: Emits the first value from the source observable that meets a specified condition.
+findIndex: Emits the index of the first value that
+
+=>Mathematical and Aggregate Operators:-
+count: Counts the number of emissions from the source observable that meet a condition.
+reduce: Applies an accumulator function over the source observable and returns the accumulated result when the source completes.
+max: Computes the maximum value emitted by the source observable.
+min: Computes the minimum value emitted by the source observable.
+

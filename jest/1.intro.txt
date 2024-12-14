@@ -1,0 +1,4 @@
+=>jest is a javascript testing framework designed to ensure correctness of any javascript code base.
+=>jest is frmework that let you test both frontend and backend application.
+=>it allow you to write test with an approachable, familiar and feature rich api that give you result quickly
+=>jest is well documented, require a little configuration that can be extended to match yourr requirement

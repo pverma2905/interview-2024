@@ -1,0 +1,8 @@
+=>node js
+hi i am pranav verma
+i have around 6 years of experience
+i have a experience on node js 3 years on aws, redis, mongodb, websocket
+aws service -ec2, elastic banstalk, s3, serverless/lambda
+
+
+

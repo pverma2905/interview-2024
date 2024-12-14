@@ -1,0 +1,19 @@
+1)tooltip top??
+data-bs-toggle="tooltip"
+data-bs-placement="top"
+title="Tooltip on top"
+
+2)tooltip right??
+data-bs-toggle="tooltip"
+data-bs-placement="right"
+title="Tooltip on right"
+
+3)tooltip bottom??
+data-bs-toggle="tooltip"
+data-bs-placement="bottom"
+title="Tooltip on bottom"
+
+4)tooltip left??
+data-bs-toggle="tooltip"
+data-bs-placement="left"
+title="Tooltip on left"

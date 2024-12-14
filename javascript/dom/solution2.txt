@@ -1,0 +1,44 @@
+1)getRootNode??
+// const rootNode = document.getRootNode();
+
+2)childNodes??
+// const htmlElementNode = rootNode.childNodes[0];
+// // console.log(htmlElementNode.childNodes); NodeList(3) [head, text, body]
+// const headElementNode = htmlElementNode.childNodes[0];
+// const textNode1 = htmlElementNode.childNodes[1];
+// const bodyElementNode = htmlElementNode.childNodes[2];
+// console.log(headElementNode.childNodes);
+
+4)parentNode??
+console.log(headElementNode.parentNode)
+
+4) child to double parent and color change ?? 
+// const h1 = document.querySelector("h1");
+// const body = h1.parentNode.parentNode;
+// body.style.color = "#efefef";
+// body.style.backgroundColor = "#333"
+
+5)body color change??
+// const body = document.body
+// body.style.color = "#efefef";
+// body.style.backgroundColor = "#333"
+
+
+// const head = document.querySelector("head");
+// // console.log(head);
+// const title = head.querySelector("title");
+// console.log(title.childNodes);
+
+1).nextSibling
+2).nextElementSibling:-returns the next sibling of an element or null if the element is the last one in the list.
+3).previousSibling
+4).previousElementSibling
+5).childNodes
+6).children:-
+7).parentNode
+8).firstChild:- 
+9).lastChild:- 
+10).firstElementChild 
+11).lastElementChild 
+12).createElement()
+13).appendChild()

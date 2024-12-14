@@ -1,0 +1,2 @@
+## Fully managed messaging service for sending notifications to individuals or systems
+## Useful for creating highly scalable messaging architectures and implementing pub/sub messaging patterns for microservices.

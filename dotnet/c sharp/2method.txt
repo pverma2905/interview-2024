@@ -1,0 +1,2 @@
+1)not static method is call with class object 
+2)static method is call with class

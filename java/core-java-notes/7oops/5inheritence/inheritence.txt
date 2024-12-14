@@ -1,0 +1,11 @@
+1)what is inheritence?
+child class acquire the properties and methods of parent class 
+
+type of inheritence
+1)single =>java support by using class
+2)multilevel =>java support by using class
+3)hierarchical inheritence =>java support by using class
+4)multiple =>not support but it acheieve by using interface
+5)hybrid  =>not support but it acheieve by using interface
+
+1)single inheritence:-the inheritence which have one parent and one child class and we use extends keyword to access the properties and methods

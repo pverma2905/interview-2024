@@ -1,0 +1,10 @@
+1)spinner??
+.spinner-border
+.visually-hidden
+
+.spinner-border text-primary
+.visually-hidden
+
+
+.spinner-grow text-primary
+.visually-hidden

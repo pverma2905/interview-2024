@@ -1,0 +1,96 @@
+21)position??
+postion-relative
+postion-absolute
+postion-static (default)
+postion-fixed
+postion-sticy, top-0   ----------- scrolling
+
+top -0 , 50, 100
+start -0 , 50, 100
+end -0 , 50, 100
+bottom -0 , 50, 100
+
+.fixed-top
+.fixed-bottom
+.sticky-top
+
+
+22)overflow??
+.overflow-auto
+.overflow-hidden
+.overflow-visible
+.overflow-scroll
+
+
+
+23)background color??
+.bg-primary
+.bg-secondary
+.bg-success
+.bg-danger
+.bg-warning
+.bg-info
+.bg-light
+.bg-dark
+.bg-body
+.bg-white
+.bg-transparent
+
+24)background-gradient??
+.bg-primary.bg-gradient
+.bg-secondary.bg-gradient
+.bg-success.bg-gradient
+.bg-danger.bg-gradient
+.bg-warning.bg-gradient
+.bg-info.bg-gradient
+.bg-light.bg-gradient
+.bg-dark.bg-gradient
+
+25)background opacity classes??
+.bg-opacity-75
+.bg-opacity-50
+.bg-opacity-25
+.bg-opacity-10
+
+
+
+26)text color??
+.text-primary
+.text-secondary
+.text-success
+.text-danger
+.text-warning
+.text-info
+.text-light
+.text-dark
+.text-body
+.text-muted
+.text-white
+.text-black-50
+.text-white-50
+
+27)text opacity??
+.text-opacity-75
+.text-opacity-50
+.text-opacity-25
+
+28)text-alignment classes??
+.text-start
+.text-center
+.text-end
+
+.text-sm-start
+
+29)text-transform??
+.text-lowercase
+.text-uppercase
+.text-capitalize
+
+30)text wrapping??
+.text-wrap
+.text-nowrap
+.text-break
+
+
+
+
