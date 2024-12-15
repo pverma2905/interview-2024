@@ -1,0 +1,7 @@
+1)Hooks -useState/ useEffect - Introduction
+2)What are React Hooks? What are the Top React Hooks?
+3)What are State, Stateless, Stateful and State Management terms?
+4)What is the role of useState() hook and how it works?
+5)What is the role of useEffect(). How it works and what is its use?
+6)What is Dependency Array in useEffect() hook?
+7)What is the meaning of the empty array [] in the useEffect()?

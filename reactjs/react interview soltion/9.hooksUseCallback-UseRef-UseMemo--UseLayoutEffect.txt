@@ -1,0 +1,7 @@
+1)Hooks - useCallback/ useMemo/ useRef/ useLayoutEffect - Introduction
+2)What is the role of useCallback() hook in React?
+3)What parameters does the useCallback hook accept & what does it returns?
+4)What is the role of useMemo() Hook?
+5)What is the role of useRef() Hook?
+6)What useLayoutEffect() Hook? Compare it with useEffect() hook.
+7)When to use useLayoutEffect() Hook?

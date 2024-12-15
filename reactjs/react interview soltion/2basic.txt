@@ -1,0 +1,99 @@
+1)what is the arrow function in jsx??
+it is a concise way of defining the function
+
+
+
+2)What are the Main Files in a React project?
+index.html:-spa file
+app.js:- main component
+app.test.js:it is used to writing unit test case
+index.css:- it is a global css file
+index.js:- it is a entry point file
+it render the mainreact component in to the root dom element
+
+3)How React App Load and display the components in browser?
+index.html
+index.js
+app.js
+childcomponent.js
+
+4)What is the difference between React and Angular?
+React:-
+=>it is a javascript Library
+=>it usea virtual dom which make its faster
+=>React is smaller bundle size and light weight and therfore faster sometime
+=>React depend on external libraries formany complex feature so developer has to writemany line of code for complex functionality 
+=>React is simple to learn and more popular than angular
+
+Angular:-
+=>it is Framework
+=>it is use a real dom
+=>angular is bigger bundle size and it is complete framework 
+=>it is a complete framework there it is provide a built in support for feature like routing,
+forms,validation and http request
+=>Angualr is slightly difficult to learn
+
+5)What are other 5 JS frameworks other than React?
+Angular
+Backbone
+Ember
+Vuejs
+Angularjs
+
+6)Differnce b/w Framework or Library??
+Framework:-
+Angular is framework
+it has predefined structure,function or pattern defined by the framework
+Library:-
+React is Library
+there is no predefined structure or function
+
+7)How React provides Reusability and Composition?
+Reusibility:-
+create a component and reuse it in differnt part of application
+
+Composition:-
+composition is creating new and big component by combining existing small components
+
+8)What are State, Stateless, Stateful and State Management terms?
+state:-it refer to the current data of the component
+stateful or sttemenagement:-when user perform some action on ui then the react application should be able to update and rerender that data or state on the ui
+
+9)differnce b/w stateless component and statefull component??
+
+
+statefull:-
+=>Class components
+=>Re-renders when state or props change
+=>Have access to lifecycle methods like componentDidMount() and componentWillUnmount()
+=>More complex, ES6 class syntax
+=>it performance slightly slow
+=>Harder due to ‘this’ keyword and complex syntax
+
+stateless:-
+=>Function components
+=>Re-renders when props change
+=>Don’t have access to lifecycle methods
+=>Simple, just a JavaScript function
+=>it performance slightly fast
+=>Easier due to simplicity of functions
+
+
+10)What are Props n JSX?
+propsa a way pass data from parent component to child component  
+
+11)differnce b/w props and state??
+props:-
+Props are read-only.
+Props are immutable.
+Props allow you to pass data from one component to other components as an argument.
+Props can be accessed by the child component.
+
+state:-
+State changes can be asynchronous.
+State is mutable.
+State holds information about the components.
+State cannot be accessed by child components.
+
+
+

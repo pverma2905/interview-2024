@@ -1,0 +1,38 @@
+1)What is NPM? What is the role of node_modules folder?
+it is noe package manager
+it manage the react dependencies 
+it load the node_modules folder
+
+node_modules folder contains all the dependencies of the  project ,including react libraries
+
+
+2)What is the role of public folder in React?
+it contains static assets such as 
+images,
+fonts,
+index.html 
+
+3)What is the role of src folder in React?
+src folder is store all the source code of the application whic is resposible for dynamic changes n your web application
+
+
+4)What is the role of index.html page in React?
+it isthe main html file in react application
+
+div with id="root" will be replcaced by the component inside indes.js file 
+
+5)What is the role of index.js file and ReactDOM in React?
+ReactDOM is a javascript Library that render component to the dom or browser 
+this index.js file is the javascript file that replace the roor element of the index.html file with the newly rendered components  
+
+6)What is the role of App.js file in React?
+it contain the root component of react application
+App component is a container for other component
+it defines the structure,layout,routing in the application
+
+
+
+7)What is the role of export default inside App.js?
+export statement is used to make a component available for import  using import  
+
+

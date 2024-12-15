@@ -1,0 +1,48 @@
+1)what is JSX?
+
+2)What is the role of JSX in React? (3 points)
+javascript stands javascript xml
+jsx is used by React to write HTML like code
+jsx is converted to javascript tools like babel
+because Browser usnderstand javascript not jsx 
+
+3)What are the 5 Advantages of JSX?
+advantage:-
+1)improve the code readibility and writability
+2)Error checking in advance(Type safety)
+3)Support javascript expression
+4)improved performance
+5)code resusbility 
+
+
+4)What is Babel?
+babel in react is used to transpile jsx syntax in to regular javascript which browser can understand
+
+
+5)What is the role of Fragment in JSX?
+it is wrapper of multiple child element
+it prevent addition of uneccary nodes to the dom
+
+
+6)What is Spread Operator in JSX?
+it is used to Spread an array orobject
+
+7)What are the types of Conditional Rendering in JSX?
+=>if/else
+=>switch
+=>ternary Operator
+=>&& operator
+
+8)How do you iterate over a list in JSX? What is map() method?
+map method allow to iterate over an array and modify its element using a callback function
+
+9)Can a browser read a JSX File?
+no
+babel take jsx code transpile and convert into javascript code 
+
+10)What is Transpiler? What is the difference between Compiler & Transpiler?
+transpile:-it take the source code and convert into another high level language
+compiler:- it convert high level language to low level language 
+
+11)Is it possible to use JSX without React?
+yes,

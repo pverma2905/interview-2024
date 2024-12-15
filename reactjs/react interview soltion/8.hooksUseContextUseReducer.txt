@@ -1,0 +1,9 @@
+1)Hooks - useContext/ useReducer - Introduction
+2)What is the role of useContext() hook?
+3)What is createContext() method? What are Provider & Consumer properties?
+4)When to use useContext() hook instead of props in real applications?
+5)What are the similarities between useState() and useReducer() hook?
+6)What is useReducer() hook? When to use useState() and when useReducer()?
+7)What are the differences between useState() and useReducer() Hook?
+8)What are dispatch & reducer function in useReducer Hook?
+9)What is the purpose of passing initial state as an object in UseReducer?

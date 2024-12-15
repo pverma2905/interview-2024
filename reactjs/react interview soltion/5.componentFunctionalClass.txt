@@ -1,0 +1,62 @@
+1)What are React Components? 
+it is a reusable bulding block for creating ui
+
+2)What are the Types of React components? What are Functional Components?
+functional components
+class  components
+
+functional components:- 
+it declared as javascript function/arrow function
+the help of hooks. it can manage the state also 
+
+
+
+3)How do you pass data between functional components in React?
+props are way to pass data from a parent component to child component
+
+4)What is Prop Drilling in React?
+pass data from parent component to child component through props
+
+5)Why to Avoid Prop Drilling? In how many ways can avoid Prop Drilling?
+it increase the code complexity and reduce the code readibility
+data pass through multiple component
+debugging become challenging 
+
+type:-
+=>context api
+=>redux
+=>usng component composition
+=>using callback function
+=>using custom hook
+
+
+6)What are Class Components In React?
+class component are defined using javascript classess
+they are stateful component by using lifecycle methods
+render method in a class component is responsible for  returing jsx
+
+
+7)How to pass data between class components in React?
+props can be  used in child component to access properties/data passed from parent componnet
+
+
+8)What is the role of this keyword in class components?
+it is used to refer the instance of the class  
+
+9)What are the 5 differences btw Functional components and Class components?
+function component:-
+=>defined as a function
+=>state-originally stateless but can now maintain state  usng hooks
+=>lefecycle-no lifecycle
+=>Readibility =-more readable and concise
+=>this keyword -no
+=>do not have render method
+
+
+class component:-
+defined as js(es6) class
+state-can manage local state with this.state
+=>lifecycle-yes
+=>readibility-verbose(complex)
+=>this keyword-yes
+=>have render method
