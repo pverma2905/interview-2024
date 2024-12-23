@@ -1,7 +1,0 @@
-1)Routing - Introduction
-2)What is Routing and Router in React?
-3)How to Implement Routing in React?
-4)What are the roles of <Routes> & <Route> component in React Routing?
-5)What are Route Parameters in React Routing?
-6)What is the role of Switch Component in React Routing?
-7)What is the role of exact prop in React Routing?

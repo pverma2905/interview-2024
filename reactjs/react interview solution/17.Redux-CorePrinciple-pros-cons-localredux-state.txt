@@ -1,0 +1,73 @@
+1)Explain the Core Principles of Redux?
+1. Single Source of Truth (Store):-
+The entire application state is stored in one place, simplifying data management
+and ensuring a consistent view of the application.
+
+2. State is Read-Only (Unidirectional):-
+State cannot be directly modified. To make changes to the state, you need to
+dispatch an action. This ensures that the state transitions are explicit and traceable.
+
+3. Changes using Pure Functions (Reducers):-
+This ensures predictability and consistency because pure functions returns the
+same result if the same arguments are passed.
+
+4. Actions Trigger State Changes (Actions):-
+Plain JavaScript objects (actions) describe state changes, guiding the store to invoke
+reducers and update the application state accordingly.
+
+5. Predictable State Changes (Actions):-
+State changes are determined by actions, fostering a predictable flow of data and
+simplifying debugging in response to specific actions.
+
+❖ Flow of Data in React-Redux application
+component => action =>store =>reducer=> store => components
+
+
+2)List 5 benefits of using Redux in React?
+1. Predictability & Centralization:-The application state is stored in a single, predictable and centralize source (the store).
+2. Maintainability:-For larger application, Redux is a structured and scalable approach for managing state.
+3. Debuggability:-Redux has powerful developer tools that make it easier to trace and debug state changes.
+4. Interoperability:-Redux can be used with various JavaScript frameworks and libraries.
+5. Community & Ecosystem:-Redux has a large and active community, resulting in a rich ecosystem of tools and extensions.
+
+3)What are the differences between local component state & Redux state?
+Local Component State:-
+    1. Scope: Limited to the component where defined.
+    2. Management: Managed internally by the component.
+    3. Performance: Generally, more performant for smallscale applications.
+    4. Complexity: Simpler to set up and manage.
+    5. Testing: Simpler to test with component-specific state.
+
+Redux State:-
+    1. Global and accessible across components.
+    2.Managed externally by the Redux store.
+    3.More performant for large applications
+    4.Comparatively complex to manage.
+    5.Requires more comprehensive testing due to global nature and interactions between components.
+
+
+4)What are the challenges or disadvantages while using Redux?
+1. Boilerplate Code:-
+Implementing Redux requires writing extensive boilerplate code in action, reducer,
+store, increasing code volume and complexity.
+
+2. Learning Curve:-
+Understanding Redux concepts can be challenging, posing a learning curve for
+developers, especially those new to React state management.
+
+3. Verbosity and Complexity:-
+As projects grow, Redux code may become verbose and complex, demanding careful
+management of actions and reducers.
+
+4. Overhead for Small Projects:-
+In small projects, Redux may introduce unnecessary complexity, potentially
+outweighing its benefits in development efficiency.
+
+5. Global State for Local Components:-
+Overusing Redux for local state introduces unnecessary complexity, as not all state
+requires a global scope.
+
+5. Global State for Local Components:-
+Integrating Redux with non-React libraries or frameworks may demand additional
+effort and customization, potentially adding complexity to the project.
+

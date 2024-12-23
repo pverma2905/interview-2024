@@ -1,0 +1,42 @@
+1)What are Controlled Components in React?
+A controlled componentis a component whose form element (like input field or  checkbox) are controlled by the state of the application 
+
+2)What are the Differences btw Controlled & Uncontrolled Components?
+Controlled component:-
+value are controlled by react.state 
+event handler update react state
+Don't depend on useRef()
+Redender on state changes
+A recommended and standard paractice for form handling in react 
+
+uncontrolled component:-
+value are not controlled by react.state
+no explicit state update; value  can be accessed directly from the dom
+commonly uses useRef() to access from element values
+less rerendering since values are not directly tied to react state
+useful in certain scenarios but less commonly considered a best practice  
+
+3)What are characteristics of controlled components?
+=>state control:- value of the form element is stored in the component state
+=>event handling:- change of the form element trigger an event (eg:- on change for input field) 
+=>state Update:-event handler update the component state with the new value of the form element 
+=>Re-rendering:-the component rerender ith the update state and the form elementreflect the new value   
+
+4)What are the advantages of using controlled components in React forms?
+=>in react component form element have their values managed by react state ensuring a single source of truth
+
+=>this approach faciltates predicatable and synchronized updates make it easier to implement the feature such as form validation and dynamic redering and seamless integration react with react lifecycle methods
+
+=>controlled components offer better control and maintainability compared to uncontrolled component make the best practice  handling form in react
+
+5)How to handle forms in React?
+the preffered and recommended apprach for handling formin react by using controlled components 
+
+6)How can you handle multiple input fields in a controlled form?
+Maintain seprate state variablefor each input field and update them individually using the onchange event
+
+7)How do you handle form validation in a controlled component?
+By using conditional rendering based on the state and validate input value before updating state
+
+8)In what scenarios might using uncontrolled components be advantageous?
+Uncontrolled components can be benifial when integrating with non react libraries  or dealing  with forms ehen controlled components are not possible

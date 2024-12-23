@@ -1,0 +1,125 @@
+1)What is the role of useCallback() hook in React?
+❖ The useCallback hook is used to memorize
+functions in functional components.
+❖ When passing function as a prop from parent
+component to child component, then passing
+memorized function avoid unnecessary recreation of the function on each render.
+
+import React from "react";
+
+const UseCallbackChild = ({ onIncrement }) => {
+  return (
+    <div>
+      <button onClick={onIncrement}>
+        Increment</button>
+    </div>
+  );
+};
+
+export default UseCallbackChild;
+
+
+
+import React, { useState, useCallback } from "react";
+import UseCallbackChild from "./1-UseCallbackChild";
+
+const UseCallbackParent = () => {
+  const [count, setCount] = useState(0);
+
+  // Without useCallback
+  // const handleIncrement = () => {
+  //   setCount(count + 1);
+  // };
+
+  // With useCallback
+  const handleIncrement = useCallback(() => {
+    setCount(count + 1);
+  }, [count]);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      {/* Pass the memoized callback to the ChildComponent */}
+      <UseCallbackChild onIncrement={handleIncrement} />
+    </div>
+  );
+};
+
+export default UseCallbackParent;
+
+
+2)What parameters does the useCallback hook accept & what does it returns?
+❖ The useCallback hook
+returns the memoized
+version of the callback
+function
+
+❖ The first parameter is the
+callback function that you
+want to memorize. 
+
+❖ The second parameter is
+an array of dependencies.
+It specifies the values that,
+when changed, will cause
+the memoized callback to
+be re-created.
+
+3)What is the role of useMemo() Hook?
+❖ The useMemo hook is a performance optimization
+function that memorizes the result of a
+computation.
+❖ The advantage is it prevent unnecessary
+recalculations and rendering. It is particularly
+useful when dealing with expensive calculations.
+❖ userMemo accept two parameters:
+1. The first argument of useMemo() is a function
+that performs some expensive computation
+and return some result(processData).
+2. The second argument([data]) is an array of
+dependencies ([data]). The memorized value
+will only be recalculated if this dependency
+will change.
+❖ useMemo returns a memorized version of the
+calculated value.
+
+
+
+
+
+
+4)What is the role of useRef() Hook?
+❖ The useRef hook is primarily used for accessing
+and interacting with the DOM elements.
+❖ The advantage is, the useRef hook persists
+across renders and does not trigger re-renders
+when it changes. 
+
+
+
+5)What useLayoutEffect() Hook? Compare it with useEffect() hook.
+Rendered after side effects by
+useEffect(eg: Loading data
+from external API)
+
+
+
+6)What useLayoutEffect() Hook? Compare it with useEffect() hook.
+useEffect:-
+useEffect runs asynchronously and is scheduled after the UI has been rendered. 
+This means useEffect won't block the browser from updating the UI.
+
+useLayoutEffect:-
+useLayoutEffect run synchronously with the UI rendering. 
+This means useLayoutEffect can block the browser from updating the UI.
+
+7)When to use useLayoutEffect() Hook?
+❖ For example, below the paragraph element
+style(bold/ normal) is dependent on the side
+effect data, then we use useLayoutEffect.
+
+❖ The useLayoutEffect hook in React should be used when you
+need to perform actions that involve manipulating the layout
+of the DOM based on side effects, such as data fetching.
+❖ In other words, you want the layout changes to be reflected
+before the browser paints the updated UI.

@@ -1,0 +1,66 @@
+1)What is the role of useContext() hook?
+useContext in react provider a way to pass data from parent to child component without using props
+
+code:-
+import {createContext} from "react"
+const MyContext = createContext();
+export default MyContext
+
+const Parent = ()=>{
+    const contextValue= "Hello From Context"
+    <MyContext.Provider>
+        <child></child>
+    </MyContext.Provider>
+}
+
+const Child = ()=>{
+    const contextValue = useContext(MyContext);
+    return <p>{contextValue}</p>
+}
+
+2)What is createContext() method? What are Provider & Consumer properties?
+=>createContext() function return an object with provider and consumer
+=>provider property is responsible for providing the context value to all its childcomponent 
+=>useContext() method or consumer property can be used to consume the context value in child component
+
+3)When to use useContext() hook instead of props in real applications?
+useContext instead of props when u want to avoid prop drilling and access the context value directly with in deeply nested components   
+
+4)What are the similarities between useState() and useReducer() hook?
+❖ 3 Similarities between useState() and useReducer() hook:
+1. Both hooks provide a way to update state and trigger a re-render of the component.
+2. Both useState and useReducer return an array with two elements:
+a. First element is current state
+b. Second element is a function that can be used to update the state.
+
+
+5)What is useReducer() hook? When to use useState() and when useReducer()?
+❖ useReducer() is an alternative to the
+useState() hook when dealing with
+complex state in your components. 
+
+
+6)What are the differences between useState() and useReducer() Hook?
+useState:-
+1. useState is simpler to use and used for managing simple state values.
+2. It is suitable for managing a single piece of state.
+3. The useState hook takes an initial state as an argument and returns an array with two
+elements: the current state and a function to update the state.
+
+useReducer:-
+1.useReducer is more appropriate for complex state logic or when the next state depends on the previous one.
+2.It is well-suited for managing multiple pieces of state that needs to be updated together
+3.The useReducer hook takes a reducer function and an initial state as arguments and returns the current state and a dispatch function.
+
+
+7)What are dispatch & reducer function in useReducer Hook?
+❖ dispatch function is returned by the useReducer
+hook, and it is used to dispatch actions(type) to
+reducer function that trigger state updates.
+❖ The reducer function is a function responsible for
+updating the state based on the action received
+from dispatch function.
+
+
+8)What is the purpose of passing initial state as an object in UseReducer?
+❖ By setting initial state as an object, you can manage complex states with useReducer functions.

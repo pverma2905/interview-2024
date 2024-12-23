@@ -1,0 +1,70 @@
+1)What are the Rules or Best Practices for hooks implementation?
+❖ Rules or Best Practices for hooks implementation
+1. Hooks can only be called at the top level of a component.
+2. Hooks can only be called directly inside React components.
+3. Keep hooks order consistent.
+
+2)What are Custom Hooks?\
+❖ Custom Hooks in React are JavaScript functions
+developed by developers to encapsulate reusable
+logic for their applications. 
+
+3)Tell 3 scenarios in which you can use useEffect() hook?
+useEffect() hook can be used for:
+1. Fetching data from external API.
+2. For managing subscriptions or event listeners.
+3. For manual DOM manipulations.
+4. For setting up timers or intervals.
+
+
+4)What useState() hook return in React?
+5)How can you conditionally run effects with useEffect?
+❖ In React, you can conditionally run
+effects with the useEffect hook by
+placing the if-else condition inside
+the hook itself.
+
+
+6)What problem do React Hooks solve?
+❖ React Hooks solve problems related to managing
+state, lifecycle, and side effects in functional
+components
+
+
+
+7)What is the advantage of React Hooks over Lifecycle methods?
+❖ Simplicity: Hooks eliminate the need for class components,
+making the code more readable and reducing boilerplate. 
+
+8)What is Context API?
+❖ Context API is a broader concept for the creation of
+context and its management.
+❖ It can be achieved by using useContect Hook.
+
+
+9)What are the uses of all the Hooks in React?
+1. useState:-
+Used for adding state to functional components.
+
+2. useEffect:-
+Enables performing side effects in functional components, such as data fetching
+
+3. useContext:
+Allows functional components to consume values from a React context
+
+4. useReducer:
+Provides an alternative to useState when the state logic is more complex.
+
+5. useCallback:
+Memoizes a callback function to prevent unnecessary re-renders of child components
+
+6. useMemo:
+Memoizes the result of a function to optimize performance by avoiding unnecessary
+recalculations.
+
+7. useRef:
+Creates a mutable object that persists across renders (used for interacting with DOM
+elements).
+
+8. useLayoutEffect:
+Similar to useEffect but fires synchronously after all DOM mutations.

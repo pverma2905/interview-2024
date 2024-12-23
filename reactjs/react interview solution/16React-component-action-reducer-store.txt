@@ -1,0 +1,110 @@
+1)What is the role of Redux in React?
+❖ Redux is an open-source JavaScript library used for state management.
+❖ Redux provides a centralized store 
+  it holds the entire state of an application 
+  and it allows components to access this state
+  and update the state in apredictable manner.
+
+2)When to use Hooks and when to use Redux in React applications?
+❖ Use React with Hooks when:
+1. Your application is small or medium (5-50 Components)
+2. Your application has simple state management.
+3. State is specific to components.
+
+❖ Use React with Redux when:
+1. Your application is big or complex (>50 Components)
+2. Your application has complex global state management.
+3. Share state among multiple components.
+
+3)What is the Flow of data in React while using Redux?
+component=> action=>store=>reducer=>store=>component 
+
+4)How to install Redux for React application?
+npm i redux react-redux
+
+5)What are Action Creators in React Redux?
+❖ Action creators are functions that create and return action objects.
+
+6)Difference between Action Creators, Action Object & Action Type?
+❖ Action creator functions are functions that create
+and return action objects.
+
+❖ Action object are plain JavaScript objects returned
+by action creator functions.
+
+❖ An action type is a string constant that defines the
+type of action. 
+
+7)Explain React Component Structure while using Redux?
+❖ 5 Steps to implement Redux integration in component:
+1. Import dependencies like connect function and action creators.
+2. Define Functional Component to render & display elements.
+3. Define function to dispatch action to reducer via store.
+4. Define function to get state from Redux store back to component.
+5. Connect both the above functions and the component to Redux
+store by connect() function.
+
+
+
+code:-
+// 1. Import Statements
+import React from "react";
+import { connect } from "react-redux";
+import { increment, decrement } from "./1-actions";
+
+// 2. Functional Component
+const CounterComponent = ({ count, increment, decrement }) => {
+  return (
+    <div>
+      <h1>Counter: {count}</h1>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+};
+
+// 3. Map Redux actions to component props
+const mapDispatchToProps = {
+  increment,
+  decrement,
+};
+
+// CounterComponent.js
+// Map Redux state to component props
+const mapStateToProps = (state) => {
+  return {
+    count: state.counter.count, 
+  };
+};
+
+// 5. Connect the component to Redux store
+export default connect(mapStateToProps, mapDispatchToProps)(CounterComponent);
+
+
+8)What is the role of Store in React Redux?
+
+❖ Redux store enables the application to update state
+using the defined reducer.
+❖ Redux Store is a centralized place for holding the
+state of all the components in the application.
+
+code :-
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './5-reducer';
+
+const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
+
+export default store;
+
+
+
+9)What is the role of Reducer in Redux?
+❖ A reducer is a function that takes the previous state and an action as arguments
+and returns the new state of the application. 
+
+Reducer=> Store.js

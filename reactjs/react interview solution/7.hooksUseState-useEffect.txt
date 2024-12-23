@@ -1,0 +1,64 @@
+1)What are React Hooks? What are the Top React Hooks?
+React hooks are in built function provided by react that allow functional components to use  State and lifecycle feature 
+
+Before hooks class component lifecycle method were used to maintain state in react application
+
+to use react hook first we have to import it from react library 
+
+Type of hooks:-
+1)useState    -------- state
+2)useEffect   -------- side effect
+3)useContext  -------- context
+4)useReducer  -------- Complex State
+5)useCallback -------- Memoization
+6)useMemo     -------- Performance
+7)useRef      -------- Refs
+8)useLayoutEffect ------- Synchronous Side Effect
+
+
+2)What are State, Stateless, Stateful and State Management terms?
+import React from "react";
+
+function ComponentState(){
+    let count = 0; //initial State
+
+    const increment = ()=>{
+        count +=1;
+        console.log('Count:',$count)
+    }
+
+    return(
+        <div>
+            <p>Stateless Example</p>
+            <p>Count:{count}</p>
+            <button onClick={increment}>click</button>
+        </div>
+    )
+}
+
+state refer to the current data of the component
+
+stateful or state management means when a user perform some action on the ui then the react application should be able to update and rerender that data or state on the ui 
+
+
+
+3)What is the role of useState() hook and how it works?
+useState hook enable functinal component to manage state
+usestate function accept the initail state value as the parameter and return an array wth two element
+
+=> first element isthe current state  value
+=> second element is the function that  is used to update the state
+
+concept of assign array element to individal  variable is called array destruring
+
+
+
+4)What is the role of useEffect(). How it works and what is its use?
+=>useEffect is called after the component is render.Example side effect
+=>function will accept two parameter: Effect function and dependency array
+
+5)What is Dependency Array in useEffect() hook?
+it trigger useEffect function to rerun if any of dependency value change.the code inside useeffect will be execute again
+
+6)What is the meaning of the empty array [] in the useEffect()?
+it trigger the useEffect function should only run once

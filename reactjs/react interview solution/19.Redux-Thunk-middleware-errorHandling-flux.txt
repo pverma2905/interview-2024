@@ -1,0 +1,21 @@
+1)What is the difference between Regular Action creator & Thunk action creator?
+❖ A regular action creator returns a plain JavaScript object with a type property,
+describing the type of action to be performed.
+❖ 3 main points about Thunks:
+1. A Thunk action creator is a function that returns another function.
+2. This returned function dispatched to the Redux store.
+3. Thunks are used to handle complex asynchronous operations, such as data fetching or API calls, based on which the action will be decide.
+
+2)Explain the concept of Middleware in React-Redux?
+❖ Middleware provides a mechanism to add extra functionality to the Redux store.
+❖ Middleware can intercept actions, modify them, or execute additional logic in actions before they reach the reducers.
+
+3)How can you handle Asynchronous Operations & side-effect in React-Redux?
+❖ Use middleware and Redux Thunk action creators to handle asynchronous operations.
+
+4)How does Error Handling work in Redux?
+❖ Error handling in Redux can be done by using try-catch blocks in action creator, middleware and reducers.
+
+5)What is the difference between Flux & Redux?
+❖ Flux is an architecture pattern. It provides a set of design principles for organizing code to manage state in a unidirectional data flow.
+❖ Redux is a library that implements the Flux architecture.

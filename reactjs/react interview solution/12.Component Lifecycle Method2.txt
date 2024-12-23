@@ -1,0 +1,80 @@
+1)What is the role of componentDidUpdate() method in component life cycle?
+1. Rendered after constructor
+initialization.
+2. Rendered after
+componentDidMount() Side
+effects.
+3. For any property or state
+change,
+componentDidUpdate()
+method will refetch the data
+and re-rendered in the DOM
+
+❖ componentDidUpdate() lifecycle method is the part
+of updating phase and is called after a component
+has been updated(property of state change).
+
+❖ For example, after data is initially fetched by the
+componentDidMount method, if the user changes
+some property in the component (e.g., triggering a
+re-render with updated props or state), then the
+componentDidUpdate method can be used to refetch data again. 
+
+2)What is the role of componentWillUnmount() method in component life cycle?
+1. Rendered after
+constructor() initialization.
+2. Rendered after
+componentDidMount().
+3. Re-rendered after,
+componentDidUpdate() on
+any state or property change.
+4. Before unmounting of
+component,
+componentWillUnmount()
+will do the cleanup task.
+
+❖ componentWillUnmount() lifecycle method
+is called just before a component is
+unmounted and removed from the DOM.
+❖ It is used for cleanup tasks, freeing up
+resources or canceling any ongoing
+processes. For example, remove event
+listener or unsubscribe from any external
+service.
+
+
+3)How do you initialize state in a class component?
+❖ In a React class component, state is initialized in
+the constructor. 
+
+4)In which lifecycle phase component will be re-rendered?
+❖ In the updating phase component will be re-rendered
+if any props or state is changed.
+
+5)What will happen if you don’t define a constructor in your React component?
+❖ If you don't define a constructor in your React
+component, React will automatically create a
+default constructor for you. This default
+constructor will call the constructor of the base
+class (Component) using super(props).
+
+6)Why we need class components when we already have functional components?
+❖ Previously, class components were used for managing state in React applications since functional
+components were stateless. However, with the introduction of hooks, functional components can also
+handle the state.
+❖ When we need class components now?
+1. To manage existing projects(legacy code), especially those built before the introduction of hooks.
+2. To support some third-party libraries that might still be written as class components.
+3. To support component lifecycle methods of the existing legacy code.
+
+7)What are the 5 main methods of component lifecycle?
+1. constructor():-Initializes the component's state and automatically called when the
+component is being created.
+2. render():-Returns UI elements based on the current state and props;
+3. componentDidMount():-Invoked after the component has been added to the DOM; used for
+data fetching and subscribing to external data sources.
+4. componentDidUpdate():-Invoked after a component's state or props have been updated and it
+has been re-rendered; used for handling side effects after updates.
+5. componentWillUnmount():-Called just before a component is unmounted and removed from the
+DOM; used for cleanup tasks and releasing resources. 
+

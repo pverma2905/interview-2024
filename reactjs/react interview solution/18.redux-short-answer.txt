@@ -1,0 +1,46 @@
+1)What is Provider Component? How components getting the state from Redux store?
+❖ Provider component of react-redux will make the Redux store available to all connected components.
+
+2)What is the role of Connect function in React-Redux?
+❖ The connect function is used to make the connection between a React component and
+the Redux store.
+
+3)What are the 4 Important Files in React-Redux project?
+❖ Important File for Redux Implementation:
+1. actions.js: Defines action creators.
+2. reducer.js: Update the state based on the action and
+previous state received from the store.
+3. store.js: Stores the updated state received from
+reducer and export it to the components.
+4. CounterComponent.js: React component connected
+to Redux, uses state and actions to render UI and
+handle user interactions.
+
+
+4)How to structure the project and maintain state in multiple components?
+5)Explain the concept of immutability in the context of Redux?
+❖ In Redux, immutability is the principle that once an object (such as the state which is readonly) is created, it cannot bechanged or modified directly.
+❖ To make changes to the state, you need to dispatch an action.
+
+6)Which are the typical properties of an Action object in React-Redux project?
+❖ 2 Typical properties in most of the React-Redux project:
+1. Type: Type describes the type of action being performed.
+2. Payload: Carries data from mostly from external API’s.
+
+7)Difference btw mapDispatchToProps & mapStateToProps in the connect?
+❖ mapDispatchToProps() function dispatches action to the store to update the state using a
+reducer.
+❖ mapStateToProps() function gets the state for the component from Redux store.
+
+8)What is the meaning of Unidirectional Data Flow in Redux?
+❖ In a unidirectional data flow architecture, data follows a single, clear path.
+❖ Redux enforces this pattern to provide a predictable state management mechanism. 
+
+9)How does Redux handle communication between components?
+❖ Redux handles communication between
+components through a centralized state
+management system(store).
+
+10)What is Payload property in Redux?
+❖ Along with the action type, payload property in Redux actions holds the data being sent to the reducer.
+❖ Payload contains information necessary for the reducer to update the state based on the action. 

@@ -1,0 +1,141 @@
+1)What is a Higher-Order Component in React?
+❖ A Higher-Order Component is a component which
+takes another component as an argument and adds
+extra features to another component.
+
+❖ HOC can be used for providing logging functionality
+to all the components in a reusable way.
+
+2)What are the 5 ways to Style React components? Explain Inline Styles?
+5 ways to Style React components
+1. Inline Styles
+2. CSS Stylesheets
+3. CSS-Modules
+4. Global Stylesheets
+5. CSS Frameworks
+
+3)What are the differences between React & React Native?
+React:-
+=>React is a library
+=>React is used for building web interfaces.
+=>Run on Web browsers. 
+=> HTML and CSS are used for UI.
+=> Deployed as web applications
+
+ReactNative:-
+=>React Native is a framework
+=>React Native is used for building mobile applications.
+=>Run on iOS and Android platforms.
+=>Native UI components (e.g., View, Text) are used for UI.
+=>Deployed through app stores(e.g., App Store, Google Play).
+
+4)What is GraphQL?
+❖ GraphQL is a query language for APIs (Application
+Programming Interfaces) and a runtime for executing
+those queries with your existing data.
+❖ GraphQL and React are often used together. React
+components can use GraphQL queries to fetch the
+data required for rendering.
+
+5)What are the Top 3 ways to achieve state management? When to use what in React?
+1. useState Hook:
+• When to use: Simple component-level state.
+• Reason: Ideal for applications having small components and isolated state because it is
+  Lightweight and built into React only. 
+
+2. Context API:
+• When to use: Prop drilling avoidance for sharing global data.
+• Reason: Simplifies data passing through the component tree, reducing the need for manual prop drilling.
+
+3. Redux:
+• When to use: Large-scale applications with complex state.
+• Reason: Centralized store and actions provide a predictable state management pattern, aiding in debugging and scalability.
+
+
+6)How can you Implement Authentication in a React application?
+1. POST: {username, password}
+2. Authenticate & create JWT Token
+3. Return Response {JWT token}
+4. Store JWT token at local storage
+5. Request Data {JWT token: Header}
+6. Validate token signature
+7. Send Data
+8. Display data on browser
+
+7)What is the use of React Profiler?
+❖ React Profiler is a set of tools in React that
+allows developers to profile(analyze) the
+performance of a React application.
+
+8)What is the difference between fetch & axios for api calls in React?
+fetch:-
+1. fetch is a built-in JavaScript function, so it
+doesn't require any additional libraries.
+2. fetch returns Promises, making it easy to work
+with asynchronous code using async/await
+syntax.
+3. If you want to keep http requests simple, fetch
+is a good choice.
+
+axios:-
+1. Axios is a third-party library, that simplifies the
+process of making HTTP requests.
+2. Axios allows you to use interceptors, which can be
+good for tasks like request/response logging,
+authentication, and error handling.
+3. If you want to intercept http request/response, or
+improve error handling then Azios has more features
+to do it.
+
+9)What are the popular Testing Libraries for React?
+=>jest
+=>cypress
+=>enzyme
+=>React Testing library
+
+10)How can you Optimize Performance in a React application?
+1. Memoization with useMemo and useCallback:
+Use this hooks to memoize values and, reducing unnecessary recalculations
+
+2. Optimizing Renders with React.Fragment:
+Use it to avoid unnecessary wrapper elements that could cause additional DOM
+nodes.
+
+3. Lazy Loading with React.lazy:
+Use it to load components lazily, reducing the initial bundle size and improving
+initial loading performance.
+
+4. Code Splitting:
+Employ code splitting to divide your application into smaller chunks that are loaded
+on demand, improving initial load times.
+
+5. Optimizing Images and Assets:
+Compress and optimize images, use responsive images, and leverage lazy loading
+for images to reduce network and rendering overhead
+
+11)Explain Reactive Programming with example?
+❖ Reactive programming is a programming paradigm
+that focuses on reacting to changes and events in a
+declarative and asynchronous manner.
+❖ Declarative means a programming style where you
+write the code for what you want to achieve, rather
+than specifying step-by-step how to achieve it. For
+example, JSX in React has declarative syntax.
+❖ Asynchronously means an action that does not
+block other actions.
+
+12)In how many ways can we implement Reactive Programming in React?
+1. State and Props:- Reacting to changes in local component state and passing data reactively through props.
+2. React Hooks:- Leveraging useState and useEffect hooks for managing state and side effects infunctional components.
+3. Event Handling:-Reacting to user interactions through event handling and updating state accordingly.
+4. Context API:-Sharing and managing global state reactively across components using the ContextAPI.
+5. Redux:-Using state management libraries like Redux for managing complex application state
+reactively.
+6. Component Lifecycle Methods:- Using class components and lifecycle methods for handling side effects and updates
+7. Async/Await:- Utilizing async/await syntax for handling asynchronous operations reactively.
+8. RxJS and Observables:- Leveraging RxJS for handling asynchronous operations and data streams in a reactive manner.    
+
+13)How to pass data from child component to parent Component in React?
+❖ Parent provides a callback function to child and
+then child component can then invoke this callback
+to pass data back to the parent.

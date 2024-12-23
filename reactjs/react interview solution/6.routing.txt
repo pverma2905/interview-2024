@@ -1,0 +1,53 @@
+1)What is Routing and Router in React?
+Rounting:- Routing allow you to create single page web application with navigation without page refresh
+
+React-Router:- it is a library for handling routing and enable  navigationand rendering of differnet components based on the url
+
+2)How to Implement Routing in React?
+npm i react-router-dom
+
+code:-
+import {Routes,Route,Link} from "react-router-dom"
+import {Home} ./components/Home;
+import {About} ./components/About;
+import {Contact} ./components/Contact;
+
+<Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
+    <Route path="/contact" element={<Contact/>}/>
+</Routes>
+
+<ul>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/about">About</Link></li>
+    <li><Link to="/contact">Contact</Link></li>
+</ul>
+
+
+
+3)What are the roles of <Routes> & <Route> component in React Routing?
+Routes:- it is a container for declaring the collection of route
+Route:- it specify the component that should render when the route mates
+
+
+4)What are Route Parameters in React Routing?
+userId is the route Parameters
+<Route path="/users/:userId" component={UserProfile}/>
+
+Route parameter is a way to pass dynamic values to the component 
+
+
+5)What is the role of Switch Component in React Routing?
+it ensure the first matching is rendered and rest are ignored
+import {Switch,Route} from 'react-router-dom';
+<Switch>
+<Route path="/users" element={<UserList/>}/>
+<Route path="/users/:id" element={<UserProfile/>}/>
+</Switch>
+
+
+6)What is the role of exact prop in React Routing?
+exact prop is used the route component to match the exact provided path
+only match about
+<Route path="/about" exact component={About}/>
